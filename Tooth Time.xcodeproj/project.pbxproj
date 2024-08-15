@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9224EB272C6E43510056B803 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224EB1F2C6E43510056B803 /* CustomButton.swift */; };
+		9224EB282C6E43510056B803 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB202C6E43510056B803 /* CustomButton.xib */; };
+		9224EB292C6E43510056B803 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224EB222C6E43510056B803 /* CustomTextFiled.swift */; };
+		9224EB2A2C6E43510056B803 /* CustomTextFiled.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB232C6E43510056B803 /* CustomTextFiled.xib */; };
 		9253223D2C6A61ED007045DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9253223C2C6A61ED007045DB /* AppDelegate.swift */; };
 		9253223F2C6A61ED007045DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9253223E2C6A61ED007045DB /* SceneDelegate.swift */; };
 		925322412C6A61ED007045DB /* MainNanigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925322402C6A61ED007045DB /* MainNanigationViewController.swift */; };
@@ -38,6 +42,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9224EB1F2C6E43510056B803 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		9224EB202C6E43510056B803 /* CustomButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
+		9224EB222C6E43510056B803 /* CustomTextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
+		9224EB232C6E43510056B803 /* CustomTextFiled.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextFiled.xib; sourceTree = "<group>"; };
+		9224EB2C2C6E4CEE0056B803 /* Inter-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.otf"; sourceTree = "<group>"; };
+		9224EB2D2C6E4CEE0056B803 /* Inter-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.otf"; sourceTree = "<group>"; };
+		9224EB2E2C6E4CEE0056B803 /* Inter-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-MediumItalic.otf"; sourceTree = "<group>"; };
+		9224EB302C6E4CEE0056B803 /* Inter-SemiBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.otf"; sourceTree = "<group>"; };
+		9224EB312C6E4CEE0056B803 /* Inter-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Italic.otf"; sourceTree = "<group>"; };
+		9224EB322C6E4CEE0056B803 /* Inter-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-BlackItalic.otf"; sourceTree = "<group>"; };
+		9224EB332C6E4CEE0056B803 /* Inter-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.otf"; sourceTree = "<group>"; };
+		9224EB342C6E4CEE0056B803 /* Inter-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.otf"; sourceTree = "<group>"; };
+		9224EB352C6E4CEE0056B803 /* Inter-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-BoldItalic.otf"; sourceTree = "<group>"; };
+		9224EB362C6E4CEE0056B803 /* Inter-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.otf"; sourceTree = "<group>"; };
 		925322392C6A61ED007045DB /* Tooth Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tooth Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9253223C2C6A61ED007045DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9253223E2C6A61ED007045DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +99,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9224EB212C6E43510056B803 /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				9224EB1F2C6E43510056B803 /* CustomButton.swift */,
+				9224EB202C6E43510056B803 /* CustomButton.xib */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
+		9224EB242C6E43510056B803 /* CustomTextFiled */ = {
+			isa = PBXGroup;
+			children = (
+				9224EB222C6E43510056B803 /* CustomTextFiled.swift */,
+				9224EB232C6E43510056B803 /* CustomTextFiled.xib */,
+			);
+			path = CustomTextFiled;
+			sourceTree = "<group>";
+		};
+		9224EB262C6E43510056B803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9224EB212C6E43510056B803 /* CustomButton */,
+				9224EB242C6E43510056B803 /* CustomTextFiled */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		925322302C6A61ED007045DB = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +183,16 @@
 		927F9A842C6E1B0500C9E9E9 /* Files */ = {
 			isa = PBXGroup;
 			children = (
+				9224EB322C6E4CEE0056B803 /* Inter-BlackItalic.otf */,
+				9224EB2D2C6E4CEE0056B803 /* Inter-Bold.otf */,
+				9224EB352C6E4CEE0056B803 /* Inter-BoldItalic.otf */,
+				9224EB312C6E4CEE0056B803 /* Inter-Italic.otf */,
+				9224EB2C2C6E4CEE0056B803 /* Inter-Light.otf */,
+				9224EB342C6E4CEE0056B803 /* Inter-Medium.otf */,
+				9224EB2E2C6E4CEE0056B803 /* Inter-MediumItalic.otf */,
+				9224EB332C6E4CEE0056B803 /* Inter-Regular.otf */,
+				9224EB362C6E4CEE0056B803 /* Inter-SemiBold.otf */,
+				9224EB302C6E4CEE0056B803 /* Inter-SemiBoldItalic.otf */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -146,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				927F9A862C6E1B2E00C9E9E9 /* Collection View */,
+				9224EB262C6E43510056B803 /* Views */,
 			);
 			path = Xibs;
 			sourceTree = "<group>";
@@ -311,9 +367,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9224EB282C6E43510056B803 /* CustomButton.xib in Resources */,
 				925322462C6A61F2007045DB /* Assets.xcassets in Resources */,
 				925322492C6A61F2007045DB /* Base in Resources */,
 				925322442C6A61ED007045DB /* Base in Resources */,
+				9224EB2A2C6E43510056B803 /* CustomTextFiled.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +382,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9224EB292C6E43510056B803 /* CustomTextFiled.swift in Sources */,
+				9224EB272C6E43510056B803 /* CustomButton.swift in Sources */,
 				92A776292C6A772F00757440 /* UserProfile.swift in Sources */,
 				925322412C6A61ED007045DB /* MainNanigationViewController.swift in Sources */,
 				9253223D2C6A61ED007045DB /* AppDelegate.swift in Sources */,
