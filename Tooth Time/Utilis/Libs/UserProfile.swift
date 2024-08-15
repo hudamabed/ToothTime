@@ -27,7 +27,8 @@ class UserProfile {
         let langArray = userdef.object(forKey: APPLE_LANGUAGE_KEY) as! NSArray
         let current = langArray.firstObject as! String
         let endIndex = current.startIndex
-        let currentwithoutLocale = current.substring(to: current.index(endIndex, offsetBy: 2))
+        let index = current.index(endIndex, offsetBy: 2)
+        let currentwithoutLocale = String(current[index...])
         return currentwithoutLocale
     }
 

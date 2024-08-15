@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		9253223D2C6A61ED007045DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9253223C2C6A61ED007045DB /* AppDelegate.swift */; };
 		9253223F2C6A61ED007045DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9253223E2C6A61ED007045DB /* SceneDelegate.swift */; };
-		925322412C6A61ED007045DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925322402C6A61ED007045DB /* ViewController.swift */; };
+		925322412C6A61ED007045DB /* MainNanigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925322402C6A61ED007045DB /* MainNanigationViewController.swift */; };
 		925322442C6A61ED007045DB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 925322432C6A61ED007045DB /* Base */; };
 		925322462C6A61F2007045DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 925322452C6A61F2007045DB /* Assets.xcassets */; };
 		925322492C6A61F2007045DB /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 925322482C6A61F2007045DB /* Base */; };
+		927F9A8F2C6E1C6B00C9E9E9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A8E2C6E1C6B00C9E9E9 /* SignUpViewController.swift */; };
+		927F9A912C6E1C8A00C9E9E9 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A902C6E1C8A00C9E9E9 /* SignInViewController.swift */; };
+		927F9A932C6E1CA700C9E9E9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A922C6E1CA700C9E9E9 /* HomeViewController.swift */; };
+		927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A942C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift */; };
+		927F9A972C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A962C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift */; };
+		927F9A992C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A982C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift */; };
 		92A776292C6A772F00757440 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776262C6A772800757440 /* UserProfile.swift */; };
 		92A7762A2C6A773400757440 /* NSNumberEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776162C6A772800757440 /* NSNumberEx.swift */; };
 		92A7762B2C6A774100757440 /* UIStringEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761E2C6A772800757440 /* UIStringEx.swift */; };
@@ -35,11 +41,17 @@
 		925322392C6A61ED007045DB /* Tooth Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tooth Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9253223C2C6A61ED007045DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9253223E2C6A61ED007045DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		925322402C6A61ED007045DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		925322402C6A61ED007045DB /* MainNanigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNanigationViewController.swift; sourceTree = "<group>"; };
 		925322432C6A61ED007045DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		925322452C6A61F2007045DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		925322482C6A61F2007045DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9253224A2C6A61F2007045DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		927F9A8E2C6E1C6B00C9E9E9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		927F9A902C6E1C8A00C9E9E9 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		927F9A922C6E1CA700C9E9E9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		927F9A942C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDoctorsViewController.swift; sourceTree = "<group>"; };
+		927F9A962C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsViewController.swift; sourceTree = "<group>"; };
+		927F9A982C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewController.swift; sourceTree = "<group>"; };
 		92A776162C6A772800757440 /* NSNumberEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNumberEx.swift; sourceTree = "<group>"; };
 		92A776172C6A772800757440 /* UIApplectionEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplectionEx.swift; sourceTree = "<group>"; };
 		92A776182C6A772800757440 /* UIButtonEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonEx.swift; sourceTree = "<group>"; };
@@ -90,13 +102,107 @@
 			children = (
 				9253223C2C6A61ED007045DB /* AppDelegate.swift */,
 				9253223E2C6A61ED007045DB /* SceneDelegate.swift */,
-				925322402C6A61ED007045DB /* ViewController.swift */,
 				92A776152C6A76DD00757440 /* Storyboard */,
+				927F9A822C6E1AD500C9E9E9 /* View Controller */,
 				92A776282C6A772800757440 /* Utilis */,
+				927F9A832C6E1AF000C9E9E9 /* Supporting Files */,
+			);
+			path = "Tooth Time";
+			sourceTree = "<group>";
+		};
+		927F9A822C6E1AD500C9E9E9 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				927F9A852C6E1B2800C9E9E9 /* Xibs */,
+				925322402C6A61ED007045DB /* MainNanigationViewController.swift */,
+				927F9A872C6E1BAD00C9E9E9 /* Sign Up */,
+				927F9A882C6E1BC000C9E9E9 /* Sign In */,
+				927F9A892C6E1BCC00C9E9E9 /* Home */,
+				927F9A8A2C6E1BDF00C9E9E9 /* Find Doctors */,
+				927F9A8B2C6E1BE900C9E9E9 /* Doctor Details */,
+				927F9A8C2C6E1C0000C9E9E9 /* Book Appointment */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		927F9A832C6E1AF000C9E9E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				927F9A842C6E1B0500C9E9E9 /* Files */,
 				925322452C6A61F2007045DB /* Assets.xcassets */,
 				9253224A2C6A61F2007045DB /* Info.plist */,
 			);
-			path = "Tooth Time";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		927F9A842C6E1B0500C9E9E9 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		927F9A852C6E1B2800C9E9E9 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				927F9A862C6E1B2E00C9E9E9 /* Collection View */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		927F9A862C6E1B2E00C9E9E9 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Collection View";
+			sourceTree = "<group>";
+		};
+		927F9A872C6E1BAD00C9E9E9 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				927F9A8E2C6E1C6B00C9E9E9 /* SignUpViewController.swift */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		927F9A882C6E1BC000C9E9E9 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				927F9A902C6E1C8A00C9E9E9 /* SignInViewController.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		927F9A892C6E1BCC00C9E9E9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				927F9A922C6E1CA700C9E9E9 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		927F9A8A2C6E1BDF00C9E9E9 /* Find Doctors */ = {
+			isa = PBXGroup;
+			children = (
+				927F9A942C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift */,
+			);
+			path = "Find Doctors";
+			sourceTree = "<group>";
+		};
+		927F9A8B2C6E1BE900C9E9E9 /* Doctor Details */ = {
+			isa = PBXGroup;
+			children = (
+				927F9A962C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift */,
+			);
+			path = "Doctor Details";
+			sourceTree = "<group>";
+		};
+		927F9A8C2C6E1C0000C9E9E9 /* Book Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				927F9A982C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift */,
+			);
+			path = "Book Appointment";
 			sourceTree = "<group>";
 		};
 		92A776152C6A76DD00757440 /* Storyboard */ = {
@@ -219,12 +325,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A776292C6A772F00757440 /* UserProfile.swift in Sources */,
-				925322412C6A61ED007045DB /* ViewController.swift in Sources */,
+				925322412C6A61ED007045DB /* MainNanigationViewController.swift in Sources */,
 				9253223D2C6A61ED007045DB /* AppDelegate.swift in Sources */,
 				92A7762B2C6A774100757440 /* UIStringEx.swift in Sources */,
+				927F9A972C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift in Sources */,
 				92A7762C2C6A774100757440 /* UIViewControllerEx.swift in Sources */,
 				92A7762D2C6A774100757440 /* UICollectionViewEx.swift in Sources */,
 				92A7762E2C6A774100757440 /* UIColorEx.swift in Sources */,
+				927F9A932C6E1CA700C9E9E9 /* HomeViewController.swift in Sources */,
 				92A7762F2C6A774100757440 /* UITableViewEx.swift in Sources */,
 				92A776302C6A774100757440 /* UIStoryboredEx.swift in Sources */,
 				92A776312C6A774100757440 /* UIButtonEx.swift in Sources */,
@@ -232,6 +340,10 @@
 				92A776332C6A774100757440 /* UITextField.swift in Sources */,
 				92A776342C6A774100757440 /* UIKitEx.swift in Sources */,
 				92A776352C6A774100757440 /* UIViewEx.swift in Sources */,
+				927F9A912C6E1C8A00C9E9E9 /* SignInViewController.swift in Sources */,
+				927F9A992C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift in Sources */,
+				927F9A8F2C6E1C6B00C9E9E9 /* SignUpViewController.swift in Sources */,
+				927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */,
 				92A776362C6A774100757440 /* UIApplectionEx.swift in Sources */,
 				92A776372C6A774100757440 /* UITabBarEx.swift in Sources */,
 				92A776382C6A774100757440 /* UIResponderEx.swift in Sources */,
@@ -314,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -371,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -390,7 +502,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 988B9VT687;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tooth Time/Info.plist";
+				INFOPLIST_FILE = "Tooth Time/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -418,7 +530,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 988B9VT687;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tooth Time/Info.plist";
+				INFOPLIST_FILE = "Tooth Time/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

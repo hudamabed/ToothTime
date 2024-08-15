@@ -47,8 +47,8 @@ func fetchData(){
 //MARK: - Set Root
 extension MainNanigationViewController {
     func setRoot(){
-        let vc = UIStoryboard.mainStorybored.instantiateViewController(withIdentifier:"LoginViewController")
-        vc.rootPush()
+        let vc = SignUpViewController.instantiat()
+            vc.rootPush()
         
         
     }

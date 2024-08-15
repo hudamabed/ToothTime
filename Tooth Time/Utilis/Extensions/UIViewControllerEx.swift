@@ -22,15 +22,6 @@ extension UIViewController {
     }
     
     
-    static var identifier: String {
-        return String(describing: self)
-    }
-        
-    static func instantiat() -> Self {
-        let mainStorybored = UIStoryboard.init(name: "Main", bundle: nil)
-        return mainStorybored.instantiateViewController(identifier: identifier) as! Self
-    }
-    
     
     func getStatusBarHeight() -> CGFloat {
        var statusBarHeight: CGFloat = 0
