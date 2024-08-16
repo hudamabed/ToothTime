@@ -22,16 +22,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zxl-Je-8bs">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="14"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zSj-gL-Uqg">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="14"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVl-mo-7zb">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="14"/>
-                                    <color key="backgroundColor" name="#5663FF"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+                                    <color key="backgroundColor" name="1C2A3A"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="48" id="zgY-R8-Pnu"/>
+                                        <constraint firstAttribute="height" constant="48" id="zZB-8N-TrW"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                     <color key="tintColor" name="#FFFFFF"/>
@@ -39,24 +39,29 @@
                                     <state key="normal" title="Button"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                            <real key="value" value="66"/>
+                                            <real key="value" value="24"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
                         </stackView>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="zSj-gL-Uqg" secondAttribute="trailing" id="CMv-uc-phm"/>
-                        <constraint firstItem="zSj-gL-Uqg" firstAttribute="leading" secondItem="zxl-Je-8bs" secondAttribute="leading" id="anN-GV-DcK"/>
-                        <constraint firstItem="zSj-gL-Uqg" firstAttribute="top" secondItem="zxl-Je-8bs" secondAttribute="top" id="lTt-9O-ieU"/>
-                        <constraint firstAttribute="bottom" secondItem="zSj-gL-Uqg" secondAttribute="bottom" id="mds-8C-lmj"/>
+                        <constraint firstAttribute="trailing" secondItem="zSj-gL-Uqg" secondAttribute="trailing" id="5eU-ag-2Ia"/>
+                        <constraint firstAttribute="bottom" secondItem="zSj-gL-Uqg" secondAttribute="bottom" id="biS-Vj-atc"/>
+                        <constraint firstItem="zSj-gL-Uqg" firstAttribute="top" secondItem="zxl-Je-8bs" secondAttribute="top" id="iUS-8a-Zag"/>
+                        <constraint firstItem="zSj-gL-Uqg" firstAttribute="leading" secondItem="zxl-Je-8bs" secondAttribute="leading" id="kPf-4U-rkq"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="12"/>
+                            <real key="value" value="0.0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
@@ -64,21 +69,21 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="zxl-Je-8bs" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="5yL-ca-6UZ"/>
-                <constraint firstItem="zxl-Je-8bs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WaP-0G-YUk"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zxl-Je-8bs" secondAttribute="trailing" id="f4v-vg-XkV"/>
-                <constraint firstItem="zxl-Je-8bs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="t5x-RO-c4y"/>
+                <constraint firstAttribute="bottom" secondItem="zxl-Je-8bs" secondAttribute="bottom" id="1V9-dF-g81"/>
+                <constraint firstItem="zxl-Je-8bs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FgW-Z7-DKd"/>
+                <constraint firstItem="zxl-Je-8bs" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Qj9-Im-eAK"/>
+                <constraint firstItem="zxl-Je-8bs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oXr-3Z-MkE"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-66.412213740458014" y="-240.84507042253523"/>
+            <point key="canvasLocation" x="-66.412213740458014" y="-263.02816901408454"/>
         </view>
     </objects>
     <resources>
-        <namedColor name="#5663FF">
-            <color red="0.33700001239776611" green="0.3880000114440918" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="#FFFFFF">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="1C2A3A">
+            <color red="0.10999999940395355" green="0.16500000655651093" blue="0.22699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

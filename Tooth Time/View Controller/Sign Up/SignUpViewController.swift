@@ -29,6 +29,7 @@ class SignUpViewController: UIViewController {
 //MARK: - Configurations
 private extension SignUpViewController {
     func setupView() {
+        isHidNavigation = true
         
     }
     
@@ -44,6 +45,7 @@ private extension SignUpViewController {
     }
 }
 
+//MARK: - Set Up No
 extension SignUpViewController {
     
 }
