@@ -25,6 +25,11 @@ class SignUpViewController: UIViewController {
         super.viewWillAppear(animated)
         
     }
+    //MARK: - Actions
+    @IBAction func btnSignIn(_ sender: Any) {
+        let vc = SignInViewController.instantiat()
+        vc.push()
+    }
 }
 //MARK: - Configurations
 private extension SignUpViewController {
