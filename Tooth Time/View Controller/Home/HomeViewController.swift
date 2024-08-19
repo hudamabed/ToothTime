@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
 //MARK: - Configurations
 private extension HomeViewController {
     func setupView() {
-        
+        isHidNavigation = true
     }
     
     func localized() {

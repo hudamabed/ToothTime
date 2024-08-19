@@ -9,7 +9,7 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     //MARK:  Outlets
-    
+    @IBOutlet weak var btnCreateAccount: CustomButton!
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -30,6 +30,11 @@ class SignUpViewController: UIViewController {
         let vc = SignInViewController.instantiat()
         vc.push()
     }
+    @objc func NavigateToSignIn() {
+        let vc = SignInViewController.instantiat()
+        vc.push()
+    }
+    
 }
 //MARK: - Configurations
 private extension SignUpViewController {
@@ -50,8 +55,10 @@ private extension SignUpViewController {
     }
 }
 
-//MARK: - Set Up No
+//MARK: - Set Up Custom Button
 extension SignUpViewController {
-    
+    func navigateToSignIn() {
+        btnCreateAccount.btn.addTarget(self, action: #selector(NavigateToSignIn), for: .touchUpInside)
+    }
 }
 
