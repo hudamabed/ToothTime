@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="AdBoardCollectionViewCell" customModule="Tooth_Time" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="163"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuD-ci-B4K">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="163"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="adImage" translatesAutoresizingMaskIntoConstraints="NO" id="umG-5x-ZJB">
+                                <rect key="frame" x="0.0" y="0.0" width="342" height="163"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f0C-bi-EKu">
+                                <rect key="frame" x="11" y="32" width="167" height="99"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaV-e4-NVF">
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="45.333333333333336"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Looking for
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="Specialist Dentist?">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="Arial-BoldMT"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="5" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhT-yR-pkx">
+                                        <rect key="frame" x="0.0" y="53.333333333333329" width="167" height="45.666666666666671"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <string key="content">Schedule an appointment with 
+</string>
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="our top doctors.">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" paragraphSpacingBefore="8" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="umG-5x-ZJB" secondAttribute="trailing" id="HOR-wa-xZP"/>
+                            <constraint firstItem="umG-5x-ZJB" firstAttribute="top" secondItem="xuD-ci-B4K" secondAttribute="top" id="Onf-vN-BUU"/>
+                            <constraint firstItem="f0C-bi-EKu" firstAttribute="top" secondItem="xuD-ci-B4K" secondAttribute="top" constant="32" id="Ozx-qr-UJC"/>
+                            <constraint firstAttribute="bottom" secondItem="f0C-bi-EKu" secondAttribute="bottom" constant="32" id="TRQ-Dx-Mi1"/>
+                            <constraint firstItem="f0C-bi-EKu" firstAttribute="leading" secondItem="xuD-ci-B4K" secondAttribute="leading" constant="11" id="bm0-aq-j2P"/>
+                            <constraint firstAttribute="bottom" secondItem="umG-5x-ZJB" secondAttribute="bottom" id="raF-B6-AbQ"/>
+                            <constraint firstItem="umG-5x-ZJB" firstAttribute="leading" secondItem="xuD-ci-B4K" secondAttribute="leading" id="xCE-oH-rEC"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="xuD-ci-B4K" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AbW-gd-JcD"/>
+                <constraint firstAttribute="bottom" secondItem="xuD-ci-B4K" secondAttribute="bottom" id="Clw-pY-FWs"/>
+                <constraint firstAttribute="trailing" secondItem="xuD-ci-B4K" secondAttribute="trailing" id="jcB-xp-hfU"/>
+                <constraint firstItem="xuD-ci-B4K" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zm2-7I-1nJ"/>
+            </constraints>
+            <size key="customSize" width="357" height="140"/>
+            <point key="canvasLocation" x="238.93129770992365" y="30.281690140845072"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="adImage" width="342" height="163"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

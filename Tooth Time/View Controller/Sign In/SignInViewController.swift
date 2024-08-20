@@ -32,7 +32,7 @@ class SignInViewController: UIViewController {
             vc.push()
     }
     
-    @objc func navigateToHome(_ sender: UIButton) {
+    @objc func navigateToHome() {
         let vc = HomeViewController.instantiat()
         vc.push()
     }
@@ -41,24 +41,32 @@ class SignInViewController: UIViewController {
 //MARK: - Configurations
 private extension SignInViewController {
     func setupView() {
-        
+        customButtonSignIn()
     }
     
     func localized() {
-        
+        setupFont()
     }
     
     func setupData() {
-        
+
     }
     
     func fetchData() {
     }
 }
 
+//MARK: - Set Up FONTS
+extension SignInViewController {
+    func setupFont() {
+        btnSignIn.btn.titleLabel?.font = UIFont(name: "Inter-Medium", size: 16)
+        
+    }
+}
+
 //MARK: - Set Up Custom Button
 extension SignInViewController {
-    func navigateToHome() {
-        btnSignIn.btn.addTarget(self, action: #selector(navigateToHome(_:)), for: .touchUpInside)
+    func customButtonSignIn() {
+        btnSignIn.btn.addTarget(self, action: #selector(navigateToHome), for: .touchUpInside)
     }
 }

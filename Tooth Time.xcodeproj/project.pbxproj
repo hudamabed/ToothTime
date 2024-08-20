@@ -23,6 +23,25 @@
 		927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A942C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift */; };
 		927F9A972C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A962C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift */; };
 		927F9A992C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A982C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift */; };
+		92A581682C74DD5D00EFAAAE /* Inter-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB322C6E4CEE0056B803 /* Inter-BlackItalic.otf */; };
+		92A581692C74DD5D00EFAAAE /* Inter-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB2D2C6E4CEE0056B803 /* Inter-Bold.otf */; };
+		92A5816A2C74DD5D00EFAAAE /* Inter-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB352C6E4CEE0056B803 /* Inter-BoldItalic.otf */; };
+		92A5816B2C74DD5D00EFAAAE /* Inter-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB312C6E4CEE0056B803 /* Inter-Italic.otf */; };
+		92A5816C2C74DD5D00EFAAAE /* Inter-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB2C2C6E4CEE0056B803 /* Inter-Light.otf */; };
+		92A5816D2C74DD5D00EFAAAE /* Inter-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB342C6E4CEE0056B803 /* Inter-Medium.otf */; };
+		92A5816E2C74DD5D00EFAAAE /* Inter-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB2E2C6E4CEE0056B803 /* Inter-MediumItalic.otf */; };
+		92A5816F2C74DD5D00EFAAAE /* Inter-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB332C6E4CEE0056B803 /* Inter-Regular.otf */; };
+		92A581702C74DD5D00EFAAAE /* Inter-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB362C6E4CEE0056B803 /* Inter-SemiBold.otf */; };
+		92A581712C74DD5D00EFAAAE /* Inter-SemiBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB302C6E4CEE0056B803 /* Inter-SemiBoldItalic.otf */; };
+		92A581742C74E14E00EFAAAE /* AdBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A581732C74E14E00EFAAAE /* AdBoard.swift */; };
+		92A581762C74E15F00EFAAAE /* MedicalCenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A581752C74E15F00EFAAAE /* MedicalCenters.swift */; };
+		92A581782C74E17000EFAAAE /* TopDentists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A581772C74E17000EFAAAE /* TopDentists.swift */; };
+		92A5817E2C74E94200EFAAAE /* AdBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A5817C2C74E94200EFAAAE /* AdBoardCollectionViewCell.swift */; };
+		92A5817F2C74E94200EFAAAE /* AdBoardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A5817D2C74E94200EFAAAE /* AdBoardCollectionViewCell.xib */; };
+		92A581822C74E95900EFAAAE /* MedicalCentersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A581802C74E95900EFAAAE /* MedicalCentersCollectionViewCell.swift */; };
+		92A581832C74E95900EFAAAE /* MedicalCentersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A581812C74E95900EFAAAE /* MedicalCentersCollectionViewCell.xib */; };
+		92A581862C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A581842C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift */; };
+		92A581872C74E97200EFAAAE /* TopDentistsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92A581852C74E97200EFAAAE /* TopDentistsCollectionViewCell.xib */; };
 		92A776292C6A772F00757440 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776262C6A772800757440 /* UserProfile.swift */; };
 		92A7762A2C6A773400757440 /* NSNumberEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776162C6A772800757440 /* NSNumberEx.swift */; };
 		92A7762B2C6A774100757440 /* UIStringEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761E2C6A772800757440 /* UIStringEx.swift */; };
@@ -70,6 +89,15 @@
 		927F9A942C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDoctorsViewController.swift; sourceTree = "<group>"; };
 		927F9A962C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsViewController.swift; sourceTree = "<group>"; };
 		927F9A982C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewController.swift; sourceTree = "<group>"; };
+		92A581732C74E14E00EFAAAE /* AdBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBoard.swift; sourceTree = "<group>"; };
+		92A581752C74E15F00EFAAAE /* MedicalCenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCenters.swift; sourceTree = "<group>"; };
+		92A581772C74E17000EFAAAE /* TopDentists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDentists.swift; sourceTree = "<group>"; };
+		92A5817C2C74E94200EFAAAE /* AdBoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		92A5817D2C74E94200EFAAAE /* AdBoardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdBoardCollectionViewCell.xib; sourceTree = "<group>"; };
+		92A581802C74E95900EFAAAE /* MedicalCentersCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCentersCollectionViewCell.swift; sourceTree = "<group>"; };
+		92A581812C74E95900EFAAAE /* MedicalCentersCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedicalCentersCollectionViewCell.xib; sourceTree = "<group>"; };
+		92A581842C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDentistsCollectionViewCell.swift; sourceTree = "<group>"; };
+		92A581852C74E97200EFAAAE /* TopDentistsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopDentistsCollectionViewCell.xib; sourceTree = "<group>"; };
 		92A776162C6A772800757440 /* NSNumberEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNumberEx.swift; sourceTree = "<group>"; };
 		92A776172C6A772800757440 /* UIApplectionEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplectionEx.swift; sourceTree = "<group>"; };
 		92A776182C6A772800757440 /* UIButtonEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonEx.swift; sourceTree = "<group>"; };
@@ -150,6 +178,7 @@
 				92A776152C6A76DD00757440 /* Storyboard */,
 				927F9A822C6E1AD500C9E9E9 /* View Controller */,
 				92A776282C6A772800757440 /* Utilis */,
+				92A581722C74E12400EFAAAE /* Model */,
 				927F9A832C6E1AF000C9E9E9 /* Supporting Files */,
 			);
 			path = "Tooth Time";
@@ -173,14 +202,14 @@
 		927F9A832C6E1AF000C9E9E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				927F9A842C6E1B0500C9E9E9 /* Files */,
+				927F9A842C6E1B0500C9E9E9 /* Fonts */,
 				925322452C6A61F2007045DB /* Assets.xcassets */,
 				9253224A2C6A61F2007045DB /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		927F9A842C6E1B0500C9E9E9 /* Files */ = {
+		927F9A842C6E1B0500C9E9E9 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				9224EB322C6E4CEE0056B803 /* Inter-BlackItalic.otf */,
@@ -194,7 +223,7 @@
 				9224EB362C6E4CEE0056B803 /* Inter-SemiBold.otf */,
 				9224EB302C6E4CEE0056B803 /* Inter-SemiBoldItalic.otf */,
 			);
-			path = Files;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		927F9A852C6E1B2800C9E9E9 /* Xibs */ = {
@@ -209,6 +238,9 @@
 		927F9A862C6E1B2E00C9E9E9 /* Collection View */ = {
 			isa = PBXGroup;
 			children = (
+				92A5817B2C74E8D200EFAAAE /* Ad Board */,
+				92A5817A2C74E8CE00EFAAAE /* Medical Centers */,
+				92A581792C74E8CB00EFAAAE /* Top Dentists */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
@@ -259,6 +291,44 @@
 				927F9A982C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift */,
 			);
 			path = "Book Appointment";
+			sourceTree = "<group>";
+		};
+		92A581722C74E12400EFAAAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92A581732C74E14E00EFAAAE /* AdBoard.swift */,
+				92A581752C74E15F00EFAAAE /* MedicalCenters.swift */,
+				92A581772C74E17000EFAAAE /* TopDentists.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92A581792C74E8CB00EFAAAE /* Top Dentists */ = {
+			isa = PBXGroup;
+			children = (
+				92A581842C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift */,
+				92A581852C74E97200EFAAAE /* TopDentistsCollectionViewCell.xib */,
+			);
+			path = "Top Dentists";
+			sourceTree = "<group>";
+		};
+		92A5817A2C74E8CE00EFAAAE /* Medical Centers */ = {
+			isa = PBXGroup;
+			children = (
+				92A581802C74E95900EFAAAE /* MedicalCentersCollectionViewCell.swift */,
+				92A581812C74E95900EFAAAE /* MedicalCentersCollectionViewCell.xib */,
+			);
+			name = "Medical Centers";
+			path = "ؤedical Centers";
+			sourceTree = "<group>";
+		};
+		92A5817B2C74E8D200EFAAAE /* Ad Board */ = {
+			isa = PBXGroup;
+			children = (
+				92A5817C2C74E94200EFAAAE /* AdBoardCollectionViewCell.swift */,
+				92A5817D2C74E94200EFAAAE /* AdBoardCollectionViewCell.xib */,
+			);
+			path = "Ad Board";
 			sourceTree = "<group>";
 		};
 		92A776152C6A76DD00757440 /* Storyboard */ = {
@@ -367,9 +437,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A581682C74DD5D00EFAAAE /* Inter-BlackItalic.otf in Resources */,
+				92A581692C74DD5D00EFAAAE /* Inter-Bold.otf in Resources */,
+				92A5817F2C74E94200EFAAAE /* AdBoardCollectionViewCell.xib in Resources */,
+				92A5816A2C74DD5D00EFAAAE /* Inter-BoldItalic.otf in Resources */,
+				92A581872C74E97200EFAAAE /* TopDentistsCollectionViewCell.xib in Resources */,
+				92A5816B2C74DD5D00EFAAAE /* Inter-Italic.otf in Resources */,
+				92A5816C2C74DD5D00EFAAAE /* Inter-Light.otf in Resources */,
+				92A5816D2C74DD5D00EFAAAE /* Inter-Medium.otf in Resources */,
+				92A5816E2C74DD5D00EFAAAE /* Inter-MediumItalic.otf in Resources */,
+				92A5816F2C74DD5D00EFAAAE /* Inter-Regular.otf in Resources */,
+				92A581702C74DD5D00EFAAAE /* Inter-SemiBold.otf in Resources */,
+				92A581712C74DD5D00EFAAAE /* Inter-SemiBoldItalic.otf in Resources */,
 				9224EB282C6E43510056B803 /* CustomButton.xib in Resources */,
 				925322462C6A61F2007045DB /* Assets.xcassets in Resources */,
 				925322492C6A61F2007045DB /* Base in Resources */,
+				92A581832C74E95900EFAAAE /* MedicalCentersCollectionViewCell.xib in Resources */,
 				925322442C6A61ED007045DB /* Base in Resources */,
 				9224EB2A2C6E43510056B803 /* CustomTextFiled.xib in Resources */,
 			);
@@ -383,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9224EB292C6E43510056B803 /* CustomTextFiled.swift in Sources */,
+				92A5817E2C74E94200EFAAAE /* AdBoardCollectionViewCell.swift in Sources */,
 				9224EB272C6E43510056B803 /* CustomButton.swift in Sources */,
 				92A776292C6A772F00757440 /* UserProfile.swift in Sources */,
 				925322412C6A61ED007045DB /* MainNanigationViewController.swift in Sources */,
@@ -390,7 +474,9 @@
 				92A7762B2C6A774100757440 /* UIStringEx.swift in Sources */,
 				927F9A972C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift in Sources */,
 				92A7762C2C6A774100757440 /* UIViewControllerEx.swift in Sources */,
+				92A581762C74E15F00EFAAAE /* MedicalCenters.swift in Sources */,
 				92A7762D2C6A774100757440 /* UICollectionViewEx.swift in Sources */,
+				92A581822C74E95900EFAAAE /* MedicalCentersCollectionViewCell.swift in Sources */,
 				92A7762E2C6A774100757440 /* UIColorEx.swift in Sources */,
 				927F9A932C6E1CA700C9E9E9 /* HomeViewController.swift in Sources */,
 				92A7762F2C6A774100757440 /* UITableViewEx.swift in Sources */,
@@ -404,9 +490,12 @@
 				927F9A992C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift in Sources */,
 				927F9A8F2C6E1C6B00C9E9E9 /* SignUpViewController.swift in Sources */,
 				927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */,
+				92A581862C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift in Sources */,
 				92A776362C6A774100757440 /* UIApplectionEx.swift in Sources */,
+				92A581782C74E17000EFAAAE /* TopDentists.swift in Sources */,
 				92A776372C6A774100757440 /* UITabBarEx.swift in Sources */,
 				92A776382C6A774100757440 /* UIResponderEx.swift in Sources */,
+				92A581742C74E14E00EFAAAE /* AdBoard.swift in Sources */,
 				92A7762A2C6A773400757440 /* NSNumberEx.swift in Sources */,
 				9253223F2C6A61ED007045DB /* SceneDelegate.swift in Sources */,
 			);

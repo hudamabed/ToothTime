@@ -30,7 +30,7 @@ class SignUpViewController: UIViewController {
         let vc = SignInViewController.instantiat()
         vc.push()
     }
-    @objc func NavigateToSignIn() {
+    @objc func navigateToSignIn() {
         let vc = SignInViewController.instantiat()
         vc.push()
     }
@@ -40,7 +40,7 @@ class SignUpViewController: UIViewController {
 private extension SignUpViewController {
     func setupView() {
         isHidNavigation = true
-        
+        customButtonCreateAccount()
     }
     
     func localized() {
@@ -55,10 +55,19 @@ private extension SignUpViewController {
     }
 }
 
+//MARK: - Set Up FONTS
+extension SignUpViewController {
+    func setupFont() {
+        btnCreateAccount.btn.titleLabel?.font = UIFont(name: "Inter-Medium", size: 16)
+        
+    }
+}
+
+
 //MARK: - Set Up Custom Button
 extension SignUpViewController {
-    func navigateToSignIn() {
-        btnCreateAccount.btn.addTarget(self, action: #selector(NavigateToSignIn), for: .touchUpInside)
+    func customButtonCreateAccount() {
+        btnCreateAccount.btn.addTarget(self, action: #selector(navigateToSignIn), for: .touchUpInside)
     }
 }
 
