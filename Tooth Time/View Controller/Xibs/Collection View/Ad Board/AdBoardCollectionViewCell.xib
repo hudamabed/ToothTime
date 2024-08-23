@@ -99,6 +99,11 @@
                 <constraint firstItem="xuD-ci-B4K" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zm2-7I-1nJ"/>
             </constraints>
             <size key="customSize" width="357" height="140"/>
+            <connections>
+                <outlet property="imgAd" destination="umG-5x-ZJB" id="RGv-K2-i6D"/>
+                <outlet property="lblDescription" destination="LhT-yR-pkx" id="up9-ZT-F8d"/>
+                <outlet property="lblHeader" destination="zaV-e4-NVF" id="wL2-DW-EtT"/>
+            </connections>
             <point key="canvasLocation" x="238.93129770992365" y="30.281690140845072"/>
         </collectionViewCell>
     </objects>

@@ -48,10 +48,15 @@ private extension HomeViewController {
     }
     
     func setupData() {
-        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for Specialist Dentist?", description: "Schedule an appointment with our top doctors."))
+        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for\nSpecialist Dentist?", description: "Schedule an appointment with our top doctors."))
         adBoard.append(AdBoard.init(image: "adImage", header: "Looking for Specialist Dentist?", description: "Schedule an appointment with our top doctors."))
         adBoard.append(AdBoard.init(image: "adImage", header: "Looking for Specialist Dentist?", description: "Schedule an appointment with our top doctors."))
         
+        
+        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 872.4))
+        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 872.4))
+        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 872.3))
+        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 872.7))
     }
     
     func fetchData() {

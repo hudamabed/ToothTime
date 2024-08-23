@@ -10,7 +10,9 @@ import UIKit
 class AdBoardCollectionViewCell: UICollectionViewCell {
     
     //MARK: Outlet
-    
+    @IBOutlet weak var imgAd: UIImageView!
+    @IBOutlet weak var lblHeader: UILabel!
+    @IBOutlet weak var lblDescription: UILabel!
     
     var object: Any?
     
@@ -21,6 +23,10 @@ class AdBoardCollectionViewCell: UICollectionViewCell {
     //MARK: - Configurations
     func configureCell() {
         if let object = self.object as? AdBoard {
+            imgAd.image = UIImage(named: object.image ?? "")
+            lblHeader.text = object.header
+            lblDescription.text = object.description
+            
         }
     }
 }
