@@ -48,15 +48,18 @@ private extension HomeViewController {
     }
     
     func setupData() {
-        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for\nSpecialist Dentist?", description: "Schedule an appointment with our top doctors."))
-        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for Specialist Dentist?", description: "Schedule an appointment with our top doctors."))
-        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for Specialist Dentist?", description: "Schedule an appointment with our top doctors."))
+        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for\nSpecialist Dentist?", description: "Schedule an appointment with\nour top doctors."))
+        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for\nSpecialist Dentist?", description: "Schedule an appointment with\nour top doctors."))
+        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for Specialist Dentist?", description: "Schedule an appointment with\nour top doctors."))
         
+        medicalCenters.append(MedicalCenters.init(image: "hospital1", centerName: "Smile & Shine Clinic", location: "123 Oak Street, CA 98765", rating: 5.0, distance: "2.5 km/40 min", review: 58, type: "Hospital"))
         
-        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 872.4))
-        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 872.4))
-        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 872.3))
-        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 872.7))
+        medicalCenters.append(MedicalCenters.init(image: "hospital2", centerName: "Golden Dentistry Center", location: "555 Bridge Street, Golden Gate", rating: 4.9, distance: "2.5 km/40 min", review: 508, type: "Clinic"))
+        
+        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 87233))
+        topDentists.append(TopDentists(drName: "Dr. Areesha Noman", image: "imgDr2", heart: "icLike", specialty: "Orthodontics", location: "32 Braces Blvd, Austin, TX", star: "icRating", rating: 3, review: 87255))
+        topDentists.append(TopDentists(drName: "Dr. Michael Johnson", image: "imgDr3", heart: "icLike", specialty: "Orthopedic Surgery", location: "178 Gum Road, Miami, FL", star: "icRating", rating: 4.5, review: 87244))
+        topDentists.append(TopDentists(drName: "Dr. Emily Walker", image: "imgDr4", heart: "icLike", specialty: "Pediatrics", location: "Serenity Pediatrics Clinic", star: "icRating", rating: 5, review: 872))
     }
     
     func fetchData() {
@@ -78,6 +81,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == AdBoardCollectionView {
             let cell: AdBoardCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "AdBoardCollectionViewCell", for: indexPath) as! AdBoardCollectionViewCell
+            updatePositions(from: indexPath.row, in: cell)
             let object = adBoard[indexPath.row]
             cell.object = object
             cell.configureCell()
@@ -97,4 +101,26 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }    
 }
+
+//MARK: - Set Up Page Control
+extension HomeViewController {
+    func updatePositions(from index: Int, in cell: AdBoardCollectionViewCell ) {
+        switch index {
+        case 0:
+            cell.stackView.removeArrangedSubview(cell.viewOval)
+            cell.stackView.insertArrangedSubview(cell.viewOval, at: 0)
+        case 1:
+            cell.stackView.removeArrangedSubview(cell.viewOval)
+            cell.stackView.insertArrangedSubview(cell.viewOval, at: 1)
+        case 2:
+            cell.stackView.removeArrangedSubview(cell.viewOval)
+            cell.stackView.insertArrangedSubview(cell.viewOval, at: 2)
+            
+        default:
+            break
+        }
+        
+    }
+}
+
 

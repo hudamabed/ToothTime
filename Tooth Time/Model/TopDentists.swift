@@ -15,9 +15,9 @@ class TopDentists {
     var location: String?
     var star: String?
     var rating: Float?
-    var review: Float?
+    var review: Int?
     
-    init(drName: String? = nil, image: String? = nil, heart: String? = nil, specialty: String? = nil, location: String? = nil, star: String? = nil, rating: Float? = nil, review: Float? = nil) {
+    init(drName: String? = nil, image: String? = nil, heart: String? = nil, specialty: String? = nil, location: String? = nil, star: String? = nil, rating: Float? = nil, review: Int? = nil) {
         self.drName = drName
         self.image = image
         self.heart = heart
@@ -29,6 +29,17 @@ class TopDentists {
     }
     
     var formattedReview: String {
-        return "\(String(describing: review)) Reviews"
+        return "\(review ?? 0) Reviews"
+    }
+    var formattedRating: String {
+        if let rating = rating {
+            if rating == floor(rating) {
+                return "\(Int(rating))"
+            } else {
+                return "\(rating)"
+            }
+        } else {
+            return ""
+        }
     }
 }

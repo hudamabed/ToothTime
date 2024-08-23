@@ -13,15 +13,20 @@ class MedicalCenters {
     var location: String?
     var rating: Float?
     var distance: String?
+    var review: Int?
     var type: String?
 
-    init(image: String? = nil, centerName: String? = nil, location: String? = nil, rating: Float? = nil, distance: String? = nil, type: String? = nil) {
+    init(image: String? = nil, centerName: String? = nil, location: String? = nil, rating: Float? = nil, distance: String? = nil, review: Int? = nil, type: String? = nil) {
         self.image = image
         self.centerName = centerName
         self.location = location
         self.rating = rating
         self.distance = distance
+        self.review = review
         self.type = type
     }
     
+    var formattedReview: String {
+        return "(\(review ?? 0 ) reviews)"
+    }
 }

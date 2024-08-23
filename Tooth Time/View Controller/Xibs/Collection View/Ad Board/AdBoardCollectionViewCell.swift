@@ -13,7 +13,10 @@ class AdBoardCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imgAd: UIImageView!
     @IBOutlet weak var lblHeader: UILabel!
     @IBOutlet weak var lblDescription: UILabel!
-    
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var viewOval: UIView!
+    @IBOutlet weak var viewDot1: UIView!
+    @IBOutlet weak var viewDot2: UIView!
     var object: Any?
     
     override func awakeFromNib() {

@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -72,14 +73,61 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Nh0-7a-PHE">
+                                <rect key="frame" x="146" y="151" width="50" height="6"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KqJ-DE-ca6">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="6"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="gt9-cS-shi"/>
+                                            <constraint firstAttribute="width" constant="30" id="jBk-8u-P4A"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bq5-nz-lma">
+                                        <rect key="frame" x="34" y="0.0" width="6" height="6"/>
+                                        <color key="backgroundColor" name="D1D5DB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="6" id="2Sx-EK-azD"/>
+                                            <constraint firstAttribute="width" constant="6" id="eEt-rU-6Qw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIk-Ic-XJT">
+                                        <rect key="frame" x="44" y="0.0" width="6" height="6"/>
+                                        <color key="backgroundColor" name="D1D5DB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="6" id="cjd-To-UW9"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Nh0-7a-PHE" firstAttribute="top" secondItem="xuD-ci-B4K" secondAttribute="top" constant="151" id="4Ir-RD-Cke"/>
+                            <constraint firstAttribute="bottom" secondItem="Nh0-7a-PHE" secondAttribute="bottom" constant="6" id="53a-Fb-Rzs"/>
                             <constraint firstAttribute="trailing" secondItem="umG-5x-ZJB" secondAttribute="trailing" id="HOR-wa-xZP"/>
                             <constraint firstItem="umG-5x-ZJB" firstAttribute="top" secondItem="xuD-ci-B4K" secondAttribute="top" id="Onf-vN-BUU"/>
                             <constraint firstItem="f0C-bi-EKu" firstAttribute="top" secondItem="xuD-ci-B4K" secondAttribute="top" constant="32" id="Ozx-qr-UJC"/>
+                            <constraint firstAttribute="trailing" secondItem="Nh0-7a-PHE" secondAttribute="trailing" constant="146" id="Pif-7g-jul"/>
                             <constraint firstAttribute="bottom" secondItem="f0C-bi-EKu" secondAttribute="bottom" constant="32" id="TRQ-Dx-Mi1"/>
                             <constraint firstItem="f0C-bi-EKu" firstAttribute="leading" secondItem="xuD-ci-B4K" secondAttribute="leading" constant="11" id="bm0-aq-j2P"/>
+                            <constraint firstItem="Nh0-7a-PHE" firstAttribute="leading" secondItem="xuD-ci-B4K" secondAttribute="leading" constant="146" id="fli-Aj-BT2"/>
                             <constraint firstAttribute="bottom" secondItem="umG-5x-ZJB" secondAttribute="bottom" id="raF-B6-AbQ"/>
                             <constraint firstItem="umG-5x-ZJB" firstAttribute="leading" secondItem="xuD-ci-B4K" secondAttribute="leading" id="xCE-oH-rEC"/>
                         </constraints>
@@ -103,12 +151,19 @@
                 <outlet property="imgAd" destination="umG-5x-ZJB" id="RGv-K2-i6D"/>
                 <outlet property="lblDescription" destination="LhT-yR-pkx" id="up9-ZT-F8d"/>
                 <outlet property="lblHeader" destination="zaV-e4-NVF" id="wL2-DW-EtT"/>
+                <outlet property="stackView" destination="Nh0-7a-PHE" id="O6v-dy-ote"/>
+                <outlet property="viewDot1" destination="bq5-nz-lma" id="nbv-49-eem"/>
+                <outlet property="viewDot2" destination="aIk-Ic-XJT" id="5P2-Qh-59i"/>
+                <outlet property="viewOval" destination="KqJ-DE-ca6" id="BNX-4k-BIt"/>
             </connections>
             <point key="canvasLocation" x="238.93129770992365" y="30.281690140845072"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="adImage" width="342" height="163"/>
+        <namedColor name="D1D5DB">
+            <color red="0.81999999284744263" green="0.83499997854232788" blue="0.85900002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
