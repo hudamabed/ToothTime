@@ -32,14 +32,19 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         
     }
+//MARK: - Actions
+    @IBAction func btnFindDoctor(_ sender: Any) {
+        let vc = FindDoctorsViewController.instantiat()
+        vc.push()
+    }
 }
 //MARK: - Configurations
 private extension HomeViewController {
     func setupView() {
-        isHidNavigation = true
         AdBoardCollectionView.registerXib(cell: AdBoardCollectionViewCell.self)
         medicalCentersCollectionView.registerXib(cell: MedicalCentersCollectionViewCell.self)
         topDentistsCollectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
+        setUpNavigation()
         
     }
     
@@ -102,6 +107,37 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }    
 }
 
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth = collectionView.bounds.width
+        let screenHeight = collectionView.bounds.height
+        
+        let horizontalSpacing: CGFloat = 24
+        let verticalSpacing: CGFloat = 16 
+        
+        let availableWidth = screenWidth - (2 * horizontalSpacing)
+        
+        let cellSize: (width: CGFloat, height: CGFloat)
+        
+        switch collectionView {
+        case AdBoardCollectionView:
+            cellSize = (width: 342, height: 163)
+        case medicalCentersCollectionView:
+            cellSize = (width: 232, height: 252)
+        default:
+            cellSize = (width: 342, height: 133)
+        }
+        
+        let cellWidth = (availableWidth / 390) * cellSize.width
+        let cellHeight = (cellWidth / cellSize.width) * cellSize.height
+        
+        let adjustedHeight = min(screenHeight, cellHeight)
+        
+        return CGSize(width: cellWidth, height: adjustedHeight)
+    }
+}
+
+
 //MARK: - Set Up Page Control
 extension HomeViewController {
     func updatePositions(from index: Int, in cell: AdBoardCollectionViewCell ) {
@@ -123,4 +159,11 @@ extension HomeViewController {
     }
 }
 
+//MARK: - Set Up Navigations
+extension HomeViewController {
+    func setUpNavigation() {
+        navigationItem.hidesBackButton = true
+        self.isHidNavigation = true
+    }
+}
 
