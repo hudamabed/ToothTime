@@ -85,7 +85,7 @@
                                                                     <constraint firstAttribute="width" constant="14" id="DF3-ii-4cd"/>
                                                                 </constraints>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYr-fX-Sxc">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYr-fX-Sxc">
                                                                 <rect key="frame" x="18" y="0.0" width="179" height="21.333333333333332"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" name="4B5563"/>
@@ -169,6 +169,7 @@
                             <constraint firstItem="0DW-vi-iMu" firstAttribute="leading" secondItem="zEE-2V-D6J" secondAttribute="leading" id="6Nz-ZZ-7Fg"/>
                             <constraint firstAttribute="bottom" secondItem="0DW-vi-iMu" secondAttribute="bottom" id="9zV-Zn-wRU"/>
                             <constraint firstAttribute="trailing" secondItem="0DW-vi-iMu" secondAttribute="trailing" id="Dpx-qh-qlP"/>
+                            <constraint firstAttribute="height" constant="133" id="ELb-lo-1wM"/>
                             <constraint firstItem="0DW-vi-iMu" firstAttribute="leading" secondItem="zEE-2V-D6J" secondAttribute="leading" id="aOF-vZ-ogf"/>
                             <constraint firstItem="0DW-vi-iMu" firstAttribute="top" secondItem="zEE-2V-D6J" secondAttribute="top" id="eO2-B5-feb"/>
                             <constraint firstItem="0DW-vi-iMu" firstAttribute="top" secondItem="zEE-2V-D6J" secondAttribute="top" id="ky0-0H-ale"/>
@@ -219,7 +220,7 @@
                 <outlet property="lblReview" destination="Vvy-sK-d2c" id="NYq-xb-adQ"/>
                 <outlet property="lblSpecialty" destination="2Wq-Ei-3wg" id="ZF3-TD-lWb"/>
             </connections>
-            <point key="canvasLocation" x="186" y="18"/>
+            <point key="canvasLocation" x="212" y="7"/>
         </collectionViewCell>
     </objects>
     <resources>
