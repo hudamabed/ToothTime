@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setUpNavigation()
         
     }
 //MARK: - Actions
@@ -44,8 +45,6 @@ private extension HomeViewController {
         AdBoardCollectionView.registerXib(cell: AdBoardCollectionViewCell.self)
         medicalCentersCollectionView.registerXib(cell: MedicalCentersCollectionViewCell.self)
         topDentistsCollectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
-        setUpNavigation()
-        
     }
     
     func localized() {
@@ -61,7 +60,7 @@ private extension HomeViewController {
         
         medicalCenters.append(MedicalCenters.init(image: "hospital2", centerName: "Golden Dentistry Center", location: "555 Bridge Street, Golden Gate", rating: 4.9, distance: "2.5 km/40 min", review: 508, type: "Clinic"))
         
-        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 87233))
+        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icLike", specialty: "Pediatric Dentistry", location: "450 Smile, Springfield, IL", star: "icRating", rating: 5, review: 87233))
         topDentists.append(TopDentists(drName: "Dr. Areesha Noman", image: "imgDr2", heart: "icLike", specialty: "Orthodontics", location: "32 Braces Blvd, Austin, TX", star: "icRating", rating: 3, review: 87255))
         topDentists.append(TopDentists(drName: "Dr. Michael Johnson", image: "imgDr3", heart: "icLike", specialty: "Orthopedic Surgery", location: "178 Gum Road, Miami, FL", star: "icRating", rating: 4.5, review: 87244))
         topDentists.append(TopDentists(drName: "Dr. Emily Walker", image: "imgDr4", heart: "icLike", specialty: "Pediatrics", location: "Serenity Pediatrics Clinic", star: "icRating", rating: 5, review: 872))

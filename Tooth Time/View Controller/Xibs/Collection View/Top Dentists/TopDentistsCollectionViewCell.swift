@@ -32,12 +32,11 @@ class TopDentistsCollectionViewCell: UICollectionViewCell {
             imgDoctor.image = UIImage(named: object.image ?? "")
             imgStar.image = UIImage(named: object.star ?? "")
             imgHeart.image = UIImage(named: object.heart ?? "")
-            lblRating.text = object.formattedRating
+            lblRating.text = String(object.rating ?? 0.0)
             lblReview.text = object.formattedReview
             lblLocation.text = object.location
             lblSpecialty.text = object.specialty
             lblDoctorName.text = object.drName
-            
         }
     }
 }

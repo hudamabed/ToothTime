@@ -31,15 +31,16 @@ class TopDentists {
     var formattedReview: String {
         return "\(review ?? 0) Reviews"
     }
-    var formattedRating: String {
-        if let rating = rating {
-            if rating == floor(rating) {
-                return "\(Int(rating))"
-            } else {
-                return "\(rating)"
-            }
-        } else {
-            return ""
-        }
-    }
+    
+//    var formattedRating: String {
+//        if let rating = rating {
+//            if rating == floor(rating) {
+//                return "\(Int(rating))"
+//            } else {
+//                return "\(rating)"
+//            }
+//        } else {
+//            return ""
+//        }
+//    }
 }

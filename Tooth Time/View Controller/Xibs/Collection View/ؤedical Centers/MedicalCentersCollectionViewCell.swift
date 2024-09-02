@@ -36,4 +36,5 @@ class MedicalCentersCollectionViewCell: UICollectionViewCell {
             lblType.text = object.type
         }
     }
+    
 }
