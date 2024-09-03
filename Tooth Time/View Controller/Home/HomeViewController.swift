@@ -48,13 +48,18 @@ private extension HomeViewController {
     }
     
     func localized() {
-        
+//        for familyName in UIFont.familyNames {
+//            print("Family: \(familyName)")
+//            for fontName in UIFont.fontNames(forFamilyName: familyName) {
+//                print("Font: \(fontName)")
+//            }
+//        }
     }
     
     func setupData() {
         adBoard.append(AdBoard.init(image: "adImage", header: "Looking for\nSpecialist Dentist?", description: "Schedule an appointment with\nour top doctors."))
         adBoard.append(AdBoard.init(image: "adImage", header: "Looking for\nSpecialist Dentist?", description: "Schedule an appointment with\nour top doctors."))
-        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for Specialist Dentist?", description: "Schedule an appointment with\nour top doctors."))
+        adBoard.append(AdBoard.init(image: "adImage", header: "Looking for\nSpecialist Dentist?", description: "Schedule an appointment with\nour top doctors."))
         
         medicalCenters.append(MedicalCenters.init(image: "hospital1", centerName: "Smile & Shine Clinic", location: "123 Oak Street, CA 98765", rating: 5.0, distance: "2.5 km/40 min", review: 58, type: "Hospital"))
         

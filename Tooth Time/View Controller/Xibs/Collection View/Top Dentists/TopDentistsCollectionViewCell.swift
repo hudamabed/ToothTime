@@ -10,7 +10,6 @@ import UIKit
 class TopDentistsCollectionViewCell: UICollectionViewCell {
     
     //MARK: Outlet
-    
     @IBOutlet weak var imgDoctor: UIImageView!
     @IBOutlet weak var lblDoctorName: UILabel!
     @IBOutlet weak var lblSpecialty: UILabel!

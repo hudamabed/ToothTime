@@ -34,6 +34,7 @@ class FindDoctorsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        updateSpecialization(to: .all)
         
     }
     
@@ -59,6 +60,10 @@ class FindDoctorsViewController: UIViewController {
         updateSpecialization(to: .surgery)
     }
     
+    @IBAction func btnDetails(_ sender: Any) {
+        let vc = DoctorDetailsViewController.instantiat()
+        vc.pop()
+    }
 }
 
 //MARK: - Configurations
@@ -119,6 +124,13 @@ extension FindDoctorsViewController: UICollectionViewDelegate, UICollectionViewD
             cell.configureCell()
             return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedDoctor = topDentists[indexPath.row]
+        let vc = DoctorDetailsViewController.instantiat()
+        vc.doctor = selectedDoctor
+        vc.push()
+    }
 }
 
 
@@ -126,7 +138,7 @@ extension FindDoctorsViewController: UICollectionViewDelegate, UICollectionViewD
 extension FindDoctorsViewController {
     func setUpNavigation() {
         let titleTextAttributes: [NSAttributedString.Key: Any] = [
-               .font: UIFont(name: "Inter-SemiBold", size: 20)!,
+            .font: UIFont(name: "Inter18pt-SemiBold", size: 20) as Any,
                .foregroundColor: "374151".color_
            ]
            navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
@@ -169,8 +181,8 @@ extension FindDoctorsViewController {
             
             lblAll.textColor = "1C2A3A".color_
             lblGeneral.textColor = "1C2A3A".color_
-            lblSurgery.textColor = "FFFFFF".color_
-            lblOrthodontics.textColor = "1C2A3A".color_
+            lblOrthodontics.textColor = "FFFFFF".color_
+            lblSurgery.textColor = "1C2A3A".color_
                 
         case .surgery:
             btnGeneral.backgroundColor = "FFFFFF".color_
@@ -180,8 +192,8 @@ extension FindDoctorsViewController {
             
             lblAll.textColor = "1C2A3A".color_
             lblGeneral.textColor = "1C2A3A".color_
-            lblSurgery.textColor = "1C2A3A".color_
-            lblOrthodontics.textColor = "FFFFFF".color_
+            lblOrthodontics.textColor = "1C2A3A".color_
+            lblSurgery.textColor = "FFFFFF".color_
         }
         topDentistsCollectionView.reloadData()
     }
