@@ -8,9 +8,13 @@
 import UIKit
 
 class DoctorDetailsViewController: UIViewController {
+    
     //MARK:  Outlets
+    @IBOutlet weak var doctorDetailsCollectionView: UICollectionView!
     
     var doctor: TopDentists?
+    var doctorDetails = [TopDentists]()
+
 
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -26,15 +30,26 @@ class DoctorDetailsViewController: UIViewController {
         super.viewWillAppear(animated)
         
     }
+    //MARK: - Actions
+        @IBAction func btnBack(_ sender: Any) {
+            let vc = HomeViewController.instantiat()
+            vc.pop()
+        }
 }
 //MARK: - Configurations
 private extension DoctorDetailsViewController {
     func setupView() {
         setUpNavigation()
+        doctorDetailsCollectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
+
     }
     
     func localized() {
-        
+        if let selectedDoctor = doctor {
+            doctorDetails.append(selectedDoctor)
+        }
+        doctorDetailsCollectionView.reloadData()
+
     }
     
     func setupData() {
@@ -43,19 +58,24 @@ private extension DoctorDetailsViewController {
     
     func fetchData() {
     }
+    
 }
 
 //MARK: - Set Up Collection View
-//extension DoctorDetailsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return 1
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        return cell
-//    }
-//    
-//}
+extension DoctorDetailsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return doctorDetails.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: TopDentistsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopDentistsCollectionViewCell", for: indexPath) as! TopDentistsCollectionViewCell
+        let object = doctorDetails[indexPath.row]
+        cell.object = object
+        cell.configureCell(isDetailsPage: true)
+        return cell  
+    }
+    
+}
 
 //MARK: - Set Up Navigations
 extension DoctorDetailsViewController {

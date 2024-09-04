@@ -121,7 +121,7 @@ extension FindDoctorsViewController: UICollectionViewDelegate, UICollectionViewD
                     filteredDentists = topDentists.filter { $0.specialty == "Surgery" }}
             let object = filteredDentists[indexPath.row]
             cell.object = object
-            cell.configureCell()
+            cell.configureCell(isDetailsPage: false)
             return cell
     }
     
