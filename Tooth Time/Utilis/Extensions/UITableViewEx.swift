@@ -8,15 +8,13 @@
 import Foundation
 import UIKit
 
-extension UITableView{
-    func registerXib(identifier: String){
+extension UITableView {
+    func registerXib(identifier: String) {
         self.register(UINib.init(nibName: identifier , bundle: nil), forCellReuseIdentifier: identifier)
-        
     }
      
-    func registerXib(cell: UITableViewCell.Type){
+    func registerXib(cell: UITableViewCell.Type) {
         self.registerXib(identifier: String(describing: cell.self))
-        
         
     }
 }

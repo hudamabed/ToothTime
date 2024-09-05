@@ -8,12 +8,13 @@
 import UIKit
 
 class DoctorDetailsViewController: UIViewController {
-    
     //MARK:  Outlets
     @IBOutlet weak var doctorDetailsCollectionView: UICollectionView!
+    @IBOutlet weak var reviewsTableView: UITableView!
     
     var doctor: TopDentists?
     var doctorDetails = [TopDentists]()
+    var review = [Review]()
 
 
     //MARK: - Life Cycle
@@ -41,7 +42,7 @@ private extension DoctorDetailsViewController {
     func setupView() {
         setUpNavigation()
         doctorDetailsCollectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
-
+        reviewsTableView.registerXib(cell: ReviewsTableViewCell.self)
     }
     
     func localized() {
@@ -53,6 +54,7 @@ private extension DoctorDetailsViewController {
     }
     
     func setupData() {
+        review.append(Review(imgProfile: "imgProfile", name: "Adil Aijaz", rating: 5.0, star: "icStars", comment: "He is a true professional who genuinely cares about his patients. I highly recommend Dr. Patel to anyone seeking exceptional cardiac care."))
         
     }
     
@@ -75,6 +77,22 @@ extension DoctorDetailsViewController: UICollectionViewDelegate, UICollectionVie
         return cell  
     }
     
+}
+
+//MARK: - Set Up Table View
+extension DoctorDetailsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return review.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell: ReviewsTableViewCell = tableView.dequeueReusableCell(withIdentifier: ReviewsTableViewCell.id, for: indexPath) as! ReviewsTableViewCell
+        let object = review[indexPath.row]
+        cell.object = object
+        cell.configureCell()
+        return cell
+    }
+
 }
 
 //MARK: - Set Up Navigations

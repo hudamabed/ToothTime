@@ -57,6 +57,9 @@
 		92A776362C6A774100757440 /* UIApplectionEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776172C6A772800757440 /* UIApplectionEx.swift */; };
 		92A776372C6A774100757440 /* UITabBarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761F2C6A772800757440 /* UITabBarEx.swift */; };
 		92A776382C6A774100757440 /* UIResponderEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761C2C6A772800757440 /* UIResponderEx.swift */; };
+		92E726372C8A0DC900CE7B1F /* ReviewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E726362C8A0DC900CE7B1F /* ReviewsTableViewCell.xib */; };
+		92E726382C8A0DC900CE7B1F /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E726352C8A0DC900CE7B1F /* ReviewsTableViewCell.swift */; };
+		92E7263A2C8A0DF000CE7B1F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E726392C8A0DF000CE7B1F /* Review.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +115,9 @@
 		92A776232C6A772800757440 /* UIViewControllerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerEx.swift; sourceTree = "<group>"; };
 		92A776242C6A772800757440 /* UIViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
 		92A776262C6A772800757440 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		92E726352C8A0DC900CE7B1F /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		92E726362C8A0DC900CE7B1F /* ReviewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsTableViewCell.xib; sourceTree = "<group>"; };
+		92E726392C8A0DF000CE7B1F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				927F9A862C6E1B2E00C9E9E9 /* Collection View */,
+				92E726332C8A0D8A00CE7B1F /* Table View */,
 				9224EB262C6E43510056B803 /* Views */,
 			);
 			path = Xibs;
@@ -304,6 +311,7 @@
 				92A581732C74E14E00EFAAAE /* AdBoard.swift */,
 				92A581752C74E15F00EFAAAE /* MedicalCenters.swift */,
 				92A581772C74E17000EFAAAE /* TopDentists.swift */,
+				92E726392C8A0DF000CE7B1F /* Review.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -384,6 +392,23 @@
 			path = Utilis;
 			sourceTree = "<group>";
 		};
+		92E726332C8A0D8A00CE7B1F /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				92E726342C8A0D9600CE7B1F /* Reviews */,
+			);
+			path = "Table View";
+			sourceTree = "<group>";
+		};
+		92E726342C8A0D9600CE7B1F /* Reviews */ = {
+			isa = PBXGroup;
+			children = (
+				92E726352C8A0DC900CE7B1F /* ReviewsTableViewCell.swift */,
+				92E726362C8A0DC900CE7B1F /* ReviewsTableViewCell.xib */,
+			);
+			path = Reviews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,6 +472,7 @@
 				92A581872C74E97200EFAAAE /* TopDentistsCollectionViewCell.xib in Resources */,
 				923FEC132C862B880078531B /* Inter_18pt-Bold.ttf in Resources */,
 				9224EB282C6E43510056B803 /* CustomButton.xib in Resources */,
+				92E726372C8A0DC900CE7B1F /* ReviewsTableViewCell.xib in Resources */,
 				923FEC142C862B880078531B /* Inter_18pt-BoldItalic.ttf in Resources */,
 				925322462C6A61F2007045DB /* Assets.xcassets in Resources */,
 				925322492C6A61F2007045DB /* Base in Resources */,
@@ -484,6 +510,7 @@
 				92A7762E2C6A774100757440 /* UIColorEx.swift in Sources */,
 				927F9A932C6E1CA700C9E9E9 /* HomeViewController.swift in Sources */,
 				92A7762F2C6A774100757440 /* UITableViewEx.swift in Sources */,
+				92E726382C8A0DC900CE7B1F /* ReviewsTableViewCell.swift in Sources */,
 				92A776302C6A774100757440 /* UIStoryboredEx.swift in Sources */,
 				92A776312C6A774100757440 /* UIButtonEx.swift in Sources */,
 				92A776322C6A774100757440 /* UIViewController.swift in Sources */,
@@ -496,6 +523,7 @@
 				927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */,
 				92A581862C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift in Sources */,
 				92A776362C6A774100757440 /* UIApplectionEx.swift in Sources */,
+				92E7263A2C8A0DF000CE7B1F /* Review.swift in Sources */,
 				92A581782C74E17000EFAAAE /* TopDentists.swift in Sources */,
 				92A776372C6A774100757440 /* UITabBarEx.swift in Sources */,
 				92A776382C6A774100757440 /* UIResponderEx.swift in Sources */,
