@@ -45,7 +45,7 @@ class CustomButton: UIView {
         contentView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         contentView.layoutIfNeeded()
         
-        btn.titleLabel?.font = UIFont(name: "Inter-Medium", size: 16)
+        btn.titleLabel?.font = UIFont(name: "Inter18pt-Medium", size: 16)
         
     }
 }

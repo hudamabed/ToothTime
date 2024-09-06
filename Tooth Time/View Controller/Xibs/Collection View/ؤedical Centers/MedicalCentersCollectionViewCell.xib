@@ -38,16 +38,16 @@
                                         <rect key="frame" x="0.0" y="121" width="232" height="131"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-dL-WRu">
-                                                <rect key="frame" x="12" y="12" width="208" height="38.333333333333336"/>
+                                                <rect key="frame" x="12" y="12" width="208" height="39"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS4-d3-jtt">
-                                                        <rect key="frame" x="0.0" y="0.0" width="208" height="16.333333333333332"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="208" height="17"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Por-ph-F6U">
-                                                        <rect key="frame" x="0.0" y="24.333333333333343" width="208" height="14"/>
+                                                        <rect key="frame" x="0.0" y="25" width="208" height="14"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLocation2" translatesAutoresizingMaskIntoConstraints="NO" id="hQX-Wr-ORp">
                                                                 <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
@@ -67,7 +67,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="X5S-mC-LHI">
-                                                <rect key="frame" x="12" y="56.333333333333343" width="208" height="62.666666666666657"/>
+                                                <rect key="frame" x="12" y="57" width="208" height="62"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Vzf-jL-AiN">
                                                         <rect key="frame" x="0.0" y="0.0" width="208" height="18"/>
@@ -77,7 +77,7 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="20" id="pB8-I1-Vao"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                                                 <color key="textColor" name="6B7280"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -97,7 +97,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLj-G8-37F">
-                                                        <rect key="frame" x="0.0" y="32" width="208" height="1"/>
+                                                        <rect key="frame" x="0.0" y="31.666666666666657" width="208" height="1"/>
                                                         <color key="backgroundColor" name="E5E7EB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="71L-2f-RqG"/>
@@ -112,7 +112,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="wbw-Jf-4jj">
-                                                        <rect key="frame" x="0.0" y="46.666666666666657" width="208" height="16"/>
+                                                        <rect key="frame" x="0.0" y="46" width="208" height="16"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ScN-1c-mH1">
                                                                 <rect key="frame" x="0.0" y="0.0" width="51" height="16"/>

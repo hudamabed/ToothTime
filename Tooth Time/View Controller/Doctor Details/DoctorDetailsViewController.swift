@@ -11,6 +11,8 @@ class DoctorDetailsViewController: UIViewController {
     //MARK:  Outlets
     @IBOutlet weak var doctorDetailsCollectionView: UICollectionView!
     @IBOutlet weak var reviewsTableView: UITableView!
+    @IBOutlet weak var btnBookAppointment: CustomButton!
+    
     
     var doctor: TopDentists?
     var doctorDetails = [TopDentists]()
@@ -32,10 +34,15 @@ class DoctorDetailsViewController: UIViewController {
         
     }
     //MARK: - Actions
-        @IBAction func btnBack(_ sender: Any) {
-            let vc = HomeViewController.instantiat()
+    @IBAction func btnBack(_ sender: Any) {
+        let vc = HomeViewController.instantiat()
             vc.pop()
         }
+    
+    @objc func navigateToBookAppointment() {
+        let vc = BookAppointmentViewController.instantiat()
+            vc.push()
+    }
 }
 //MARK: - Configurations
 private extension DoctorDetailsViewController {
@@ -43,6 +50,7 @@ private extension DoctorDetailsViewController {
         setUpNavigation()
         doctorDetailsCollectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
         reviewsTableView.registerXib(cell: ReviewsTableViewCell.self)
+        customButtonBookAppointment()
     }
     
     func localized() {
@@ -104,5 +112,12 @@ extension DoctorDetailsViewController {
            ]
            navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
         self.isHidNavigation = false
+    }
+}
+
+//MARK: - Set Up Custom Button
+extension DoctorDetailsViewController {
+    func customButtonBookAppointment() {
+        btnBookAppointment.btn.addTarget(self, action: #selector(navigateToBookAppointment), for: .touchUpInside)
     }
 }

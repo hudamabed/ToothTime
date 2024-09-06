@@ -38,8 +38,8 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="197" height="18"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBo-Vg-9dM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="18"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="18"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <color key="textColor" name="1F2A37"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -72,7 +72,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wq-Ei-3wg">
                                                         <rect key="frame" x="0.0" y="0.0" width="197" height="17"/>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                         <color key="textColor" name="4B5563"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -147,7 +147,7 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="140" id="XU4-hu-0vu"/>
                                                                         </constraints>
-                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                         <color key="textColor" name="6B7280"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
