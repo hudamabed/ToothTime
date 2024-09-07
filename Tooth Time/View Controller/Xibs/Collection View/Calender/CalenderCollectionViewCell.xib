@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CalenderCollectionViewCell" customModule="Tooth_Time" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="269"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="269"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UkT-Qw-YLD">
+                        <rect key="frame" x="0.0" y="0.0" width="342" height="269"/>
+                        <color key="backgroundColor" name="F9FAFB"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UkT-Qw-YLD" secondAttribute="trailing" id="72T-tm-mX6"/>
+                <constraint firstItem="UkT-Qw-YLD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TjF-pT-qST"/>
+                <constraint firstItem="UkT-Qw-YLD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="f0F-xD-IDL"/>
+                <constraint firstAttribute="bottom" secondItem="UkT-Qw-YLD" secondAttribute="bottom" id="heE-bm-igo"/>
+            </constraints>
+            <point key="canvasLocation" x="-218" y="5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="F9FAFB">
+            <color red="0.97600001096725464" green="0.98000001907348633" blue="0.98400002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

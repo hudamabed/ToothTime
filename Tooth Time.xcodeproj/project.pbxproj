@@ -57,6 +57,12 @@
 		92A776362C6A774100757440 /* UIApplectionEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776172C6A772800757440 /* UIApplectionEx.swift */; };
 		92A776372C6A774100757440 /* UITabBarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761F2C6A772800757440 /* UITabBarEx.swift */; };
 		92A776382C6A774100757440 /* UIResponderEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761C2C6A772800757440 /* UIResponderEx.swift */; };
+		92D3C5972C8C90CA001D3479 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3C5962C8C90CA001D3479 /* MainTabBarViewController.swift */; };
+		92D3C59B2C8CB8A1001D3479 /* CalenderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3C5992C8CB8A1001D3479 /* CalenderCollectionViewCell.swift */; };
+		92D3C59C2C8CB8A1001D3479 /* CalenderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D3C59A2C8CB8A1001D3479 /* CalenderCollectionViewCell.xib */; };
+		92D3C5A02C8CC2C7001D3479 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3C59E2C8CC2C7001D3479 /* TimeCollectionViewCell.swift */; };
+		92D3C5A12C8CC2C7001D3479 /* TimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D3C59F2C8CC2C7001D3479 /* TimeCollectionViewCell.xib */; };
+		92D3C5A32C8CC98E001D3479 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3C5A22C8CC98E001D3479 /* Time.swift */; };
 		92E726372C8A0DC900CE7B1F /* ReviewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E726362C8A0DC900CE7B1F /* ReviewsTableViewCell.xib */; };
 		92E726382C8A0DC900CE7B1F /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E726352C8A0DC900CE7B1F /* ReviewsTableViewCell.swift */; };
 		92E7263A2C8A0DF000CE7B1F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E726392C8A0DF000CE7B1F /* Review.swift */; };
@@ -115,6 +121,12 @@
 		92A776232C6A772800757440 /* UIViewControllerEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerEx.swift; sourceTree = "<group>"; };
 		92A776242C6A772800757440 /* UIViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewEx.swift; sourceTree = "<group>"; };
 		92A776262C6A772800757440 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		92D3C5962C8C90CA001D3479 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		92D3C5992C8CB8A1001D3479 /* CalenderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderCollectionViewCell.swift; sourceTree = "<group>"; };
+		92D3C59A2C8CB8A1001D3479 /* CalenderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalenderCollectionViewCell.xib; sourceTree = "<group>"; };
+		92D3C59E2C8CC2C7001D3479 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
+		92D3C59F2C8CC2C7001D3479 /* TimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCollectionViewCell.xib; sourceTree = "<group>"; };
+		92D3C5A22C8CC98E001D3479 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		92E726352C8A0DC900CE7B1F /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
 		92E726362C8A0DC900CE7B1F /* ReviewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsTableViewCell.xib; sourceTree = "<group>"; };
 		92E726392C8A0DF000CE7B1F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
@@ -201,6 +213,7 @@
 			children = (
 				927F9A852C6E1B2800C9E9E9 /* Xibs */,
 				925322402C6A61ED007045DB /* MainNanigationViewController.swift */,
+				92D3C5962C8C90CA001D3479 /* MainTabBarViewController.swift */,
 				927F9A872C6E1BAD00C9E9E9 /* Sign Up */,
 				927F9A882C6E1BC000C9E9E9 /* Sign In */,
 				927F9A892C6E1BCC00C9E9E9 /* Home */,
@@ -252,6 +265,8 @@
 				92A5817B2C74E8D200EFAAAE /* Ad Board */,
 				92A5817A2C74E8CE00EFAAAE /* Medical Centers */,
 				92A581792C74E8CB00EFAAAE /* Top Dentists */,
+				92D3C5982C8CB86A001D3479 /* Calender */,
+				92D3C59D2C8CC29B001D3479 /* Appointment Time */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
@@ -312,6 +327,7 @@
 				92A581752C74E15F00EFAAAE /* MedicalCenters.swift */,
 				92A581772C74E17000EFAAAE /* TopDentists.swift */,
 				92E726392C8A0DF000CE7B1F /* Review.swift */,
+				92D3C5A22C8CC98E001D3479 /* Time.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -392,6 +408,24 @@
 			path = Utilis;
 			sourceTree = "<group>";
 		};
+		92D3C5982C8CB86A001D3479 /* Calender */ = {
+			isa = PBXGroup;
+			children = (
+				92D3C5992C8CB8A1001D3479 /* CalenderCollectionViewCell.swift */,
+				92D3C59A2C8CB8A1001D3479 /* CalenderCollectionViewCell.xib */,
+			);
+			path = Calender;
+			sourceTree = "<group>";
+		};
+		92D3C59D2C8CC29B001D3479 /* Appointment Time */ = {
+			isa = PBXGroup;
+			children = (
+				92D3C59E2C8CC2C7001D3479 /* TimeCollectionViewCell.swift */,
+				92D3C59F2C8CC2C7001D3479 /* TimeCollectionViewCell.xib */,
+			);
+			path = "Appointment Time";
+			sourceTree = "<group>";
+		};
 		92E726332C8A0D8A00CE7B1F /* Table View */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +501,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D3C5A12C8CC2C7001D3479 /* TimeCollectionViewCell.xib in Resources */,
+				92D3C59C2C8CB8A1001D3479 /* CalenderCollectionViewCell.xib in Resources */,
 				92A5817F2C74E94200EFAAAE /* AdBoardCollectionViewCell.xib in Resources */,
 				923FEC0E2C862B1D0078531B /* Inter_18pt-MediumItalic.ttf in Resources */,
 				92A581872C74E97200EFAAAE /* TopDentistsCollectionViewCell.xib in Resources */,
@@ -504,13 +540,17 @@
 				927F9A972C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift in Sources */,
 				92A7762C2C6A774100757440 /* UIViewControllerEx.swift in Sources */,
 				92A581762C74E15F00EFAAAE /* MedicalCenters.swift in Sources */,
+				92D3C5972C8C90CA001D3479 /* MainTabBarViewController.swift in Sources */,
 				92A7762D2C6A774100757440 /* UICollectionViewEx.swift in Sources */,
+				92D3C5A32C8CC98E001D3479 /* Time.swift in Sources */,
+				92D3C59B2C8CB8A1001D3479 /* CalenderCollectionViewCell.swift in Sources */,
 				921A61AC2C7B6704009434BD /* Specialization.swift in Sources */,
 				92A581822C74E95900EFAAAE /* MedicalCentersCollectionViewCell.swift in Sources */,
 				92A7762E2C6A774100757440 /* UIColorEx.swift in Sources */,
 				927F9A932C6E1CA700C9E9E9 /* HomeViewController.swift in Sources */,
 				92A7762F2C6A774100757440 /* UITableViewEx.swift in Sources */,
 				92E726382C8A0DC900CE7B1F /* ReviewsTableViewCell.swift in Sources */,
+				92D3C5A02C8CC2C7001D3479 /* TimeCollectionViewCell.swift in Sources */,
 				92A776302C6A774100757440 /* UIStoryboredEx.swift in Sources */,
 				92A776312C6A774100757440 /* UIButtonEx.swift in Sources */,
 				92A776322C6A774100757440 /* UIViewController.swift in Sources */,

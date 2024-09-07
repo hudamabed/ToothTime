@@ -33,7 +33,7 @@ class SignInViewController: UIViewController {
     }
     
     @objc func navigateToHome() {
-        let vc = HomeViewController.instantiat()
+        let vc = MainTabBarViewController.instantiat()
         vc.push()
     }
 }
