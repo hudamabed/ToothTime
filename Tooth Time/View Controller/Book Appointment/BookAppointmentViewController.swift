@@ -11,9 +11,12 @@ class BookAppointmentViewController: UIViewController {
     //MARK:  Outlets
     @IBOutlet weak var btnConfirm: CustomButton!
     @IBOutlet weak var TimeCollectionView: UICollectionView!
-    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var customAlert: CustomAlert!    
     
     var time = [Time]()
+    var selectedIndexPath: IndexPath?
+
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -30,12 +33,17 @@ class BookAppointmentViewController: UIViewController {
         
     }
     //MARK: - Actions
-//    @objc func navigateToSelectTime() {
-//        let vc = 
-//    }
+    @objc func showCustomAlert() {
+    
+    }
+    
+    @objc func navigateToConfirmation() {
+    
+    }
+    
     @IBAction func btnBack(_ sender: Any) {
         let vc = DoctorDetailsViewController.instantiat()
-        vc.push()
+        vc.pop()
     }
 }
 
@@ -43,9 +51,8 @@ class BookAppointmentViewController: UIViewController {
 private extension BookAppointmentViewController {
     func setupView() {
         setUpNavigation()
-        TimeCollectionView.register(
-            UINib(nibName: "TimeCollectionViewCell", bundle: nil)
-            ,forCellWithReuseIdentifier: "TimeCollectionViewCell")
+        setUpPickerDate()
+        customButtonConfirm()
         TimeCollectionView.registerXib(cell: TimeCollectionViewCell.self)
     }
     
@@ -82,11 +89,22 @@ extension BookAppointmentViewController: UICollectionViewDelegate, UICollectionV
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: TimeCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TimeCollectionViewCell", for: indexPath) as! TimeCollectionViewCell
+        if selectedIndexPath == indexPath {
+            cell.viewBackground.backgroundColor = "1C2A3A".color_
+            cell.lblTime.textColor = "FFFFFF".color_
+        } else {
+            cell.viewBackground.backgroundColor = "F9FAFB".color_
+            cell.lblTime.textColor = "6B7280".color_
+        }
         let object = time[indexPath.row]
         cell.object = object
         cell.configureCell()
         return cell
-        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedIndexPath = indexPath
+        collectionView.reloadData()
     }
 }
 
@@ -102,8 +120,21 @@ extension BookAppointmentViewController {
     }
 }
 //MARK: - Set Up Custom Button
-//extension BookAppointmentViewController {
-//    func customButtonConfirm() {
-//        btnConfirm.btn.addTarget(self, action: #selector(navigateToSelectTime), for: .touchUpInside)
-//    }
-//}
+extension BookAppointmentViewController {
+    func customButtonConfirm() {
+        btnConfirm.btn.addTarget(self, action: #selector(navigateToConfirmation), for: .touchUpInside)
+    }
+}
+
+//MARK: - Set Up Picker Date
+extension BookAppointmentViewController {
+    func setUpPickerDate() {
+        for view in datePicker.subviews {
+            for subview in view.subviews {
+                if let label = subview as? UILabel {
+                    label.font = UIFont(name: "Inter-Bold", size: 12)  // لتغيير نوع الخط
+                }
+            }
+        }
+    }
+}

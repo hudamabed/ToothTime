@@ -10,9 +10,7 @@ import UIKit
 class TimeCollectionViewCell: UICollectionViewCell {
     //MARK: Outlet
     @IBOutlet weak var lblTime: UILabel!
-    @IBOutlet weak var viewBackground: UIView!
-    @IBOutlet weak var btn: UIButton!
-    
+    @IBOutlet weak var viewBackground: UIView!    
     var object: Any?
     
     override func awakeFromNib() {

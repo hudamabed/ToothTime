@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlert" customModule="Tooth_Time" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="5t4-eH-JTh" id="e7w-Ud-n6x"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="445"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5t4-eH-JTh">
+                    <rect key="frame" x="0.0" y="0.0" width="341" height="445"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="OEw-GA-gFz">
+                            <rect key="frame" x="0.0" y="0.0" width="341" height="445"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgAlert" translatesAutoresizingMaskIntoConstraints="NO" id="hKq-qN-9oA">
+                                    <rect key="frame" x="105" y="32" width="131" height="131"/>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="GvF-kC-vlm">
+                                    <rect key="frame" x="48" y="193" width="245" height="86.333333333333314"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tu0-LT-8vb">
+                                            <rect key="frame" x="46" y="0.0" width="153.33333333333334" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <color key="textColor" name="1C2A3A"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your appointment with Dr. David Patel is confirmed for June 30, 2023, at 10:00 AM." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kep-9O-UoS">
+                                            <rect key="frame" x="0.0" y="36" width="245" height="50.333333333333343"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" name="6B7280"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nBt-9q-DAn">
+                                    <rect key="frame" x="48" y="309.33333333333331" width="245" height="103.66666666666669"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fa-aM-9zm" customClass="CustomButton" customModule="Tooth_Time" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="245" height="67.666666666666671"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="245" id="0o0-yV-Alf"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Done"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh5-ig-V5F">
+                                            <rect key="frame" x="49" y="83.666666666666686" width="147" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="STc-Zu-pdX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Edit your appointment ">
+                                                <color key="titleColor" name="6B7280"/>
+                                            </state>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <directionalEdgeInsets key="directionalLayoutMargins" top="32" leading="48" bottom="32" trailing="48"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="OEw-GA-gFz" secondAttribute="bottom" id="1V6-qU-eSz"/>
+                        <constraint firstAttribute="trailing" secondItem="OEw-GA-gFz" secondAttribute="trailing" id="3qe-oa-bRO"/>
+                        <constraint firstItem="OEw-GA-gFz" firstAttribute="leading" secondItem="5t4-eH-JTh" secondAttribute="leading" id="nji-uO-lP4"/>
+                        <constraint firstItem="OEw-GA-gFz" firstAttribute="top" secondItem="5t4-eH-JTh" secondAttribute="top" id="pbg-KU-tSI"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="48"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="5t4-eH-JTh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GIN-oZ-UjG"/>
+                <constraint firstItem="5t4-eH-JTh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dhJ-XD-BQ6"/>
+                <constraint firstAttribute="bottom" secondItem="5t4-eH-JTh" secondAttribute="bottom" id="eeX-4a-tLd"/>
+                <constraint firstItem="5t4-eH-JTh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yHt-h6-DZ5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="48"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-152" y="-2"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="imgAlert" width="131" height="131"/>
+        <namedColor name="1C2A3A">
+            <color red="0.10999999940395355" green="0.16500000655651093" blue="0.22699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="6B7280">
+            <color red="0.41999998688697815" green="0.44699999690055847" blue="0.50199997425079346" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

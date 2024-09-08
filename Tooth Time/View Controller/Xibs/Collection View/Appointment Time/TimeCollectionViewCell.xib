@@ -27,21 +27,14 @@
                                 <color key="textColor" name="6B7280"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3V-Nt-jeX">
-                                <rect key="frame" x="0.0" y="0.0" width="105" height="41"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" name="F9FAFB"/>
                         <constraints>
                             <constraint firstItem="iBw-yh-mvg" firstAttribute="centerY" secondItem="ict-O5-DKU" secondAttribute="centerY" id="3jY-HG-2vw"/>
-                            <constraint firstItem="c3V-Nt-jeX" firstAttribute="top" secondItem="ict-O5-DKU" secondAttribute="top" id="LDi-XG-y5A"/>
+                            <constraint firstAttribute="width" constant="105" id="6M8-yy-qcH"/>
                             <constraint firstAttribute="trailing" secondItem="iBw-yh-mvg" secondAttribute="trailing" constant="19" id="MAO-yO-fJt"/>
-                            <constraint firstAttribute="trailing" secondItem="c3V-Nt-jeX" secondAttribute="trailing" id="SKK-It-Ck8"/>
-                            <constraint firstItem="c3V-Nt-jeX" firstAttribute="leading" secondItem="ict-O5-DKU" secondAttribute="leading" id="VCM-1L-KH6"/>
+                            <constraint firstAttribute="height" constant="41" id="S37-ib-zIh"/>
                             <constraint firstItem="iBw-yh-mvg" firstAttribute="leading" secondItem="ict-O5-DKU" secondAttribute="leading" constant="19" id="jQn-NE-L4E"/>
-                            <constraint firstAttribute="bottom" secondItem="c3V-Nt-jeX" secondAttribute="bottom" id="kvh-Ee-rAz"/>
                             <constraint firstItem="iBw-yh-mvg" firstAttribute="centerX" secondItem="ict-O5-DKU" secondAttribute="centerX" id="rr2-X7-MRo"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -60,7 +53,6 @@
                 <constraint firstItem="ict-O5-DKU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sQ1-ZJ-Xqv"/>
             </constraints>
             <connections>
-                <outlet property="btn" destination="c3V-Nt-jeX" id="wQZ-04-YNh"/>
                 <outlet property="lblTime" destination="iBw-yh-mvg" id="9lI-TR-nwm"/>
                 <outlet property="viewBackground" destination="ict-O5-DKU" id="FxM-ik-GJx"/>
             </connections>
