@@ -609,7 +609,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40f-nO-ORT" customClass="CustomAlert" customModule="Tooth_Time" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="168" width="340" height="508"/>
+                                        <rect key="frame" x="25" y="168" width="340" height="455"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -620,7 +620,6 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30220405629139074" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="40f-nO-ORT" firstAttribute="centerY" secondItem="Z8H-uZ-T1n" secondAttribute="centerY" id="BaE-xj-9f6"/>
                                     <constraint firstItem="40f-nO-ORT" firstAttribute="top" secondItem="Z8H-uZ-T1n" secondAttribute="top" constant="168" id="MMW-I3-s7b"/>
                                     <constraint firstAttribute="trailing" secondItem="40f-nO-ORT" secondAttribute="trailing" constant="25" id="cww-wP-iF3"/>
                                     <constraint firstItem="40f-nO-ORT" firstAttribute="leading" secondItem="Z8H-uZ-T1n" secondAttribute="leading" constant="25" id="kt7-kh-5of"/>
@@ -634,6 +633,7 @@
                             <constraint firstItem="Z8H-uZ-T1n" firstAttribute="leading" secondItem="zd2-Dp-qjz" secondAttribute="leading" id="Ptn-9k-kdS"/>
                             <constraint firstItem="zd2-Dp-qjz" firstAttribute="trailing" secondItem="Z8H-uZ-T1n" secondAttribute="trailing" id="e7i-c1-lgI"/>
                             <constraint firstAttribute="bottom" secondItem="Z8H-uZ-T1n" secondAttribute="bottom" id="hcI-lh-EAM"/>
+                            <constraint firstItem="40f-nO-ORT" firstAttribute="height" secondItem="yRG-y7-gh6" secondAttribute="height" multiplier="455/844" id="uyn-88-Dk6"/>
                             <constraint firstItem="Z8H-uZ-T1n" firstAttribute="top" secondItem="yRG-y7-gh6" secondAttribute="top" id="wWK-7b-041"/>
                         </constraints>
                     </view>

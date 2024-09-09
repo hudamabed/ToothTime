@@ -33,17 +33,20 @@ class BookAppointmentViewController: UIViewController {
         
     }
     //MARK: - Actions
-    @objc func showCustomAlert() {
-    
-    }
-    
     @objc func navigateToConfirmation() {
-    
+        let vc = ConfirmationViewController.instantiat()
+        vc.modalPresentationStyle = .overFullScreen
+        vc.presenVC()
     }
     
     @IBAction func btnBack(_ sender: Any) {
         let vc = DoctorDetailsViewController.instantiat()
         vc.pop()
+    }
+    
+    @objc func navigateToBookAppointment() {
+        let vc = BookAppointmentViewController.instantiat()
+        vc.dismiss(animated: true)
     }
 }
 
@@ -51,8 +54,9 @@ class BookAppointmentViewController: UIViewController {
 private extension BookAppointmentViewController {
     func setupView() {
         setUpNavigation()
-        setUpPickerDate()
+        setUpCustomAlert()
         customButtonConfirm()
+        customButtonDone()
         TimeCollectionView.registerXib(cell: TimeCollectionViewCell.self)
     }
     
@@ -124,17 +128,15 @@ extension BookAppointmentViewController {
     func customButtonConfirm() {
         btnConfirm.btn.addTarget(self, action: #selector(navigateToConfirmation), for: .touchUpInside)
     }
+    
+    func customButtonDone() {
+        customAlert.btnDone.btn.addTarget(self, action: #selector(navigateToBookAppointment), for: .touchUpInside)
+    }
 }
 
 //MARK: - Set Up Picker Date
 extension BookAppointmentViewController {
-    func setUpPickerDate() {
-        for view in datePicker.subviews {
-            for subview in view.subviews {
-                if let label = subview as? UILabel {
-                    label.font = UIFont(name: "Inter-Bold", size: 12)  // لتغيير نوع الخط
-                }
-            }
-        }
+    func setUpCustomAlert() {
+       
     }
 }

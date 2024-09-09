@@ -10,6 +10,8 @@ import UIKit
 class CustomAlert: UIView {
     
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var btnDone: CustomButton!
+    @IBOutlet weak var btnEdit: UIButton!
     
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -21,8 +23,9 @@ class CustomAlert: UIView {
         configureXib()
     }
     
+    
     //MARK: - Configurations
-    private func configureXib(){
+    private func configureXib() {
         Bundle.main.loadNibNamed("CustomAlert", owner: self, options: [:])
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         contentView.translatesAutoresizingMaskIntoConstraints = false
@@ -34,4 +37,5 @@ class CustomAlert: UIView {
         contentView.layoutIfNeeded()
         
     }
+    
 }

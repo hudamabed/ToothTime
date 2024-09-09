@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlert" customModule="Tooth_Time" customModuleProvider="target">
             <connections>
+                <outlet property="btnDone" destination="2fa-aM-9zm" id="O4r-wn-1vh"/>
+                <outlet property="btnEdit" destination="rh5-ig-V5F" id="0QD-rW-uxE"/>
                 <outlet property="contentView" destination="5t4-eH-JTh" id="e7w-Ud-n6x"/>
             </connections>
         </placeholder>
