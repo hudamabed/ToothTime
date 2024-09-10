@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyBookingsCollectionViewCell" customModule="Tooth_Time" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="257"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="257"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYf-6k-9Sv" userLabel="content view">
+                        <rect key="frame" x="0.0" y="0.0" width="352" height="257"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLx-Cz-3kL" userLabel="container view">
+                                <rect key="frame" x="5" y="0.0" width="342" height="247"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mLh-rv-9ZX">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="247"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 22, 2023 - 10.00 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDH-X7-18Y">
+                                                <rect key="frame" x="16" y="16" width="310" height="19"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" name="1F2A37"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41w-EP-6cS">
+                                                <rect key="frame" x="16" y="47" width="310" height="1"/>
+                                                <color key="backgroundColor" name="E5E7EB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="JfC-RB-LZf"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="E5E7EB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="DXe-79-cnQ">
+                                                <rect key="frame" x="16" y="60" width="310" height="109"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgDr1" translatesAutoresizingMaskIntoConstraints="NO" id="cyu-je-8Md">
+                                                        <rect key="frame" x="0.0" y="0.0" width="109" height="109"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="109" id="5Tz-c9-aS7"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QfG-AG-usl">
+                                                        <rect key="frame" x="121" y="0.0" width="189" height="109"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. James Robinson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ia-MK-h4z">
+                                                                <rect key="frame" x="0.0" y="13.999999999999998" width="189" height="19.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                <color key="textColor" name="1F2A37"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orthopedic Surgery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABn-XE-wvD">
+                                                                <rect key="frame" x="0.0" y="43.666666666666671" width="189" height="17"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                                <color key="textColor" name="4B5563"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="LlQ-Fe-xh6">
+                                                                <rect key="frame" x="0.0" y="71" width="189" height="24"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icLocation1" translatesAutoresizingMaskIntoConstraints="NO" id="1MI-EH-cna">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="14" height="24"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="14" id="IJi-TF-1y8"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elite Ortho Clinic, USA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ns-Vj-fbM">
+                                                                        <rect key="frame" x="18" y="0.0" width="171" height="24"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <color key="textColor" name="4B5563"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="14" leading="0.0" bottom="14" trailing="0.0"/>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rkr-jh-c3r">
+                                                <rect key="frame" x="16" y="181" width="310" height="1"/>
+                                                <color key="backgroundColor" name="E5E7EB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="PnT-th-E2A"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="E5E7EB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OQh-xw-aRr">
+                                                <rect key="frame" x="16" y="194" width="310" height="37"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKv-xv-cHJ" customClass="CustomButton" customModule="Tooth_Time" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="147" height="37"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="37" id="j5a-dU-a2Y"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                                <color key="value" name="E5E7EB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="LabelColor">
+                                                                <color key="value" name="1C2A3A"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Cancel"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkf-9j-3fE" customClass="CustomButton" customModule="Tooth_Time" customModuleProvider="target">
+                                                        <rect key="frame" x="163" y="0.0" width="147" height="37"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                                <color key="value" name="1C2A3A"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="LabelColor">
+                                                                <color key="value" name="FFFFFF"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Reschedule"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="16" leading="16" bottom="16" trailing="16"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mLh-rv-9ZX" secondAttribute="trailing" id="Brj-Vv-OxA"/>
+                                    <constraint firstAttribute="bottom" secondItem="mLh-rv-9ZX" secondAttribute="bottom" id="Pyy-ZA-GGI"/>
+                                    <constraint firstItem="mLh-rv-9ZX" firstAttribute="leading" secondItem="zLx-Cz-3kL" secondAttribute="leading" id="UdY-Oy-aeZ"/>
+                                    <constraint firstItem="mLh-rv-9ZX" firstAttribute="top" secondItem="zLx-Cz-3kL" secondAttribute="top" id="ZZD-cW-dlU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zLx-Cz-3kL" firstAttribute="top" secondItem="uYf-6k-9Sv" secondAttribute="top" id="1LV-rE-Za1"/>
+                            <constraint firstItem="zLx-Cz-3kL" firstAttribute="leading" secondItem="uYf-6k-9Sv" secondAttribute="leading" constant="5" id="BxY-oA-DUs"/>
+                            <constraint firstAttribute="bottom" secondItem="zLx-Cz-3kL" secondAttribute="bottom" constant="10" id="CTU-d5-Ycs"/>
+                            <constraint firstAttribute="trailing" secondItem="zLx-Cz-3kL" secondAttribute="trailing" constant="5" id="lHc-0J-hzM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="uYf-6k-9Sv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HBN-5p-unN"/>
+                <constraint firstAttribute="trailing" secondItem="uYf-6k-9Sv" secondAttribute="trailing" id="LGF-dM-EvB"/>
+                <constraint firstItem="uYf-6k-9Sv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SKF-qK-qx2"/>
+                <constraint firstAttribute="bottom" secondItem="uYf-6k-9Sv" secondAttribute="bottom" id="zoe-x1-6pE"/>
+            </constraints>
+            <size key="customSize" width="268" height="208"/>
+            <point key="canvasLocation" x="80.152671755725194" y="54.225352112676056"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icLocation1" width="24" height="24"/>
+        <image name="imgDr1" width="109" height="109"/>
+        <namedColor name="1C2A3A">
+            <color red="0.10999999940395355" green="0.16500000655651093" blue="0.22699999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="1F2A37">
+            <color red="0.12200000137090683" green="0.16500000655651093" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="4B5563">
+            <color red="0.29399999976158142" green="0.33300000429153442" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="E5E7EB">
+            <color red="0.89800000190734863" green="0.90600001811981201" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="FFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

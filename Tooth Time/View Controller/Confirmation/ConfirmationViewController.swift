@@ -8,6 +8,7 @@ import UIKit
 
 class ConfirmationViewController: UIViewController {
     //MARK:  Outlets
+    @IBOutlet weak var customAlert: CustomAlert!
     
     
     //MARK: - Life Cycle
@@ -24,11 +25,17 @@ class ConfirmationViewController: UIViewController {
         super.viewWillAppear(animated)
         
     }
+    
+    //MARK: - Actions
+    @objc func navigateToBookAppointment() {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
 //MARK: - Configurations
 private extension ConfirmationViewController {
     func setupView() {
         setUpNavigation()
+        customButtonDone()
     }
     
     func localized() {
@@ -47,5 +54,14 @@ private extension ConfirmationViewController {
 extension ConfirmationViewController {
     func setUpNavigation() {
         self.isHidNavigation = true
+    }
+}
+
+
+//MARK: - Set Up Custom Alert
+extension ConfirmationViewController {
+    func customButtonDone() {
+        customAlert.btnDone.btn.addTarget(self, action: #selector(navigateToBookAppointment), for: .touchUpInside)
+        customAlert.btnEdit.addTarget(self, action: #selector(navigateToBookAppointment), for: .touchUpInside)
     }
 }

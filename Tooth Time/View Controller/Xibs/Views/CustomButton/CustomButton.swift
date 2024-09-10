@@ -23,6 +23,23 @@ class CustomButton: UIView {
         }
     }
     
+    @IBInspectable var LabelColor: UIColor? {
+        set {
+            self.btn.setTitleColor(newValue, for: .normal)
+        }
+        get {
+            return btn.titleColor(for: .normal)
+        }
+    }
+    @IBInspectable override var backgroundColor: UIColor? {
+        set {
+            self.contentView?.backgroundColor = newValue
+        }
+        get {
+            return contentView?.backgroundColor
+        }
+    }
+    
     override init(frame: CGRect){
         super.init(frame: frame)
         configureXib()

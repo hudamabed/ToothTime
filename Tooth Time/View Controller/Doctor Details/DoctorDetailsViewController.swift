@@ -6,19 +6,40 @@
 //
 
 import UIKit
+import ExpandableLabel
 
-class DoctorDetailsViewController: UIViewController {
+class DoctorDetailsViewController: UIViewController, ExpandableLabelDelegate {
+    func willExpandLabel(_ label: ExpandableLabel) {
+        print("Label did collapse")
+
+    }
+    
+    func didExpandLabel(_ label: ExpandableLabel) {
+        print("Label did collapse")
+
+    }
+    
+    func willCollapseLabel(_ label: ExpandableLabel) {
+        print("Label did collapse")
+
+    }
+    
+    func didCollapseLabel(_ label: ExpandableLabel) {
+        print("Label did collapse")
+
+    }
+    
     //MARK:  Outlets
     @IBOutlet weak var doctorDetailsCollectionView: UICollectionView!
     @IBOutlet weak var reviewsTableView: UITableView!
     @IBOutlet weak var btnBookAppointment: CustomButton!
-    
+    @IBOutlet weak var lblExpandableLabel: ExpandableLabel!
     
     var doctor: TopDentists?
     var doctorDetails = [TopDentists]()
     var review = [Review]()
 
-
+    
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +79,18 @@ private extension DoctorDetailsViewController {
             doctorDetails.append(selectedDoctor)
         }
         doctorDetailsCollectionView.reloadData()
+        
+//        lblExpandableLabel.text = "This is an expandable label test. This is some additional text to make sure the label expands. Let's see if view more works."
 
+        lblExpandableLabel.numberOfLines = 2
+        lblExpandableLabel.collapsed = true
+        lblExpandableLabel.collapsedAttributedLink = NSAttributedString(string: "view more")
+        //lblExpandableLabel.expandedAttributedLink = NSAttributedString(string: "view less")
+        lblExpandableLabel.delegate = self
+        lblExpandableLabel.sizeToFit()
+        lblExpandableLabel.collapsed = true
+        
+        
     }
     
     func setupData() {
@@ -121,3 +153,4 @@ extension DoctorDetailsViewController {
         btnBookAppointment.btn.addTarget(self, action: #selector(navigateToBookAppointment), for: .touchUpInside)
     }
 }
+

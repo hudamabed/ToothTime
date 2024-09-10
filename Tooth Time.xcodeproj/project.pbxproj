@@ -33,6 +33,9 @@
 		927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A942C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift */; };
 		927F9A972C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A962C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift */; };
 		927F9A992C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927F9A982C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift */; };
+		9285F13C2C908FC5009F50E7 /* ManageAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9285F13B2C908FC5009F50E7 /* ManageAppointmentViewController.swift */; };
+		9285F1402C909577009F50E7 /* MyBookingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9285F13E2C909577009F50E7 /* MyBookingsCollectionViewCell.swift */; };
+		9285F1412C909577009F50E7 /* MyBookingsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9285F13F2C909577009F50E7 /* MyBookingsCollectionViewCell.xib */; };
 		92A581742C74E14E00EFAAAE /* AdBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A581732C74E14E00EFAAAE /* AdBoard.swift */; };
 		92A581762C74E15F00EFAAAE /* MedicalCenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A581752C74E15F00EFAAAE /* MedicalCenters.swift */; };
 		92A581782C74E17000EFAAAE /* TopDentists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A581772C74E17000EFAAAE /* TopDentists.swift */; };
@@ -102,6 +105,9 @@
 		927F9A942C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindDoctorsViewController.swift; sourceTree = "<group>"; };
 		927F9A962C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorDetailsViewController.swift; sourceTree = "<group>"; };
 		927F9A982C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewController.swift; sourceTree = "<group>"; };
+		9285F13B2C908FC5009F50E7 /* ManageAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAppointmentViewController.swift; sourceTree = "<group>"; };
+		9285F13E2C909577009F50E7 /* MyBookingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBookingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		9285F13F2C909577009F50E7 /* MyBookingsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBookingsCollectionViewCell.xib; sourceTree = "<group>"; };
 		92A581732C74E14E00EFAAAE /* AdBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdBoard.swift; sourceTree = "<group>"; };
 		92A581752C74E15F00EFAAAE /* MedicalCenters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalCenters.swift; sourceTree = "<group>"; };
 		92A581772C74E17000EFAAAE /* TopDentists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopDentists.swift; sourceTree = "<group>"; };
@@ -244,6 +250,7 @@
 				927F9A8B2C6E1BE900C9E9E9 /* Doctor Details */,
 				927F9A8C2C6E1C0000C9E9E9 /* Book Appointment */,
 				92ECAC8F2C8E05700005DCDB /* Confirmation */,
+				9285F13A2C908EC2009F50E7 /* Manage Appointment */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -286,11 +293,13 @@
 		927F9A862C6E1B2E00C9E9E9 /* Collection View */ = {
 			isa = PBXGroup;
 			children = (
+				9285F1422C909A72009F50E7 /* New Group */,
 				92A5817B2C74E8D200EFAAAE /* Ad Board */,
 				92A5817A2C74E8CE00EFAAAE /* Medical Centers */,
 				92A581792C74E8CB00EFAAAE /* Top Dentists */,
 				92D3C5982C8CB86A001D3479 /* Calender */,
 				92D3C59D2C8CC29B001D3479 /* Appointment Time */,
+				9285F13D2C9094EB009F50E7 /* Bookings */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
@@ -341,6 +350,30 @@
 				927F9A982C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift */,
 			);
 			path = "Book Appointment";
+			sourceTree = "<group>";
+		};
+		9285F13A2C908EC2009F50E7 /* Manage Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				9285F13B2C908FC5009F50E7 /* ManageAppointmentViewController.swift */,
+			);
+			path = "Manage Appointment";
+			sourceTree = "<group>";
+		};
+		9285F13D2C9094EB009F50E7 /* Bookings */ = {
+			isa = PBXGroup;
+			children = (
+				9285F13E2C909577009F50E7 /* MyBookingsCollectionViewCell.swift */,
+				9285F13F2C909577009F50E7 /* MyBookingsCollectionViewCell.xib */,
+			);
+			path = Bookings;
+			sourceTree = "<group>";
+		};
+		9285F1422C909A72009F50E7 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		92A581722C74E12400EFAAAE /* Model */ = {
@@ -565,6 +598,7 @@
 				925322462C6A61F2007045DB /* Assets.xcassets in Resources */,
 				925322492C6A61F2007045DB /* Base in Resources */,
 				923FEC0A2C862AF30078531B /* Inter-SemiBoldItalic.ttf in Resources */,
+				9285F1412C909577009F50E7 /* MyBookingsCollectionViewCell.xib in Resources */,
 				923FEC092C862AF30078531B /* Inter-SemiBold.ttf in Resources */,
 				92A581832C74E95900EFAAAE /* MedicalCentersCollectionViewCell.xib in Resources */,
 				923FEC0D2C862B1D0078531B /* Inter-Medium.ttf in Resources */,
@@ -658,6 +692,7 @@
 				927F9A8F2C6E1C6B00C9E9E9 /* SignUpViewController.swift in Sources */,
 				927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */,
 				92A581862C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift in Sources */,
+				9285F1402C909577009F50E7 /* MyBookingsCollectionViewCell.swift in Sources */,
 				92A776362C6A774100757440 /* UIApplectionEx.swift in Sources */,
 				92E7263A2C8A0DF000CE7B1F /* Review.swift in Sources */,
 				92A581782C74E17000EFAAAE /* TopDentists.swift in Sources */,
@@ -665,6 +700,7 @@
 				92A776382C6A774100757440 /* UIResponderEx.swift in Sources */,
 				92A581742C74E14E00EFAAAE /* AdBoard.swift in Sources */,
 				92A7762A2C6A773400757440 /* NSNumberEx.swift in Sources */,
+				9285F13C2C908FC5009F50E7 /* ManageAppointmentViewController.swift in Sources */,
 				9253223F2C6A61ED007045DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

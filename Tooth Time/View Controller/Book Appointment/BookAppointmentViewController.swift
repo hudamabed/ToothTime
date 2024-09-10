@@ -12,7 +12,6 @@ class BookAppointmentViewController: UIViewController {
     @IBOutlet weak var btnConfirm: CustomButton!
     @IBOutlet weak var TimeCollectionView: UICollectionView!
     @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var customAlert: CustomAlert!    
     
     var time = [Time]()
     var selectedIndexPath: IndexPath?
@@ -43,11 +42,6 @@ class BookAppointmentViewController: UIViewController {
         let vc = DoctorDetailsViewController.instantiat()
         vc.pop()
     }
-    
-    @objc func navigateToBookAppointment() {
-        let vc = BookAppointmentViewController.instantiat()
-        vc.dismiss(animated: true)
-    }
 }
 
 //MARK: - Configurations
@@ -56,7 +50,7 @@ private extension BookAppointmentViewController {
         setUpNavigation()
         setUpCustomAlert()
         customButtonConfirm()
-        customButtonDone()
+        //customButtonDone()
         TimeCollectionView.registerXib(cell: TimeCollectionViewCell.self)
     }
     
@@ -77,8 +71,6 @@ private extension BookAppointmentViewController {
         time.append(Time(time: "4.30 PM"))
         time.append(Time(time: "5.00 PM"))
         time.append(Time(time: "5.30 PM"))
-
-
     }
     
     func fetchData() {
@@ -127,10 +119,6 @@ extension BookAppointmentViewController {
 extension BookAppointmentViewController {
     func customButtonConfirm() {
         btnConfirm.btn.addTarget(self, action: #selector(navigateToConfirmation), for: .touchUpInside)
-    }
-    
-    func customButtonDone() {
-        customAlert.btnDone.btn.addTarget(self, action: #selector(navigateToBookAppointment), for: .touchUpInside)
     }
 }
 

@@ -8,5 +8,6 @@ target 'Tooth Time' do
   # Pods for Tooth Time
 
   pod 'IQKeyboardManagerSwift'
+  pod "ExpandableLabel"
 
 end

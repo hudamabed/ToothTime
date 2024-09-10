@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -637,6 +636,9 @@
                             <constraint firstItem="Z8H-uZ-T1n" firstAttribute="top" secondItem="yRG-y7-gh6" secondAttribute="top" id="wWK-7b-041"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="customAlert" destination="40f-nO-ORT" id="2Cf-qk-vwE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EBP-S8-a5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1173,7 +1175,7 @@
                                                                         <color key="textColor" name="1F2A37"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W05-dy-XJW">
+                                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W05-dy-XJW" customClass="ExpandableLabel" customModule="ExpandableLabel">
                                                                         <rect key="frame" x="0.0" y="36" width="342" height="60.333333333333343"/>
                                                                         <attributedString key="attributedText">
                                                                             <fragment>
@@ -1186,6 +1188,11 @@
                                                                             </fragment>
                                                                         </attributedString>
                                                                         <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="collapsed" value="NO"/>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldExpand" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shouldCollapse" value="YES"/>
+                                                                        </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
@@ -1229,7 +1236,7 @@
                                                                                     </label>
                                                                                 </subviews>
                                                                             </stackView>
-                                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NNN-Ij-bKm">
+                                                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NNN-Ij-bKm">
                                                                                 <rect key="frame" x="0.0" y="34" width="342" height="160.66666666666666"/>
                                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                                 <connections>
@@ -1342,6 +1349,7 @@
                     <connections>
                         <outlet property="btnBookAppointment" destination="c7Z-lV-f6V" id="HJG-7Q-zkl"/>
                         <outlet property="doctorDetailsCollectionView" destination="Td3-f9-p7g" id="dkm-nY-V6z"/>
+                        <outlet property="lblExpandableLabel" destination="W05-dy-XJW" id="WlT-zv-5F8"/>
                         <outlet property="reviewsTableView" destination="NNN-Ij-bKm" id="VNo-kc-cZt"/>
                     </connections>
                 </viewController>
@@ -1367,19 +1375,57 @@
             </objects>
             <point key="canvasLocation" x="1048" y="1242"/>
         </scene>
-        <!--View Controller-->
+        <!--My Bookings-->
         <scene sceneID="faw-zW-uFD">
             <objects>
-                <viewController id="tsr-RI-BNN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ManageAppointmentViewController" title="My Bookings" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tsr-RI-BNN" customClass="ManageAppointmentViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jcb-jU-Zw4">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e85-4U-Z7f">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gpf-1d-w2Z">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AIK-Ic-qsq">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FsB-y4-XUt">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eh2-H7-UEE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="tsr-RI-BNN" id="oRP-qF-sa8"/>
+                                            <outlet property="delegate" destination="tsr-RI-BNN" id="Hxf-58-o5w"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QHK-cb-boz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QHK-cb-boz" firstAttribute="bottom" secondItem="e85-4U-Z7f" secondAttribute="bottom" id="FMu-cW-pBv"/>
+                            <constraint firstItem="e85-4U-Z7f" firstAttribute="top" secondItem="QHK-cb-boz" secondAttribute="top" id="Gip-ZL-MOV"/>
+                            <constraint firstItem="e85-4U-Z7f" firstAttribute="leading" secondItem="QHK-cb-boz" secondAttribute="leading" id="Zln-dX-EPm"/>
+                            <constraint firstItem="QHK-cb-boz" firstAttribute="trailing" secondItem="e85-4U-Z7f" secondAttribute="trailing" id="t6N-rc-5P9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icAppointment" selectedImage="icSelectedCalendar" id="879-zr-T9d">
                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-22"/>
                     </tabBarItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAu-dq-ejs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
