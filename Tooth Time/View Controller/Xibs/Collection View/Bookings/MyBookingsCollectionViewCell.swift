@@ -8,10 +8,27 @@
 import UIKit
 
 class MyBookingsCollectionViewCell: UICollectionViewCell {
-
+    //MARK: Outlet
+    @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var lblDoctorName: UILabel!
+    @IBOutlet weak var imgDoctor: UIImageView!
+    @IBOutlet weak var lblSpecialty: UILabel!
+    @IBOutlet weak var lblLocation: UILabel!
+    
+    var object: Any?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
+    //MARK: - Configurations
+    func configureCell() {
+        if let object = self.object as? Bookings {
+            lblDate.text = object.date
+            lblDoctorName.text = object.drName
+            lblLocation.text = object.location
+            lblSpecialty.text = object.specialty
+            imgDoctor.image = UIImage(named: object.image ?? "")
+        }
+    }
 }

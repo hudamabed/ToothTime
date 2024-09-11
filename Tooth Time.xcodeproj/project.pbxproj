@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1E4A5A259DAD599E6EF97DAC /* Pods_Tooth_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DF45072546883D970D71CB /* Pods_Tooth_Time.framework */; };
+		92090B022C91F3B00013441E /* BookingStatusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92090B012C91F3B00013441E /* BookingStatusCollectionViewCell.xib */; };
+		92090B032C91F3B00013441E /* BookingStatusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92090B002C91F3B00013441E /* BookingStatusCollectionViewCell.swift */; };
+		92090B052C91F6C40013441E /* BookingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92090B042C91F6C40013441E /* BookingStatus.swift */; };
+		92090B072C91FA8C0013441E /* Bookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92090B062C91FA8C0013441E /* Bookings.swift */; };
 		921A61AC2C7B6704009434BD /* Specialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A61AB2C7B6704009434BD /* Specialization.swift */; };
 		9224EB272C6E43510056B803 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224EB1F2C6E43510056B803 /* CustomButton.swift */; };
 		9224EB282C6E43510056B803 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB202C6E43510056B803 /* CustomButton.xib */; };
@@ -78,6 +82,10 @@
 /* Begin PBXFileReference section */
 		49A61AE2CE95418A82A410B3 /* Pods-Tooth Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tooth Time.release.xcconfig"; path = "Target Support Files/Pods-Tooth Time/Pods-Tooth Time.release.xcconfig"; sourceTree = "<group>"; };
 		8F0F59623C6A9DDDC4EEC1B1 /* Pods-Tooth Time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tooth Time.debug.xcconfig"; path = "Target Support Files/Pods-Tooth Time/Pods-Tooth Time.debug.xcconfig"; sourceTree = "<group>"; };
+		92090B002C91F3B00013441E /* BookingStatusCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingStatusCollectionViewCell.swift; sourceTree = "<group>"; };
+		92090B012C91F3B00013441E /* BookingStatusCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingStatusCollectionViewCell.xib; sourceTree = "<group>"; };
+		92090B042C91F6C40013441E /* BookingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingStatus.swift; sourceTree = "<group>"; };
+		92090B062C91FA8C0013441E /* Bookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookings.swift; sourceTree = "<group>"; };
 		921A61AB2C7B6704009434BD /* Specialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specialization.swift; sourceTree = "<group>"; };
 		9224EB1F2C6E43510056B803 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9224EB202C6E43510056B803 /* CustomButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
@@ -293,13 +301,13 @@
 		927F9A862C6E1B2E00C9E9E9 /* Collection View */ = {
 			isa = PBXGroup;
 			children = (
-				9285F1422C909A72009F50E7 /* New Group */,
 				92A5817B2C74E8D200EFAAAE /* Ad Board */,
 				92A5817A2C74E8CE00EFAAAE /* Medical Centers */,
 				92A581792C74E8CB00EFAAAE /* Top Dentists */,
 				92D3C5982C8CB86A001D3479 /* Calender */,
 				92D3C59D2C8CC29B001D3479 /* Appointment Time */,
 				9285F13D2C9094EB009F50E7 /* Bookings */,
+				9285F1422C909A72009F50E7 /* Booking Status */,
 			);
 			path = "Collection View";
 			sourceTree = "<group>";
@@ -369,11 +377,13 @@
 			path = Bookings;
 			sourceTree = "<group>";
 		};
-		9285F1422C909A72009F50E7 /* New Group */ = {
+		9285F1422C909A72009F50E7 /* Booking Status */ = {
 			isa = PBXGroup;
 			children = (
+				92090B002C91F3B00013441E /* BookingStatusCollectionViewCell.swift */,
+				92090B012C91F3B00013441E /* BookingStatusCollectionViewCell.xib */,
 			);
-			path = "New Group";
+			path = "Booking Status";
 			sourceTree = "<group>";
 		};
 		92A581722C74E12400EFAAAE /* Model */ = {
@@ -385,6 +395,8 @@
 				92A581772C74E17000EFAAAE /* TopDentists.swift */,
 				92E726392C8A0DF000CE7B1F /* Review.swift */,
 				92D3C5A22C8CC98E001D3479 /* Time.swift */,
+				92090B042C91F6C40013441E /* BookingStatus.swift */,
+				92090B062C91FA8C0013441E /* Bookings.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -601,6 +613,7 @@
 				9285F1412C909577009F50E7 /* MyBookingsCollectionViewCell.xib in Resources */,
 				923FEC092C862AF30078531B /* Inter-SemiBold.ttf in Resources */,
 				92A581832C74E95900EFAAAE /* MedicalCentersCollectionViewCell.xib in Resources */,
+				92090B022C91F3B00013441E /* BookingStatusCollectionViewCell.xib in Resources */,
 				923FEC0D2C862B1D0078531B /* Inter-Medium.ttf in Resources */,
 				923FEC162C862BA30078531B /* Inter-ExtraLight.ttf in Resources */,
 				925322442C6A61ED007045DB /* Base in Resources */,
@@ -669,12 +682,14 @@
 				92A7762B2C6A774100757440 /* UIStringEx.swift in Sources */,
 				927F9A972C6E1CEF00C9E9E9 /* DoctorDetailsViewController.swift in Sources */,
 				92A7762C2C6A774100757440 /* UIViewControllerEx.swift in Sources */,
+				92090B032C91F3B00013441E /* BookingStatusCollectionViewCell.swift in Sources */,
 				92A581762C74E15F00EFAAAE /* MedicalCenters.swift in Sources */,
 				92D3C5972C8C90CA001D3479 /* MainTabBarViewController.swift in Sources */,
 				92A7762D2C6A774100757440 /* UICollectionViewEx.swift in Sources */,
 				92D3C5A32C8CC98E001D3479 /* Time.swift in Sources */,
 				92D3C59B2C8CB8A1001D3479 /* CalenderCollectionViewCell.swift in Sources */,
 				921A61AC2C7B6704009434BD /* Specialization.swift in Sources */,
+				92090B072C91FA8C0013441E /* Bookings.swift in Sources */,
 				92A581822C74E95900EFAAAE /* MedicalCentersCollectionViewCell.swift in Sources */,
 				92A7762E2C6A774100757440 /* UIColorEx.swift in Sources */,
 				927F9A932C6E1CA700C9E9E9 /* HomeViewController.swift in Sources */,
@@ -700,6 +715,7 @@
 				92A776382C6A774100757440 /* UIResponderEx.swift in Sources */,
 				92A581742C74E14E00EFAAAE /* AdBoard.swift in Sources */,
 				92A7762A2C6A773400757440 /* NSNumberEx.swift in Sources */,
+				92090B052C91F6C40013441E /* BookingStatus.swift in Sources */,
 				9285F13C2C908FC5009F50E7 /* ManageAppointmentViewController.swift in Sources */,
 				9253223F2C6A61ED007045DB /* SceneDelegate.swift in Sources */,
 			);
