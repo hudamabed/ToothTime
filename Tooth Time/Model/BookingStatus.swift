@@ -7,11 +7,9 @@
 
 import Foundation
  
-class BookingStatus {
-    var status: String?
-    
-    
-    init(status: String? = nil) {
-        self.status = status
-    }
+enum BookingStatus {
+    case Upcoming
+    case Completed
+    case Canceled
+ 
 }

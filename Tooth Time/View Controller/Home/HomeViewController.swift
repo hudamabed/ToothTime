@@ -54,7 +54,6 @@ private extension HomeViewController {
 //                print("Font: \(fontName)")
 //            }
 //        }
-        
     }
     
     func setupData() {

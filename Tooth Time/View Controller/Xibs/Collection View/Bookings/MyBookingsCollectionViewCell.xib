@@ -126,6 +126,9 @@
                                                                 <color key="value" name="1C2A3A"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Cancel"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="18.5"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkf-9j-3fE" customClass="CustomButton" customModule="Tooth_Time" customModuleProvider="target">
@@ -139,6 +142,9 @@
                                                                 <color key="value" name="FFFFFF"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Reschedule"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="18.5"/>
+                                                            </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
@@ -153,6 +159,7 @@
                                     <constraint firstAttribute="bottom" secondItem="mLh-rv-9ZX" secondAttribute="bottom" id="Pyy-ZA-GGI"/>
                                     <constraint firstItem="mLh-rv-9ZX" firstAttribute="leading" secondItem="zLx-Cz-3kL" secondAttribute="leading" id="UdY-Oy-aeZ"/>
                                     <constraint firstItem="mLh-rv-9ZX" firstAttribute="top" secondItem="zLx-Cz-3kL" secondAttribute="top" id="ZZD-cW-dlU"/>
+                                    <constraint firstAttribute="width" constant="342" id="aac-j6-cb5"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">

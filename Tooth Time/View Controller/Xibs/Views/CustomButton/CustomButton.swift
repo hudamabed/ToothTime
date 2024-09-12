@@ -31,12 +31,21 @@ class CustomButton: UIView {
             return btn.titleColor(for: .normal)
         }
     }
+    
     @IBInspectable override var backgroundColor: UIColor? {
         set {
             self.contentView?.backgroundColor = newValue
         }
         get {
             return contentView?.backgroundColor
+        }
+    }
+    
+    @IBInspectable override var cornerRadius: CGFloat {
+        set {
+            self.contentView.cornerRadius = newValue
+        } get {
+            return contentView.cornerRadius
         }
     }
     

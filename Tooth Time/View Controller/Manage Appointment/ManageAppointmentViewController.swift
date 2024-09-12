@@ -9,11 +9,18 @@ import UIKit
 
 class ManageAppointmentViewController: UIViewController {
     //MARK:  Outlets
-    @IBOutlet weak var bookingStatusCollectionView: UICollectionView!
     @IBOutlet weak var myBookingsCollectionView: UICollectionView!
     
-    var status = [BookingStatus]()
+    @IBOutlet weak var lblUpcoming: UILabel!
+    @IBOutlet weak var lblCompleted: UILabel!
+    @IBOutlet weak var lblCanceled: UILabel!
+    
+    @IBOutlet weak var viewLine1: UIView!
+    @IBOutlet weak var viewLine2: UIView!
+    @IBOutlet weak var viewLine3: UIView!
+    
     var booking = [Bookings]()
+    var currentStatus: BookingStatus = .Upcoming
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -26,14 +33,33 @@ class ManageAppointmentViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        setUpNavigation()
+        updateUI(for: .Upcoming)
         
     }
+    
+    //MARK: - Actions
+    @IBAction func btnUpcoming(_ sender: Any) {
+        currentStatus = .Upcoming
+        updateUI(for: currentStatus)
+    }
+    
+    
+    @IBAction func btnCompleted(_ sender: Any) {
+        currentStatus = .Completed
+        updateUI(for: currentStatus)
+    }
+    
+    @IBAction func btnCanceled(_ sender: Any) {
+        currentStatus = .Canceled
+        updateUI(for: currentStatus)
+    }
 }
+
 //MARK: - Configurations
 private extension ManageAppointmentViewController {
     func setupView() {
         setUpNavigation()
-        bookingStatusCollectionView.registerXib(cell: BookingStatusCollectionViewCell.self)
         myBookingsCollectionView.registerXib(cell: MyBookingsCollectionViewCell.self)
     }
     
@@ -42,11 +68,15 @@ private extension ManageAppointmentViewController {
     }
     
     func setupData() {
-        booking.append(Bookings(drName: "", image: "", specialty: "", location: "", date: ""))
+        booking.append(Bookings(drName: "Dr. James Robinson", image: "imgDr1", specialty: "Orthopedic Surgery", location: "Cardiology Center, USA", date: "May 22, 2023 - 10.00 AM"))
+        booking.append(Bookings(drName: "Dr. Daniel Lee", image: "imgDr4", specialty: "Orthopedic Surgery", location: "Elite Ortho Clinic, USA", date: "June 21, 2023 - 10.00 AM"))
         
-        status.append(BookingStatus(status: "Upcoming"))
-        status.append(BookingStatus(status: "Completed"))
-        status.append(BookingStatus(status: "Canceled"))
+        booking.append(Bookings(drName: "Dr. James Robinson", image: "imgDr3", specialty: "Orthopedic Surgery", location: "Elite Ortho Clinic, USA", date: "May 22, 2023 - 10.00 AM"))
+        
+        booking.append(Bookings(drName: "Dr. Nathan Harris", image: "imgDr2", specialty: "Orthopedic Surgery", location: "Digestive Institute, USAA", date: "May 22, 2023 - 10.00 AM"))
+        
+        booking.append(Bookings(drName: "Dr. James Robinson", image: "imgDr5", specialty: "Orthopedic Surgery", location: "Elite Ortho Clinic, USA", date: "Jube 14, 2023 - 15.00pm"))
+        
 
     }
     
@@ -57,41 +87,66 @@ private extension ManageAppointmentViewController {
 //MARK: - Set Up collection View
 extension ManageAppointmentViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == bookingStatusCollectionView {
-            return status.count
-        } else {
-            return booking.count
-        }
+        return booking.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == bookingStatusCollectionView {
-            let cell: BookingStatusCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "BookingStatusCollectionViewCell", for: indexPath) as! BookingStatusCollectionViewCell
-            let object = status[indexPath.row]
-            cell.object = object
-            cell.configureCell()
-            return cell
-        } else {
             let cell: MyBookingsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyBookingsCollectionViewCell", for: indexPath) as! MyBookingsCollectionViewCell
             let object = booking[indexPath.row]
             cell.object = object
             cell.configureCell()
             return cell
-        }
     }
-    
-    
-    
 }
 
 //MARK: - Set Up Navigations
 extension ManageAppointmentViewController {
     func setUpNavigation() {
+        navigationItem.title = "My Bookings"
         let titleTextAttributes: [NSAttributedString.Key: Any] = [
-            .font: UIFont(name: "Inter18pt-SemiBold", size: 20) as Any,
+            .font: UIFont(name: "Inter-SemiBold", size: 20) as Any,
             .foregroundColor: "374151".color_
         ]
         navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
         self.isHidNavigation = false
+        navigationItem.backBarButtonItem?.isHidden = true
+        navigationItem.hidesBackButton = true
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
 }
+
+//MARK: - Set Up Booking Status
+extension ManageAppointmentViewController {
+    func updateUI(for status: BookingStatus) {
+        switch status {
+        case .Upcoming:
+            lblUpcoming.textColor = "1C2A3A".color_
+            lblCompleted.textColor = "9CA3AF".color_
+            lblCanceled.textColor = "9CA3AF".color_
+            viewLine1.isHidden = false
+            viewLine2.isHidden = true
+            viewLine3.isHidden = true
+            viewLine1.roundCorners(isTopLeft: true, isTopRight: true, isBottomLeft: false, isBottomRight: false, radius: 3)
+            
+        case .Completed:
+            lblUpcoming.textColor = "9CA3AF".color_
+            lblCompleted.textColor = "1C2A3A".color_
+            lblCanceled.textColor = "9CA3AF".color_
+            viewLine1.isHidden = true
+            viewLine2.isHidden = false
+            viewLine3.isHidden = true
+            viewLine2.roundCorners(isTopLeft: true, isTopRight: true, isBottomLeft: false, isBottomRight: false, radius: 3)
+            
+        case .Canceled:
+            lblUpcoming.textColor = "9CA3AF".color_
+            lblCompleted.textColor = "9CA3AF".color_
+            lblCanceled.textColor = "1C2A3A".color_
+            viewLine1.isHidden = true
+            viewLine2.isHidden = true
+            viewLine3.isHidden = false
+            viewLine3.roundCorners(isTopLeft: true, isTopRight: true, isBottomLeft: false, isBottomRight: false, radius: 3)
+        }
+    }
+    
+}
+
