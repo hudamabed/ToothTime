@@ -29,6 +29,9 @@ class MainTabBarViewController: UITabBarController {
 //MARK: - Configurations
 private extension MainTabBarViewController {
     func setupView() {
+        navigationItem.hidesBackButton = true
+        isHidNavigation = true
+        
         
     }
     

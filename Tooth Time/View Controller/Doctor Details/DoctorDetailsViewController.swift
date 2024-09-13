@@ -6,38 +6,20 @@
 //
 
 import UIKit
-import ExpandableLabel
+//import ExpandableLabel
 
-class DoctorDetailsViewController: UIViewController, ExpandableLabelDelegate {
-    func willExpandLabel(_ label: ExpandableLabel) {
-        print("Label did collapse")
-
-    }
-    
-    func didExpandLabel(_ label: ExpandableLabel) {
-        print("Label did collapse")
-
-    }
-    
-    func willCollapseLabel(_ label: ExpandableLabel) {
-        print("Label did collapse")
-
-    }
-    
-    func didCollapseLabel(_ label: ExpandableLabel) {
-        print("Label did collapse")
-
-    }
-    
+class DoctorDetailsViewController: UIViewController {
     //MARK:  Outlets
     @IBOutlet weak var doctorDetailsCollectionView: UICollectionView!
     @IBOutlet weak var reviewsTableView: UITableView!
     @IBOutlet weak var btnBookAppointment: CustomButton!
-    @IBOutlet weak var lblExpandableLabel: ExpandableLabel!
+    @IBOutlet weak var lblExpandableLabel: UILabel!
     
     var doctor: TopDentists?
     var doctorDetails = [TopDentists]()
     var review = [Review]()
+    let fullText = "Dr. Lee offers state-of-the-art orthodontic solutions, including Invisalign and traditional braces, to create perfect smiles for patients of all ages."
+     var isExpanded = false
 
     
     //MARK: - Life Cycle
@@ -62,7 +44,12 @@ class DoctorDetailsViewController: UIViewController, ExpandableLabelDelegate {
     
     @objc func navigateToBookAppointment() {
         let vc = BookAppointmentViewController.instantiat()
-            vc.push()
+        vc.push()
+    }
+    
+    @objc func labelTapped() {
+        isExpanded.toggle()
+        expandableLabel()
     }
 }
 //MARK: - Configurations
@@ -72,6 +59,7 @@ private extension DoctorDetailsViewController {
         doctorDetailsCollectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
         reviewsTableView.registerXib(cell: ReviewsTableViewCell.self)
         customButtonBookAppointment()
+        expandableLabel()
     }
     
     func localized() {
@@ -80,21 +68,14 @@ private extension DoctorDetailsViewController {
         }
         doctorDetailsCollectionView.reloadData()
         
-//        lblExpandableLabel.text = "This is an expandable label test. This is some additional text to make sure the label expands. Let's see if view more works."
-
-        lblExpandableLabel.numberOfLines = 2
-        lblExpandableLabel.collapsed = true
-        lblExpandableLabel.collapsedAttributedLink = NSAttributedString(string: "view more")
-        //lblExpandableLabel.expandedAttributedLink = NSAttributedString(string: "view less")
-        lblExpandableLabel.delegate = self
-        lblExpandableLabel.sizeToFit()
-        lblExpandableLabel.collapsed = true
-        
-        
     }
     
     func setupData() {
         review.append(Review(imgProfile: "imgProfile", name: "Adil Aijaz", rating: 5.0, star: "icStars", comment: "He is a true professional who genuinely cares about his patients. I highly recommend Dr. Patel to anyone seeking exceptional cardiac care."))
+        
+        lblExpandableLabel.isUserInteractionEnabled = true
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(labelTapped))
+        lblExpandableLabel.addGestureRecognizer(tapGesture)
         
     }
     
@@ -102,6 +83,7 @@ private extension DoctorDetailsViewController {
     }
     
 }
+
 
 //MARK: - Set Up Collection View
 extension DoctorDetailsViewController: UICollectionViewDelegate, UICollectionViewDataSource {
@@ -138,6 +120,7 @@ extension DoctorDetailsViewController: UITableViewDelegate, UITableViewDataSourc
 //MARK: - Set Up Navigations
 extension DoctorDetailsViewController {
     func setUpNavigation() {
+        self.navigationItem.title = "My Bookings"
         let titleTextAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont(name: "Inter18pt-SemiBold", size: 20) as Any,
                .foregroundColor: "374151".color_
@@ -154,3 +137,17 @@ extension DoctorDetailsViewController {
     }
 }
 
+//MARK: - Set Up Expandable Label
+extension DoctorDetailsViewController {
+    func expandableLabel() {
+        let partialText = String(fullText.prefix(100))
+        let moreText = isExpanded ? " Read Less" : " Read More"
+        let displayText = isExpanded ? fullText : partialText + "view more"
+        let attributedString = NSMutableAttributedString(string: displayText)
+        let moreRange = (displayText as NSString).range(of: moreText)
+        attributedString.addAttribute(.foregroundColor, value: UIColor.blue, range: moreRange)
+        attributedString.addAttribute(.underlineStyle, value: NSUnderlineStyle.single.rawValue, range: moreRange)
+        
+        lblExpandableLabel.attributedText = attributedString
+    }
+}

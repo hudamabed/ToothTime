@@ -24,13 +24,13 @@ class BookAppointmentViewController: UIViewController {
         setupData()
         localized()
         fetchData()
-        
-        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
     }
+    
     //MARK: - Actions
     @objc func navigateToConfirmation() {
         let vc = ConfirmationViewController.instantiat()
