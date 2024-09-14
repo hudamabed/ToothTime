@@ -102,5 +102,12 @@ class CustomTextFiled: UIView {
         contentView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
         contentView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
         contentView.layoutIfNeeded()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        self.addGestureRecognizer(tapGesture)
     }
+    
+    @objc private func handleTap() {
+        txtFiled.becomeFirstResponder() 
+    }
+    
 }

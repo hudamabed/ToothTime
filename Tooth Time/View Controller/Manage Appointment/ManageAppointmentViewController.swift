@@ -109,9 +109,6 @@ extension ManageAppointmentViewController {
         ]
         navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
         self.isHidNavigation = false
-        navigationItem.backBarButtonItem?.isHidden = true
-        navigationItem.hidesBackButton = true
-        navigationController?.setNavigationBarHidden(false, animated: false)
     }
 }
 

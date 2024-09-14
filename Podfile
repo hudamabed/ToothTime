@@ -4,10 +4,11 @@
 target 'Tooth Time' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
   # Pods for Tooth Time
-
+  
   pod 'IQKeyboardManagerSwift'
   pod "ExpandableLabel"
-
+  pod 'LocationPickerViewControllerRTL'
+  pod 'LocationPickerViewController'
 end

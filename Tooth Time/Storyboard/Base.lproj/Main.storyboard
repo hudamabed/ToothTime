@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1685,23 +1686,118 @@
             </objects>
             <point key="canvasLocation" x="2580" y="1242"/>
         </scene>
-        <!--View Controller-->
+        <!--Location View Controller-->
         <scene sceneID="vrQ-sJ-0RH">
             <objects>
-                <viewController id="n69-m5-Ec6" sceneMemberID="viewController">
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="n69-m5-Ec6" customClass="LocationViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7J-cH-BGc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gz9-Ru-U1f">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tI-wr-eKg" customClass="CustomTextFiled" customModule="Tooth_Time" customModuleProvider="target">
+                                <rect key="frame" x="24" y="75" width="342" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mcv-nR-izV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" name="FFFFFF"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="Icon" value="search-normal"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="Placeholder" value="Search Doctor, Hospital"/>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="3" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.10681394867549669" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                        <color key="value" name="9CA3AF"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iel-dn-DCJ">
+                                <rect key="frame" x="0.0" y="486" width="390" height="252"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKd-ZW-sHx">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="252"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iDP-Fy-mDd">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="252"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pSY-Bd-KIA">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="24" minY="0.0" maxX="24" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ih7-DH-HPJ">
+                                                        <rect key="frame" x="24" y="62" width="128" height="128"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="AZP-Py-i7N">
+                                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="n69-m5-Ec6" id="3uJ-8Z-1T5"/>
+                                                    <outlet property="delegate" destination="n69-m5-Ec6" id="K27-aF-xLf"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nKd-ZW-sHx" firstAttribute="leading" secondItem="iel-dn-DCJ" secondAttribute="leading" id="1dx-r7-uDk"/>
+                                    <constraint firstAttribute="trailing" secondItem="nKd-ZW-sHx" secondAttribute="trailing" id="4Jj-nD-J6W"/>
+                                    <constraint firstItem="nKd-ZW-sHx" firstAttribute="top" secondItem="iel-dn-DCJ" secondAttribute="top" id="JMC-Me-Tm1"/>
+                                    <constraint firstAttribute="bottom" secondItem="nKd-ZW-sHx" secondAttribute="bottom" id="WC2-JU-RND"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="iGj-1g-87J"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9tI-wr-eKg" firstAttribute="leading" secondItem="iGj-1g-87J" secondAttribute="leading" constant="24" id="6JH-Kr-bDd"/>
+                            <constraint firstItem="iGj-1g-87J" firstAttribute="trailing" secondItem="9tI-wr-eKg" secondAttribute="trailing" constant="24" id="6qN-eR-hfD"/>
+                            <constraint firstItem="gz9-Ru-U1f" firstAttribute="leading" secondItem="iGj-1g-87J" secondAttribute="leading" id="Cg2-yy-Oms"/>
+                            <constraint firstItem="iGj-1g-87J" firstAttribute="trailing" secondItem="iel-dn-DCJ" secondAttribute="trailing" id="GHc-FE-doS"/>
+                            <constraint firstItem="iGj-1g-87J" firstAttribute="bottom" secondItem="iel-dn-DCJ" secondAttribute="bottom" constant="23" id="Gj3-9M-E42"/>
+                            <constraint firstItem="gz9-Ru-U1f" firstAttribute="top" secondItem="Y7J-cH-BGc" secondAttribute="top" id="J6i-0l-iLo"/>
+                            <constraint firstItem="9tI-wr-eKg" firstAttribute="top" secondItem="Y7J-cH-BGc" secondAttribute="top" constant="75" id="XSA-mn-Gka"/>
+                            <constraint firstItem="iGj-1g-87J" firstAttribute="bottom" secondItem="gz9-Ru-U1f" secondAttribute="bottom" id="c3r-J8-qo1"/>
+                            <constraint firstItem="iel-dn-DCJ" firstAttribute="leading" secondItem="iGj-1g-87J" secondAttribute="leading" id="eT9-u0-1fQ"/>
+                            <constraint firstItem="iGj-1g-87J" firstAttribute="trailing" secondItem="gz9-Ru-U1f" secondAttribute="trailing" id="kmR-8I-mLT"/>
+                            <constraint firstItem="iel-dn-DCJ" firstAttribute="height" secondItem="Y7J-cH-BGc" secondAttribute="height" multiplier="252/761" id="tAT-O6-e91"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icLocation1" selectedImage="icSelectedLocation" id="rPL-i7-Myq">
                         <inset key="imageInsets" minX="8" minY="0.0" maxX="-8" maxY="-22"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="MedicalCentersCollectionView" destination="iDP-Fy-mDd" id="TmG-HZ-Y3N"/>
+                        <outlet property="customTextFiled" destination="9tI-wr-eKg" id="XUB-MC-ZPw"/>
+                        <outlet property="mapView" destination="gz9-Ru-U1f" id="irP-72-vfk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KYs-Ff-tID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3765" y="2413"/>
+            <point key="canvasLocation" x="3764.6153846153843" y="2412.7962085308054"/>
         </scene>
         <!--All Doctors-->
         <scene sceneID="iZe-0T-7tF">

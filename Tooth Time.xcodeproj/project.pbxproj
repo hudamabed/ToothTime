@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E4A5A259DAD599E6EF97DAC /* Pods_Tooth_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DF45072546883D970D71CB /* Pods_Tooth_Time.framework */; };
+		9203F0452C95D14400220F21 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9203F0442C95D14400220F21 /* LocationViewController.swift */; };
 		92090B052C91F6C40013441E /* BookingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92090B042C91F6C40013441E /* BookingStatus.swift */; };
 		92090B072C91FA8C0013441E /* Bookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92090B062C91FA8C0013441E /* Bookings.swift */; };
 		921A61AC2C7B6704009434BD /* Specialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A61AB2C7B6704009434BD /* Specialization.swift */; };
@@ -80,6 +81,7 @@
 /* Begin PBXFileReference section */
 		49A61AE2CE95418A82A410B3 /* Pods-Tooth Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tooth Time.release.xcconfig"; path = "Target Support Files/Pods-Tooth Time/Pods-Tooth Time.release.xcconfig"; sourceTree = "<group>"; };
 		8F0F59623C6A9DDDC4EEC1B1 /* Pods-Tooth Time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tooth Time.debug.xcconfig"; path = "Target Support Files/Pods-Tooth Time/Pods-Tooth Time.debug.xcconfig"; sourceTree = "<group>"; };
+		9203F0442C95D14400220F21 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		92090B042C91F6C40013441E /* BookingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingStatus.swift; sourceTree = "<group>"; };
 		92090B062C91FA8C0013441E /* Bookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookings.swift; sourceTree = "<group>"; };
 		921A61AB2C7B6704009434BD /* Specialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specialization.swift; sourceTree = "<group>"; };
@@ -173,6 +175,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9203F0432C95D12800220F21 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				9203F0442C95D14400220F21 /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		921A61AA2C7B6689009434BD /* specialization */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +265,7 @@
 				927F9A8C2C6E1C0000C9E9E9 /* Book Appointment */,
 				92ECAC8F2C8E05700005DCDB /* Confirmation */,
 				9285F13A2C908EC2009F50E7 /* Manage Appointment */,
+				9203F0432C95D12800220F21 /* Location */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -535,6 +546,7 @@
 				925322362C6A61ED007045DB /* Frameworks */,
 				925322372C6A61ED007045DB /* Resources */,
 				3C45D3874CDAF3F5ABA1D0C5 /* [CP] Embed Pods Frameworks */,
+				9D4D192FD17F512CB34D0452 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -649,6 +661,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tooth Time/Pods-Tooth Time-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9D4D192FD17F512CB34D0452 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tooth Time/Pods-Tooth Time-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tooth Time/Pods-Tooth Time-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tooth Time/Pods-Tooth Time-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -659,6 +688,7 @@
 				92ECAC912C8E058C0005DCDB /* ConfirmationViewController.swift in Sources */,
 				9224EB292C6E43510056B803 /* CustomTextFiled.swift in Sources */,
 				92A5817E2C74E94200EFAAAE /* AdBoardCollectionViewCell.swift in Sources */,
+				9203F0452C95D14400220F21 /* LocationViewController.swift in Sources */,
 				92ECAC8D2C8E01060005DCDB /* CustomAlert.swift in Sources */,
 				9224EB272C6E43510056B803 /* CustomButton.swift in Sources */,
 				92A776292C6A772F00757440 /* UserProfile.swift in Sources */,

@@ -29,10 +29,10 @@ class TopDentistsCollectionViewCell: UICollectionViewCell {
     }
 
     private func setupShadow() {
-        contentView.layer.shadowColor = UIColor.black.cgColor
-        contentView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        contentView.layer.shadowColor =  UIColor.black.withAlphaComponent(0.3).cgColor
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 3)
         contentView.layer.shadowOpacity = 0.3
-        contentView.layer.shadowRadius = 4
+        contentView.layer.shadowRadius = 3
 
         contentView.layer.masksToBounds = false
         contentView.clipsToBounds = true

@@ -30,8 +30,7 @@ class MainTabBarViewController: UITabBarController {
 private extension MainTabBarViewController {
     func setupView() {
         navigationItem.hidesBackButton = true
-        isHidNavigation = true
-        
+        isHidNavigation = false
         
     }
     

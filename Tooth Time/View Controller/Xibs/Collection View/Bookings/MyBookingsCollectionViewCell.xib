@@ -12,14 +12,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyBookingsCollectionViewCell" customModule="Tooth_Time" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="352" height="257"/>
+            <rect key="frame" x="0.0" y="0.0" width="352" height="255"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="352" height="257"/>
+                <rect key="frame" x="0.0" y="0.0" width="352" height="255"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYf-6k-9Sv" userLabel="content view">
-                        <rect key="frame" x="0.0" y="0.0" width="352" height="257"/>
+                        <rect key="frame" x="0.0" y="0.0" width="352" height="255"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLx-Cz-3kL" userLabel="container view">
                                 <rect key="frame" x="5" y="0.0" width="342" height="247"/>
@@ -175,10 +175,13 @@
                                         <real key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="1" height="2"/>
+                                        <size key="value" width="2" height="6"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -187,7 +190,7 @@
                         <constraints>
                             <constraint firstItem="zLx-Cz-3kL" firstAttribute="top" secondItem="uYf-6k-9Sv" secondAttribute="top" id="1LV-rE-Za1"/>
                             <constraint firstItem="zLx-Cz-3kL" firstAttribute="leading" secondItem="uYf-6k-9Sv" secondAttribute="leading" constant="5" id="BxY-oA-DUs"/>
-                            <constraint firstAttribute="bottom" secondItem="zLx-Cz-3kL" secondAttribute="bottom" constant="10" id="CTU-d5-Ycs"/>
+                            <constraint firstAttribute="bottom" secondItem="zLx-Cz-3kL" secondAttribute="bottom" constant="8" id="CTU-d5-Ycs"/>
                             <constraint firstAttribute="trailing" secondItem="zLx-Cz-3kL" secondAttribute="trailing" constant="5" id="lHc-0J-hzM"/>
                         </constraints>
                     </view>

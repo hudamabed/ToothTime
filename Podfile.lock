@@ -1,20 +1,28 @@
 PODS:
   - ExpandableLabel (0.5.2)
   - IQKeyboardManagerSwift (6.3.0)
+  - LocationPickerViewController (3.4)
+  - LocationPickerViewControllerRTL (3.4.5)
 
 DEPENDENCIES:
   - ExpandableLabel
   - IQKeyboardManagerSwift
+  - LocationPickerViewController
+  - LocationPickerViewControllerRTL
 
 SPEC REPOS:
   trunk:
     - ExpandableLabel
     - IQKeyboardManagerSwift
+    - LocationPickerViewController
+    - LocationPickerViewControllerRTL
 
 SPEC CHECKSUMS:
   ExpandableLabel: c2fab6d27860c572d67134b30522a5917746171d
   IQKeyboardManagerSwift: a8228c257614af98743b4cd8584637025f36358f
+  LocationPickerViewController: 4f33d63587bca682267a09779de2b2e09cf5b8e2
+  LocationPickerViewControllerRTL: 5a0305ce315516268d28cf080aca2ada1d62af10
 
-PODFILE CHECKSUM: 26e289f767a0c134146affc0ca1b2a24f1e60bde
+PODFILE CHECKSUM: 447ffc14118d6affc3fbd71a32cbf542d95add7a
 
 COCOAPODS: 1.12.1
