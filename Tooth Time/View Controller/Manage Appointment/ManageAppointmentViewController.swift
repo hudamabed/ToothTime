@@ -33,9 +33,7 @@ class ManageAppointmentViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setUpNavigation()
         updateUI(for: .Upcoming)
-        
     }
     
     //MARK: - Actions
@@ -102,9 +100,9 @@ extension ManageAppointmentViewController: UICollectionViewDelegate, UICollectio
 //MARK: - Set Up Navigations
 extension ManageAppointmentViewController {
     func setUpNavigation() {
-        navigationItem.title = "My Bookings"
+//        self.navigationController?.navigationBar.topItem?.title = "My Bookings"
         let titleTextAttributes: [NSAttributedString.Key: Any] = [
-            .font: UIFont(name: "Inter-SemiBold", size: 20) as Any,
+            .font: UIFont(name: "Inter18pt-SemiBold", size: 20) as Any,
             .foregroundColor: "374151".color_
         ]
         navigationController?.navigationBar.titleTextAttributes = titleTextAttributes

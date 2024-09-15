@@ -19,8 +19,8 @@ class MainTabBarViewController: UITabBarController {
         localized()
         fetchData()
         
-        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -31,7 +31,6 @@ private extension MainTabBarViewController {
     func setupView() {
         navigationItem.hidesBackButton = true
         isHidNavigation = false
-        
     }
     
     func localized() {
