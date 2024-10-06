@@ -168,6 +168,7 @@ extension HomeViewController {
     func setUpNavigation() {
         navigationItem.hidesBackButton = true
         self.isHidNavigation = true
+    
     }
 }
 
