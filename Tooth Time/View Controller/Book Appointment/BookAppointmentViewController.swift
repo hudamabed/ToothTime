@@ -107,13 +107,14 @@ extension BookAppointmentViewController: UICollectionViewDelegate, UICollectionV
 //MARK: - Set Up Navigations
 extension BookAppointmentViewController {
     func setUpNavigation() {
-        title = "Book Appointment"
-        let titleTextAttributes: [NSAttributedString.Key: Any] = [
-            .font: UIFont(name: "Inter18pt-SemiBold", size: 20) as Any,
-               .foregroundColor: "374151".color_
-           ]
-           navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
-        self.isHidNavigation = false
+        //self.title = "Book Appointment"
+        
+//        let titleTextAttributes: [NSAttributedString.Key: Any] = [
+//            .font: UIFont(name: "Inter18pt-SemiBold", size: 20) as Any,
+//               .foregroundColor: "374151".color_
+//           ]
+//           navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
+//        self.isHidNavigation = true
     }
 }
 //MARK: - Set Up Custom Button

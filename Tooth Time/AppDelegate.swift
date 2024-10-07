@@ -15,21 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        
     var rootNavigationController : MainNanigationViewController?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         
-        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-           let sceneDelegate = windowScene.delegate as? SceneDelegate,
-           let window = sceneDelegate.window {
-            
-            let newViewController = MainTabBarViewController()
-            window.rootViewController = newViewController
-            window.makeKeyAndVisible()
-            
-        }
+//        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+//           let sceneDelegate = windowScene.delegate as? SceneDelegate,
+//           let window = sceneDelegate.window {
+//            
+//            let newViewController = MainTabBarViewController()
+//            window.rootViewController = newViewController
+//            window.makeKeyAndVisible()
+//        }
+        
         return true
     }
 

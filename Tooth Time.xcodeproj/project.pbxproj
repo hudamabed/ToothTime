@@ -11,7 +11,10 @@
 		9203F0452C95D14400220F21 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9203F0442C95D14400220F21 /* LocationViewController.swift */; };
 		92090B052C91F6C40013441E /* BookingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92090B042C91F6C40013441E /* BookingStatus.swift */; };
 		92090B072C91FA8C0013441E /* Bookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92090B062C91FA8C0013441E /* Bookings.swift */; };
-		921A61AC2C7B6704009434BD /* Specialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A61AB2C7B6704009434BD /* Specialization.swift */; };
+		920D6EF02CB3C8F00001FA1B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D6EEF2CB3C8F00001FA1B /* ProfileViewController.swift */; };
+		920D6EF42CB3CA040001FA1B /* ProfileSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D6EF22CB3CA040001FA1B /* ProfileSettingsTableViewCell.swift */; };
+		920D6EF52CB3CA040001FA1B /* ProfileSettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 920D6EF32CB3CA040001FA1B /* ProfileSettingsTableViewCell.xib */; };
+		921A61AC2C7B6704009434BD /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921A61AB2C7B6704009434BD /* GlobalConstants.swift */; };
 		9224EB272C6E43510056B803 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224EB1F2C6E43510056B803 /* CustomButton.swift */; };
 		9224EB282C6E43510056B803 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB202C6E43510056B803 /* CustomButton.xib */; };
 		9224EB292C6E43510056B803 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224EB222C6E43510056B803 /* CustomTextFiled.swift */; };
@@ -70,6 +73,7 @@
 		92D3C5A02C8CC2C7001D3479 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3C59E2C8CC2C7001D3479 /* TimeCollectionViewCell.swift */; };
 		92D3C5A12C8CC2C7001D3479 /* TimeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D3C59F2C8CC2C7001D3479 /* TimeCollectionViewCell.xib */; };
 		92D3C5A32C8CC98E001D3479 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3C5A22C8CC98E001D3479 /* Time.swift */; };
+		92D8E6652CB457AF00729E65 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8E6642CB457AF00729E65 /* LogoutViewController.swift */; };
 		92E726372C8A0DC900CE7B1F /* ReviewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E726362C8A0DC900CE7B1F /* ReviewsTableViewCell.xib */; };
 		92E726382C8A0DC900CE7B1F /* ReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E726352C8A0DC900CE7B1F /* ReviewsTableViewCell.swift */; };
 		92E7263A2C8A0DF000CE7B1F /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E726392C8A0DF000CE7B1F /* Review.swift */; };
@@ -84,7 +88,10 @@
 		9203F0442C95D14400220F21 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		92090B042C91F6C40013441E /* BookingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingStatus.swift; sourceTree = "<group>"; };
 		92090B062C91FA8C0013441E /* Bookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookings.swift; sourceTree = "<group>"; };
-		921A61AB2C7B6704009434BD /* Specialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specialization.swift; sourceTree = "<group>"; };
+		920D6EEF2CB3C8F00001FA1B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		920D6EF22CB3CA040001FA1B /* ProfileSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsTableViewCell.swift; sourceTree = "<group>"; };
+		920D6EF32CB3CA040001FA1B /* ProfileSettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileSettingsTableViewCell.xib; sourceTree = "<group>"; };
+		921A61AB2C7B6704009434BD /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		9224EB1F2C6E43510056B803 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9224EB202C6E43510056B803 /* CustomButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
 		9224EB222C6E43510056B803 /* CustomTextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
@@ -145,6 +152,7 @@
 		92D3C59E2C8CC2C7001D3479 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
 		92D3C59F2C8CC2C7001D3479 /* TimeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCollectionViewCell.xib; sourceTree = "<group>"; };
 		92D3C5A22C8CC98E001D3479 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		92D8E6642CB457AF00729E65 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		92E726352C8A0DC900CE7B1F /* ReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTableViewCell.swift; sourceTree = "<group>"; };
 		92E726362C8A0DC900CE7B1F /* ReviewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsTableViewCell.xib; sourceTree = "<group>"; };
 		92E726392C8A0DF000CE7B1F /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
@@ -183,12 +191,29 @@
 			path = Location;
 			sourceTree = "<group>";
 		};
-		921A61AA2C7B6689009434BD /* specialization */ = {
+		920D6EE92CB3C87A0001FA1B /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				921A61AB2C7B6704009434BD /* Specialization.swift */,
+				920D6EEF2CB3C8F00001FA1B /* ProfileViewController.swift */,
 			);
-			path = specialization;
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		920D6EF12CB3C9860001FA1B /* Profile Settings */ = {
+			isa = PBXGroup;
+			children = (
+				920D6EF22CB3CA040001FA1B /* ProfileSettingsTableViewCell.swift */,
+				920D6EF32CB3CA040001FA1B /* ProfileSettingsTableViewCell.xib */,
+			);
+			path = "Profile Settings";
+			sourceTree = "<group>";
+		};
+		921A61AA2C7B6689009434BD /* Global Constants */ = {
+			isa = PBXGroup;
+			children = (
+				921A61AB2C7B6704009434BD /* GlobalConstants.swift */,
+			);
+			path = "Global Constants";
 			sourceTree = "<group>";
 		};
 		9224EB212C6E43510056B803 /* CustomButton */ = {
@@ -266,6 +291,8 @@
 				92ECAC8F2C8E05700005DCDB /* Confirmation */,
 				9285F13A2C908EC2009F50E7 /* Manage Appointment */,
 				9203F0432C95D12800220F21 /* Location */,
+				920D6EE92CB3C87A0001FA1B /* Profile */,
+				92D8E6662CB457F000729E65 /* Logout */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -386,7 +413,7 @@
 		92A581722C74E12400EFAAAE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				921A61AA2C7B6689009434BD /* specialization */,
+				921A61AA2C7B6689009434BD /* Global Constants */,
 				92A581732C74E14E00EFAAAE /* AdBoard.swift */,
 				92A581752C74E15F00EFAAAE /* MedicalCenters.swift */,
 				92A581772C74E17000EFAAAE /* TopDentists.swift */,
@@ -492,9 +519,18 @@
 			path = "Appointment Time";
 			sourceTree = "<group>";
 		};
+		92D8E6662CB457F000729E65 /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				92D8E6642CB457AF00729E65 /* LogoutViewController.swift */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
 		92E726332C8A0D8A00CE7B1F /* Table View */ = {
 			isa = PBXGroup;
 			children = (
+				920D6EF12CB3C9860001FA1B /* Profile Settings */,
 				92E726342C8A0D9600CE7B1F /* Reviews */,
 			);
 			path = "Table View";
@@ -605,6 +641,7 @@
 				9224EB282C6E43510056B803 /* CustomButton.xib in Resources */,
 				92E726372C8A0DC900CE7B1F /* ReviewsTableViewCell.xib in Resources */,
 				923FEC142C862B880078531B /* Inter-BoldItalic.ttf in Resources */,
+				920D6EF52CB3CA040001FA1B /* ProfileSettingsTableViewCell.xib in Resources */,
 				925322462C6A61F2007045DB /* Assets.xcassets in Resources */,
 				925322492C6A61F2007045DB /* Base in Resources */,
 				923FEC0A2C862AF30078531B /* Inter-SemiBoldItalic.ttf in Resources */,
@@ -691,6 +728,7 @@
 				9203F0452C95D14400220F21 /* LocationViewController.swift in Sources */,
 				92ECAC8D2C8E01060005DCDB /* CustomAlert.swift in Sources */,
 				9224EB272C6E43510056B803 /* CustomButton.swift in Sources */,
+				920D6EF02CB3C8F00001FA1B /* ProfileViewController.swift in Sources */,
 				92A776292C6A772F00757440 /* UserProfile.swift in Sources */,
 				925322412C6A61ED007045DB /* MainNanigationViewController.swift in Sources */,
 				9253223D2C6A61ED007045DB /* AppDelegate.swift in Sources */,
@@ -702,7 +740,7 @@
 				92A7762D2C6A774100757440 /* UICollectionViewEx.swift in Sources */,
 				92D3C5A32C8CC98E001D3479 /* Time.swift in Sources */,
 				92D3C59B2C8CB8A1001D3479 /* CalenderCollectionViewCell.swift in Sources */,
-				921A61AC2C7B6704009434BD /* Specialization.swift in Sources */,
+				921A61AC2C7B6704009434BD /* GlobalConstants.swift in Sources */,
 				92090B072C91FA8C0013441E /* Bookings.swift in Sources */,
 				92A581822C74E95900EFAAAE /* MedicalCentersCollectionViewCell.swift in Sources */,
 				92A7762E2C6A774100757440 /* UIColorEx.swift in Sources */,
@@ -718,9 +756,11 @@
 				92A776352C6A774100757440 /* UIViewEx.swift in Sources */,
 				927F9A912C6E1C8A00C9E9E9 /* SignInViewController.swift in Sources */,
 				927F9A992C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift in Sources */,
+				920D6EF42CB3CA040001FA1B /* ProfileSettingsTableViewCell.swift in Sources */,
 				927F9A8F2C6E1C6B00C9E9E9 /* SignUpViewController.swift in Sources */,
 				927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */,
 				92A581862C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift in Sources */,
+				92D8E6652CB457AF00729E65 /* LogoutViewController.swift in Sources */,
 				9285F1402C909577009F50E7 /* MyBookingsCollectionViewCell.swift in Sources */,
 				92A776362C6A774100757440 /* UIApplectionEx.swift in Sources */,
 				92E7263A2C8A0DF000CE7B1F /* Review.swift in Sources */,

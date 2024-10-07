@@ -21,7 +21,7 @@ class FindDoctorsViewController: UIViewController {
     @IBOutlet weak var lblSurgery: UILabel!
     
     var topDentists = [TopDentists]()
-    var currentSpecialization: Specialization = .all
+    var currentSpecialization: GlobalConstants.Specialization = .all
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -158,7 +158,7 @@ extension FindDoctorsViewController {
 
 //MARK: - Specialization
 extension FindDoctorsViewController {
-    func updateSpecialization(to specialization: Specialization) {
+    func updateSpecialization(to specialization: GlobalConstants.Specialization) {
         currentSpecialization = specialization
         switch currentSpecialization {
         case .all:
