@@ -16,6 +16,20 @@ class GlobalConstants {
         case surgery
     }
     
+    //MARK: - Manage Appointment View Controller
+    enum BookingStatus {
+        case Upcoming
+        case Completed
+        case Canceled
+    }
+    
+    //MARK: - Favorite View Controller
+    enum Favorite {
+        case doctor
+        case hospital
+    }
+    
+    
     //MARK: - ProfileSettingsView Controller
     enum ProfileSettings {
         case editProfile

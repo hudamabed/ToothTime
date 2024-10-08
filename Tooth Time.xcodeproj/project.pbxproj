@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1E4A5A259DAD599E6EF97DAC /* Pods_Tooth_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DF45072546883D970D71CB /* Pods_Tooth_Time.framework */; };
 		9203F0452C95D14400220F21 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9203F0442C95D14400220F21 /* LocationViewController.swift */; };
-		92090B052C91F6C40013441E /* BookingStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92090B042C91F6C40013441E /* BookingStatus.swift */; };
 		92090B072C91FA8C0013441E /* Bookings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92090B062C91FA8C0013441E /* Bookings.swift */; };
 		920D6EF02CB3C8F00001FA1B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D6EEF2CB3C8F00001FA1B /* ProfileViewController.swift */; };
 		920D6EF42CB3CA040001FA1B /* ProfileSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D6EF22CB3CA040001FA1B /* ProfileSettingsTableViewCell.swift */; };
@@ -19,6 +18,7 @@
 		9224EB282C6E43510056B803 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB202C6E43510056B803 /* CustomButton.xib */; };
 		9224EB292C6E43510056B803 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224EB222C6E43510056B803 /* CustomTextFiled.swift */; };
 		9224EB2A2C6E43510056B803 /* CustomTextFiled.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB232C6E43510056B803 /* CustomTextFiled.xib */; };
+		923D64C52CB57FD8002FD4EA /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D64C42CB57FD8002FD4EA /* FavoriteViewController.swift */; };
 		923FEC092C862AF30078531B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 923FEC072C862AF30078531B /* Inter-SemiBold.ttf */; };
 		923FEC0A2C862AF30078531B /* Inter-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 923FEC082C862AF30078531B /* Inter-SemiBoldItalic.ttf */; };
 		923FEC0D2C862B1D0078531B /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 923FEC0B2C862B1D0078531B /* Inter-Medium.ttf */; };
@@ -86,7 +86,6 @@
 		49A61AE2CE95418A82A410B3 /* Pods-Tooth Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tooth Time.release.xcconfig"; path = "Target Support Files/Pods-Tooth Time/Pods-Tooth Time.release.xcconfig"; sourceTree = "<group>"; };
 		8F0F59623C6A9DDDC4EEC1B1 /* Pods-Tooth Time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tooth Time.debug.xcconfig"; path = "Target Support Files/Pods-Tooth Time/Pods-Tooth Time.debug.xcconfig"; sourceTree = "<group>"; };
 		9203F0442C95D14400220F21 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
-		92090B042C91F6C40013441E /* BookingStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingStatus.swift; sourceTree = "<group>"; };
 		92090B062C91FA8C0013441E /* Bookings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookings.swift; sourceTree = "<group>"; };
 		920D6EEF2CB3C8F00001FA1B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		920D6EF22CB3CA040001FA1B /* ProfileSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsTableViewCell.swift; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		9224EB202C6E43510056B803 /* CustomButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
 		9224EB222C6E43510056B803 /* CustomTextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
 		9224EB232C6E43510056B803 /* CustomTextFiled.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextFiled.xib; sourceTree = "<group>"; };
+		923D64C42CB57FD8002FD4EA /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		923FEC072C862AF30078531B /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		923FEC082C862AF30078531B /* Inter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		923FEC0B2C862B1D0078531B /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
@@ -244,6 +244,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		923D64C32CB57FAD002FD4EA /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				923D64C42CB57FD8002FD4EA /* FavoriteViewController.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
 		925322302C6A61ED007045DB = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +301,7 @@
 				9203F0432C95D12800220F21 /* Location */,
 				920D6EE92CB3C87A0001FA1B /* Profile */,
 				92D8E6662CB457F000729E65 /* Logout */,
+				923D64C32CB57FAD002FD4EA /* Favorite */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -419,7 +428,6 @@
 				92A581772C74E17000EFAAAE /* TopDentists.swift */,
 				92E726392C8A0DF000CE7B1F /* Review.swift */,
 				92D3C5A22C8CC98E001D3479 /* Time.swift */,
-				92090B042C91F6C40013441E /* BookingStatus.swift */,
 				92090B062C91FA8C0013441E /* Bookings.swift */,
 			);
 			path = Model;
@@ -768,8 +776,8 @@
 				92A776372C6A774100757440 /* UITabBarEx.swift in Sources */,
 				92A776382C6A774100757440 /* UIResponderEx.swift in Sources */,
 				92A581742C74E14E00EFAAAE /* AdBoard.swift in Sources */,
+				923D64C52CB57FD8002FD4EA /* FavoriteViewController.swift in Sources */,
 				92A7762A2C6A773400757440 /* NSNumberEx.swift in Sources */,
-				92090B052C91F6C40013441E /* BookingStatus.swift in Sources */,
 				9285F13C2C908FC5009F50E7 /* ManageAppointmentViewController.swift in Sources */,
 				9253223F2C6A61ED007045DB /* SceneDelegate.swift in Sources */,
 			);

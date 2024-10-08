@@ -11,5 +11,4 @@ enum BookingStatus {
     case Upcoming
     case Completed
     case Canceled
- 
 }

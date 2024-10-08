@@ -20,7 +20,7 @@ class ManageAppointmentViewController: UIViewController {
     @IBOutlet weak var viewLine3: UIView!
     
     var booking = [Bookings]()
-    var currentStatus: BookingStatus = .Upcoming
+    var currentStatus: GlobalConstants.BookingStatus = .Upcoming
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -112,7 +112,7 @@ extension ManageAppointmentViewController {
 
 //MARK: - Set Up Booking Status
 extension ManageAppointmentViewController {
-    func updateUI(for status: BookingStatus) {
+    func updateUI(for status: GlobalConstants.BookingStatus) {
         switch status {
         case .Upcoming:
             lblUpcoming.textColor = "1C2A3A".color_

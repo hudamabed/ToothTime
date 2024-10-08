@@ -86,6 +86,8 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
                 case .editProfile:
                     break
                 case .favorite:
+                    let vc = FavoriteViewController.instantiat()
+                    vc.push()
                     break
                 case .notifications:
                     break
@@ -103,7 +105,6 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
                     
                 }
             }
-            
         }
     }
     
