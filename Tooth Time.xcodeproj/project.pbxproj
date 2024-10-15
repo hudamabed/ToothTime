@@ -18,6 +18,7 @@
 		9224EB282C6E43510056B803 /* CustomButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB202C6E43510056B803 /* CustomButton.xib */; };
 		9224EB292C6E43510056B803 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224EB222C6E43510056B803 /* CustomTextFiled.swift */; };
 		9224EB2A2C6E43510056B803 /* CustomTextFiled.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB232C6E43510056B803 /* CustomTextFiled.xib */; };
+		9231670D2CBE995900E713A1 /* RemoveFromFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9231670C2CBE995900E713A1 /* RemoveFromFavoritesViewController.swift */; };
 		923D64C52CB57FD8002FD4EA /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D64C42CB57FD8002FD4EA /* FavoriteViewController.swift */; };
 		923FEC092C862AF30078531B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 923FEC072C862AF30078531B /* Inter-SemiBold.ttf */; };
 		923FEC0A2C862AF30078531B /* Inter-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 923FEC082C862AF30078531B /* Inter-SemiBoldItalic.ttf */; };
@@ -95,6 +96,7 @@
 		9224EB202C6E43510056B803 /* CustomButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomButton.xib; sourceTree = "<group>"; };
 		9224EB222C6E43510056B803 /* CustomTextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
 		9224EB232C6E43510056B803 /* CustomTextFiled.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextFiled.xib; sourceTree = "<group>"; };
+		9231670C2CBE995900E713A1 /* RemoveFromFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFromFavoritesViewController.swift; sourceTree = "<group>"; };
 		923D64C42CB57FD8002FD4EA /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		923FEC072C862AF30078531B /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		923FEC082C862AF30078531B /* Inter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -244,6 +246,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9231670B2CBE990F00E713A1 /* Remove From Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				9231670C2CBE995900E713A1 /* RemoveFromFavoritesViewController.swift */,
+			);
+			path = "Remove From Favorites";
+			sourceTree = "<group>";
+		};
 		923D64C32CB57FAD002FD4EA /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
@@ -302,6 +312,7 @@
 				920D6EE92CB3C87A0001FA1B /* Profile */,
 				92D8E6662CB457F000729E65 /* Logout */,
 				923D64C32CB57FAD002FD4EA /* Favorite */,
+				9231670B2CBE990F00E713A1 /* Remove From Favorites */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -769,6 +780,7 @@
 				927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */,
 				92A581862C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift in Sources */,
 				92D8E6652CB457AF00729E65 /* LogoutViewController.swift in Sources */,
+				9231670D2CBE995900E713A1 /* RemoveFromFavoritesViewController.swift in Sources */,
 				9285F1402C909577009F50E7 /* MyBookingsCollectionViewCell.swift in Sources */,
 				92A776362C6A774100757440 /* UIApplectionEx.swift in Sources */,
 				92E7263A2C8A0DF000CE7B1F /* Review.swift in Sources */,

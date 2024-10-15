@@ -8,6 +8,7 @@
 import Foundation
 
 class MedicalCenters {
+    var id: Int?
     var image: String?
     var centerName: String?
     var location: String?
@@ -16,7 +17,8 @@ class MedicalCenters {
     var review: Int?
     var type: String?
 
-    init(image: String? = nil, centerName: String? = nil, location: String? = nil, rating: Float? = nil, distance: String? = nil, review: Int? = nil, type: String? = nil) {
+    init(id: Int? = nil, image: String? = nil, centerName: String? = nil, location: String? = nil, rating: Float? = nil, distance: String? = nil, review: Int? = nil, type: String? = nil) {
+        self.id = id
         self.image = image
         self.centerName = centerName
         self.location = location

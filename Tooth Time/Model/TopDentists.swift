@@ -8,6 +8,7 @@
 import Foundation
 
 class TopDentists {
+    var id: Int?
     var drName: String?
     var image: String?
     var heart: String?
@@ -16,8 +17,9 @@ class TopDentists {
     var star: String?
     var rating: Float?
     var review: Int?
-    
-    init(drName: String? = nil, image: String? = nil, heart: String? = nil, specialty: String? = nil, location: String? = nil, star: String? = nil, rating: Float? = nil, review: Int? = nil) {
+
+    init(id: Int? = nil, drName: String? = nil, image: String? = nil, heart: String? = nil, specialty: String? = nil, location: String? = nil, star: String? = nil, rating: Float? = nil, review: Int? = nil) {
+        self.id = id
         self.drName = drName
         self.image = image
         self.heart = heart

@@ -70,15 +70,15 @@ private extension FavoriteViewController {
     }
     
     func setupData() {
-        topDentists.append(TopDentists(drName: "Dr. David Lee", image: "imgDr1", heart: "icFillHeart", specialty: "Pediatrics", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 87233))
-        topDentists.append(TopDentists(drName: "Dr. Areesha Noman", image: "imgDr2", heart: "icFillHeart", specialty: "Orthodontics", location: "32 Braces Blvd, Austin, TX", star: "icRating", rating: 3, review: 87255))
-        topDentists.append(TopDentists(drName: "Dr. Michael Johnson", image: "imgDr3", heart: "icFillHeart", specialty: "Surgery", location: "178 Gum Road, Miami, FL", star: "icRating", rating: 4.5, review: 87244))
-        topDentists.append(TopDentists(drName: "Dr. Emily Walker", image: "imgDr4", heart: "icFillHeart", specialty: "Pediatrics", location: "Serenity Pediatrics Clinic", star: "icRating", rating: 5, review: 872))
-        topDentists.append(TopDentists(drName: "Dr. Emily Walker", image: "imgDr5", heart: "icFillHeart", specialty: "Pediatrics", location: "Serenity Pediatrics Clinic", star: "icRating", rating: 5, review: 872))
+        topDentists.append(TopDentists(id: 1, drName: "Dr. David Lee", image: "imgDr1", heart: "icFillHeart", specialty: "Pediatrics", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 87233))
+        topDentists.append(TopDentists(id: 2, drName: "Dr. Areesha Noman", image: "imgDr2", heart: "icFillHeart", specialty: "Orthodontics", location: "32 Braces Blvd, Austin, TX", star: "icRating", rating: 3, review: 87255))
+        topDentists.append(TopDentists(id: 3, drName: "Dr. Michael Johnson", image: "imgDr3", heart: "icFillHeart", specialty: "Surgery", location: "178 Gum Road, Miami, FL", star: "icRating", rating: 4.5, review: 87244))
+        topDentists.append(TopDentists(id: 4, drName: "Dr. Emily Walker", image: "imgDr4", heart: "icFillHeart", specialty: "Pediatrics", location: "Serenity Pediatrics Clinic", star: "icRating", rating: 5, review: 872))
+        topDentists.append(TopDentists(id: 5, drName: "Dr. Emily Walker", image: "imgDr5", heart: "icFillHeart", specialty: "Pediatrics", location: "Serenity Pediatrics Clinic", star: "icRating", rating: 5, review: 872))
         
-        medicalCenters.append(MedicalCenters.init(image: "hospital1", centerName: "Smile & Shine Clinic", location: "123 Oak Street, CA 98765", rating: 5.0, distance: "2.5 km/40 min", review: 58, type: "Hospital"))
+        medicalCenters.append(MedicalCenters.init(id: 1, image: "hospital1", centerName: "Smile & Shine Clinic", location: "123 Oak Street, CA 98765", rating: 5.0, distance: "2.5 km/40 min", review: 58, type: "Hospital"))
         
-        medicalCenters.append(MedicalCenters.init(image: "hospital2", centerName: "Golden Dentistry Center", location: "555 Bridge Street, Golden Gate", rating: 4.9, distance: "2.5 km/40 min", review: 508, type: "Clinic"))
+        medicalCenters.append(MedicalCenters.init(id: 2, image: "hospital2", centerName: "Golden Dentistry Center", location: "555 Bridge Street, Golden Gate", rating: 4.9, distance: "2.5 km/40 min", review: 508, type: "Clinic"))
         
     }
     
@@ -88,7 +88,7 @@ private extension FavoriteViewController {
 }
 
 //MARK: - Set Up Collection View
-extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDelegate {
+extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch currentFavorite {
         case .doctor:
@@ -112,6 +112,23 @@ extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDe
             cell.object = object
             cell.configureCell()
             return cell
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch currentFavorite {
+        case .doctor:
+            let selectedDoctor = topDentists[indexPath.row]
+            let vc = RemoveFromFavoritesViewController.instantiat()
+            vc.doctor = selectedDoctor
+            vc.modalPresentationStyle = .fullScreen
+            vc.presenVC()
+        case .hospital:
+            let selectedDoctor = medicalCenters[indexPath.row]
+            let vc = RemoveFromFavoritesViewController.instantiat()
+            vc.hospital = selectedDoctor
+            vc.modalPresentationStyle = .fullScreen
+            vc.presenVC()
         }
     }
 }
@@ -140,7 +157,7 @@ extension FavoriteViewController {
             viewLine1.isHidden = true
             viewLine2.isHidden = false
             viewLine2.roundCorners(isTopLeft: true, isTopRight: true, isBottomLeft: false, isBottomRight: false, radius: 3)
-                    }
+        }
     }
 }
 //MARK: - Set Up Navigations

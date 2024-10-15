@@ -100,7 +100,7 @@ extension ManageAppointmentViewController: UICollectionViewDelegate, UICollectio
 //MARK: - Set Up Navigations
 extension ManageAppointmentViewController {
     func setUpNavigation() {
-//        self.navigationController?.navigationBar.topItem?.title = "My Bookings"
+//      self.navigationController?.navigationBar.topItem?.title = "My Bookings"
         let titleTextAttributes: [NSAttributedString.Key: Any] = [
             .font: UIFont(name: "Inter18pt-SemiBold", size: 20) as Any,
             .foregroundColor: "374151".color_

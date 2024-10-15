@@ -127,15 +127,16 @@ extension FindDoctorsViewController: UICollectionViewDelegate, UICollectionViewD
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let filteredDentists: [TopDentists]
-            switch currentSpecialization {
-            case .all:
-                filteredDentists = topDentists
-            case .general:
-                filteredDentists = topDentists.filter { $0.specialty == "General" }
-            case .orthodontics:
-                filteredDentists = topDentists.filter { $0.specialty == "Orthodontics" }
-            case .surgery:
-                filteredDentists = topDentists.filter { $0.specialty == "Surgery" }}
+        switch currentSpecialization {
+        case .all:
+            filteredDentists = topDentists
+        case .general:
+            filteredDentists = topDentists.filter { $0.specialty == "General" }
+        case .orthodontics:
+            filteredDentists = topDentists.filter { $0.specialty == "Orthodontics" }
+        case .surgery:
+            filteredDentists = topDentists.filter { $0.specialty == "Surgery" }
+        }
         let selectedDoctor = filteredDentists[indexPath.row]
         let vc = DoctorDetailsViewController.instantiat()
         vc.doctor = selectedDoctor

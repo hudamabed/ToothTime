@@ -33,10 +33,10 @@ class LogoutViewController: UIViewController {
     }
     @objc func navigateToSignIn() {
         let vc = SignInViewController.instantiat()
-            vc.push()
+        vc.pop()
     }
-    
 }
+
 //MARK: - Configurations
 private extension LogoutViewController {
     func setupView() {

@@ -18,6 +18,7 @@ class DoctorDetailsViewController: UIViewController {
     var doctor: TopDentists?
     var doctorDetails = [TopDentists]()
     var review = [Review]()
+    
     let fullText = "Dr. Lee offers state-of-the-art orthodontic solutions, including Invisalign and traditional braces, to create perfect smiles for patients of all ages."
      var isExpanded = false
 
@@ -29,9 +30,8 @@ class DoctorDetailsViewController: UIViewController {
         setupData()
         localized()
         fetchData()
-        
-        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
