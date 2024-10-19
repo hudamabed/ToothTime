@@ -60,14 +60,12 @@
 		92A7762E2C6A774100757440 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761A2C6A772800757440 /* UIColorEx.swift */; };
 		92A7762F2C6A774100757440 /* UITableViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776202C6A772800757440 /* UITableViewEx.swift */; };
 		92A776302C6A774100757440 /* UIStoryboredEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761D2C6A772800757440 /* UIStoryboredEx.swift */; };
-		92A776312C6A774100757440 /* UIButtonEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776182C6A772800757440 /* UIButtonEx.swift */; };
 		92A776322C6A774100757440 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776222C6A772800757440 /* UIViewController.swift */; };
 		92A776332C6A774100757440 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776212C6A772800757440 /* UITextField.swift */; };
 		92A776342C6A774100757440 /* UIKitEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761B2C6A772800757440 /* UIKitEx.swift */; };
 		92A776352C6A774100757440 /* UIViewEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776242C6A772800757440 /* UIViewEx.swift */; };
 		92A776362C6A774100757440 /* UIApplectionEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A776172C6A772800757440 /* UIApplectionEx.swift */; };
 		92A776372C6A774100757440 /* UITabBarEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761F2C6A772800757440 /* UITabBarEx.swift */; };
-		92A776382C6A774100757440 /* UIResponderEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7761C2C6A772800757440 /* UIResponderEx.swift */; };
 		92D3C5972C8C90CA001D3479 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3C5962C8C90CA001D3479 /* MainTabBarViewController.swift */; };
 		92D3C59B2C8CB8A1001D3479 /* CalenderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D3C5992C8CB8A1001D3479 /* CalenderCollectionViewCell.swift */; };
 		92D3C59C2C8CB8A1001D3479 /* CalenderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D3C59A2C8CB8A1001D3479 /* CalenderCollectionViewCell.xib */; };
@@ -134,11 +132,9 @@
 		92A581852C74E97200EFAAAE /* TopDentistsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopDentistsCollectionViewCell.xib; sourceTree = "<group>"; };
 		92A776162C6A772800757440 /* NSNumberEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNumberEx.swift; sourceTree = "<group>"; };
 		92A776172C6A772800757440 /* UIApplectionEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplectionEx.swift; sourceTree = "<group>"; };
-		92A776182C6A772800757440 /* UIButtonEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonEx.swift; sourceTree = "<group>"; };
 		92A776192C6A772800757440 /* UICollectionViewEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewEx.swift; sourceTree = "<group>"; };
 		92A7761A2C6A772800757440 /* UIColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
 		92A7761B2C6A772800757440 /* UIKitEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitEx.swift; sourceTree = "<group>"; };
-		92A7761C2C6A772800757440 /* UIResponderEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponderEx.swift; sourceTree = "<group>"; };
 		92A7761D2C6A772800757440 /* UIStoryboredEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboredEx.swift; sourceTree = "<group>"; };
 		92A7761E2C6A772800757440 /* UIStringEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStringEx.swift; sourceTree = "<group>"; };
 		92A7761F2C6A772800757440 /* UITabBarEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarEx.swift; sourceTree = "<group>"; };
@@ -486,11 +482,9 @@
 			children = (
 				92A776162C6A772800757440 /* NSNumberEx.swift */,
 				92A776172C6A772800757440 /* UIApplectionEx.swift */,
-				92A776182C6A772800757440 /* UIButtonEx.swift */,
 				92A776192C6A772800757440 /* UICollectionViewEx.swift */,
 				92A7761A2C6A772800757440 /* UIColorEx.swift */,
 				92A7761B2C6A772800757440 /* UIKitEx.swift */,
-				92A7761C2C6A772800757440 /* UIResponderEx.swift */,
 				92A7761D2C6A772800757440 /* UIStoryboredEx.swift */,
 				92A7761E2C6A772800757440 /* UIStringEx.swift */,
 				92A7761F2C6A772800757440 /* UITabBarEx.swift */,
@@ -768,7 +762,6 @@
 				92E726382C8A0DC900CE7B1F /* ReviewsTableViewCell.swift in Sources */,
 				92D3C5A02C8CC2C7001D3479 /* TimeCollectionViewCell.swift in Sources */,
 				92A776302C6A774100757440 /* UIStoryboredEx.swift in Sources */,
-				92A776312C6A774100757440 /* UIButtonEx.swift in Sources */,
 				92A776322C6A774100757440 /* UIViewController.swift in Sources */,
 				92A776332C6A774100757440 /* UITextField.swift in Sources */,
 				92A776342C6A774100757440 /* UIKitEx.swift in Sources */,
@@ -786,7 +779,6 @@
 				92E7263A2C8A0DF000CE7B1F /* Review.swift in Sources */,
 				92A581782C74E17000EFAAAE /* TopDentists.swift in Sources */,
 				92A776372C6A774100757440 /* UITabBarEx.swift in Sources */,
-				92A776382C6A774100757440 /* UIResponderEx.swift in Sources */,
 				92A581742C74E14E00EFAAAE /* AdBoard.swift in Sources */,
 				923D64C52CB57FD8002FD4EA /* FavoriteViewController.swift in Sources */,
 				92A7762A2C6A773400757440 /* NSNumberEx.swift in Sources */,

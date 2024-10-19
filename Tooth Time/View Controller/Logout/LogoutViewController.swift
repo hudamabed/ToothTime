@@ -31,9 +31,10 @@ class LogoutViewController: UIViewController {
     @objc func navigateToProfileSettings() {
         self.dismiss(animated: true, completion: nil)
     }
+    
     @objc func navigateToSignIn() {
-        let vc = SignInViewController.instantiat()
-        vc.pop()
+        setRoot()
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -71,5 +72,23 @@ extension LogoutViewController {
     }
 }
 
+//MARK: - Set Root
+extension LogoutViewController {
+    func setRoot(){
+        let vc = SignInViewController.instantiat()
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let sceneDelegate = windowScene.delegate as? SceneDelegate,
+           let window = sceneDelegate.window {
+            window.rootViewController = vc
+            window.makeKeyAndVisible()
+            
+            if window.rootViewController is MainNanigationViewController {
+                print("Successfully set MainTabBarViewController as root!")
+            } else {
+                print("Failed to set MainTabBarViewController as root.")
+            }
 
+        }
+    }
+}
 

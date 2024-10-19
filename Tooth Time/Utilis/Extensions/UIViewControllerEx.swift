@@ -34,31 +34,31 @@ extension UIViewController {
        return statusBarHeight
    }
     
-    func push(){
+    func push() {
         AppDelegate.shared?.rootNavigationController?.pushViewController(self, animated: true)
     }
     
-    func pushWithoutAnimated(){
+    func pushWithoutAnimated() {
         AppDelegate.shared?.rootNavigationController?.pushViewController(self, animated: false)
     }
     
-    func pop(){
+    func pop() {
         AppDelegate.shared?.rootNavigationController?.popViewController(animated: true)
     
     }
     
-    func rootPush(){
+    func rootPush() {
         AppDelegate.shared?.rootNavigationController?.setViewControllers([self], animated: true)
+        
+        }
     
-    }
-    
-    func presenVC(){
+    func presenVC() {
         AppDelegate.shared?.rootNavigationController?.present(self, animated: true, completion: nil)
         
     }
     
      
-    func  safeperformSegue(withIdentifier identifier : String , sender: Any?) {
+    func safeperformSegue(withIdentifier identifier : String , sender: Any?) {
         if canPerformSegue(identifier: identifier){
         self.performSegue(withIdentifier: identifier , sender:sender)
         }

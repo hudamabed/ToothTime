@@ -48,7 +48,7 @@ class GlobalConstants {
             case .favorite:
                 return "Favorite"
             case .notifications:
-                return "notifications"
+                return "Notifications"
             case .settings:
                 return "Settings"
             case .helpAndSupport:

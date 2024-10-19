@@ -70,6 +70,7 @@ private extension FavoriteViewController {
     }
     
     func setupData() {
+        
         topDentists.append(TopDentists(id: 1, drName: "Dr. David Lee", image: "imgDr1", heart: "icFillHeart", specialty: "Pediatrics", location: "450 Smile, Springfield, IL", star: "icRating", rating: 1, review: 87233))
         topDentists.append(TopDentists(id: 2, drName: "Dr. Areesha Noman", image: "imgDr2", heart: "icFillHeart", specialty: "Orthodontics", location: "32 Braces Blvd, Austin, TX", star: "icRating", rating: 3, review: 87255))
         topDentists.append(TopDentists(id: 3, drName: "Dr. Michael Johnson", image: "imgDr3", heart: "icFillHeart", specialty: "Surgery", location: "178 Gum Road, Miami, FL", star: "icRating", rating: 4.5, review: 87244))

@@ -20,15 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         
-//        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-//           let sceneDelegate = windowScene.delegate as? SceneDelegate,
-//           let window = sceneDelegate.window {
-//            
-//            let newViewController = MainTabBarViewController()
-//            window.rootViewController = newViewController
-//            window.makeKeyAndVisible()
-//        }
-        
         return true
     }
 

@@ -33,6 +33,7 @@ class ProfileViewController: UIViewController {
 private extension ProfileViewController {
     func setupView() {
         tableView.registerXib(cell: ProfileSettingsTableViewCell.self)
+        setUpNavigation()
     }
     
     func localized() {
@@ -107,7 +108,17 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
             }
         }
     }
-    
 }
 
 
+//MARK: - Set Up Navigations
+extension ProfileViewController {
+    func setUpNavigation() {
+        let titleTextAttributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont(name: "Inter18pt-SemiBold", size: 20) as Any,
+            .foregroundColor: "374151".color_
+        ]
+        navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
+        self.isHidNavigation = false
+    }
+}

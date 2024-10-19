@@ -29,12 +29,11 @@ class SignInViewController: UIViewController {
     //MARK: - Actions
     @IBAction func btnSignUp(_ sender: Any) {
         let vc = SignUpViewController.instantiat()
-            vc.push()
+        vc.pop()
     }
     
     @objc func navigateToHome() {
-        let vc = MainTabBarViewController.instantiat()
-        vc.push()
+        setRoot()
     }
 }
 
@@ -42,6 +41,7 @@ class SignInViewController: UIViewController {
 private extension SignInViewController {
     func setupView() {
         customButtonSignIn()
+        self.isHidNavigation = true
     }
     
     func localized() {
@@ -68,5 +68,24 @@ extension SignInViewController {
 extension SignInViewController {
     func customButtonSignIn() {
         btnSignIn.btn.addTarget(self, action: #selector(navigateToHome), for: .touchUpInside)
+    }
+}
+
+//MARK: - Set Root
+extension SignInViewController {
+    func setRoot(){
+        let vc = MainTabBarViewController.instantiat()
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let sceneDelegate = windowScene.delegate as? SceneDelegate,
+           let window = sceneDelegate.window {
+            window.rootViewController = vc
+            window.makeKeyAndVisible()
+            
+            if window.rootViewController is MainTabBarViewController {
+                print("Successfully set MainTabBarViewController as root!")
+            } else {
+                print("Failed to set MainTabBarViewController as root.")
+            }
+        }
     }
 }

@@ -26,7 +26,7 @@ class MainNanigationViewController: UINavigationController  {
 }
 //MARK: - Configurations
 private extension MainNanigationViewController {
-    func setupView(){
+    func setupView() {
         AppDelegate.shared?.rootNavigationController = self
         setRoot()
     }
@@ -49,8 +49,6 @@ extension MainNanigationViewController {
     func setRoot(){
         let vc = SignUpViewController.instantiat()
             vc.rootPush()
-        
-        
     }
 }
 

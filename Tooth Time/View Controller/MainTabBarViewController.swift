@@ -45,7 +45,5 @@ private extension MainTabBarViewController {
     }
 }
 
-extension MainTabBarViewController {
-    
-}
+
 

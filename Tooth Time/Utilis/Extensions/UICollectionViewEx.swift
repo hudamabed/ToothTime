@@ -22,7 +22,6 @@ extension UICollectionView{
     
 }
 
-
 extension UICollectionViewCell {
     static var id: String {
         return String(describing: Self.self)
