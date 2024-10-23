@@ -19,6 +19,8 @@
 		9224EB292C6E43510056B803 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9224EB222C6E43510056B803 /* CustomTextFiled.swift */; };
 		9224EB2A2C6E43510056B803 /* CustomTextFiled.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9224EB232C6E43510056B803 /* CustomTextFiled.xib */; };
 		9231670D2CBE995900E713A1 /* RemoveFromFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9231670C2CBE995900E713A1 /* RemoveFromFavoritesViewController.swift */; };
+		9236C4D02CC915E6003E7015 /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9236C4CF2CC915E6003E7015 /* HomeNavigationViewController.swift */; };
+		9236C4D22CC91CD8003E7015 /* ProfileNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9236C4D12CC91CD8003E7015 /* ProfileNavigationViewController.swift */; };
 		923D64C52CB57FD8002FD4EA /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923D64C42CB57FD8002FD4EA /* FavoriteViewController.swift */; };
 		923FEC092C862AF30078531B /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 923FEC072C862AF30078531B /* Inter-SemiBold.ttf */; };
 		923FEC0A2C862AF30078531B /* Inter-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 923FEC082C862AF30078531B /* Inter-SemiBoldItalic.ttf */; };
@@ -95,6 +97,8 @@
 		9224EB222C6E43510056B803 /* CustomTextFiled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
 		9224EB232C6E43510056B803 /* CustomTextFiled.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTextFiled.xib; sourceTree = "<group>"; };
 		9231670C2CBE995900E713A1 /* RemoveFromFavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFromFavoritesViewController.swift; sourceTree = "<group>"; };
+		9236C4CF2CC915E6003E7015 /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
+		9236C4D12CC91CD8003E7015 /* ProfileNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileNavigationViewController.swift; sourceTree = "<group>"; };
 		923D64C42CB57FD8002FD4EA /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		923FEC072C862AF30078531B /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		923FEC082C862AF30078531B /* Inter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
@@ -250,6 +254,47 @@
 			path = "Remove From Favorites";
 			sourceTree = "<group>";
 		};
+		9236C4D32CC92590003E7015 /* Home Tab Bar Item */ = {
+			isa = PBXGroup;
+			children = (
+				9236C4CF2CC915E6003E7015 /* HomeNavigationViewController.swift */,
+				927F9A892C6E1BCC00C9E9E9 /* Home */,
+				927F9A8A2C6E1BDF00C9E9E9 /* Find Doctors */,
+				927F9A8B2C6E1BE900C9E9E9 /* Doctor Details */,
+				927F9A8C2C6E1C0000C9E9E9 /* Book Appointment */,
+				92ECAC8F2C8E05700005DCDB /* Confirmation */,
+			);
+			path = "Home Tab Bar Item";
+			sourceTree = "<group>";
+		};
+		9236C4D42CC92594003E7015 /* Location Tab Bar Item */ = {
+			isa = PBXGroup;
+			children = (
+				9203F0432C95D12800220F21 /* Location */,
+			);
+			path = "Location Tab Bar Item";
+			sourceTree = "<group>";
+		};
+		9236C4D52CC92598003E7015 /* Booking Tab Bar Item */ = {
+			isa = PBXGroup;
+			children = (
+				9285F13A2C908EC2009F50E7 /* Manage Appointment */,
+			);
+			path = "Booking Tab Bar Item";
+			sourceTree = "<group>";
+		};
+		9236C4D62CC9259C003E7015 /* Profile Tab Bar Item */ = {
+			isa = PBXGroup;
+			children = (
+				9236C4D12CC91CD8003E7015 /* ProfileNavigationViewController.swift */,
+				920D6EE92CB3C87A0001FA1B /* Profile */,
+				92D8E6662CB457F000729E65 /* Logout */,
+				923D64C32CB57FAD002FD4EA /* Favorite */,
+				9231670B2CBE990F00E713A1 /* Remove From Favorites */,
+			);
+			path = "Profile Tab Bar Item";
+			sourceTree = "<group>";
+		};
 		923D64C32CB57FAD002FD4EA /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
@@ -298,17 +343,10 @@
 				92D3C5962C8C90CA001D3479 /* MainTabBarViewController.swift */,
 				927F9A872C6E1BAD00C9E9E9 /* Sign Up */,
 				927F9A882C6E1BC000C9E9E9 /* Sign In */,
-				927F9A892C6E1BCC00C9E9E9 /* Home */,
-				927F9A8A2C6E1BDF00C9E9E9 /* Find Doctors */,
-				927F9A8B2C6E1BE900C9E9E9 /* Doctor Details */,
-				927F9A8C2C6E1C0000C9E9E9 /* Book Appointment */,
-				92ECAC8F2C8E05700005DCDB /* Confirmation */,
-				9285F13A2C908EC2009F50E7 /* Manage Appointment */,
-				9203F0432C95D12800220F21 /* Location */,
-				920D6EE92CB3C87A0001FA1B /* Profile */,
-				92D8E6662CB457F000729E65 /* Logout */,
-				923D64C32CB57FAD002FD4EA /* Favorite */,
-				9231670B2CBE990F00E713A1 /* Remove From Favorites */,
+				9236C4D32CC92590003E7015 /* Home Tab Bar Item */,
+				9236C4D42CC92594003E7015 /* Location Tab Bar Item */,
+				9236C4D52CC92598003E7015 /* Booking Tab Bar Item */,
+				9236C4D62CC9259C003E7015 /* Profile Tab Bar Item */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -738,6 +776,7 @@
 				92ECAC912C8E058C0005DCDB /* ConfirmationViewController.swift in Sources */,
 				9224EB292C6E43510056B803 /* CustomTextFiled.swift in Sources */,
 				92A5817E2C74E94200EFAAAE /* AdBoardCollectionViewCell.swift in Sources */,
+				9236C4D22CC91CD8003E7015 /* ProfileNavigationViewController.swift in Sources */,
 				9203F0452C95D14400220F21 /* LocationViewController.swift in Sources */,
 				92ECAC8D2C8E01060005DCDB /* CustomAlert.swift in Sources */,
 				9224EB272C6E43510056B803 /* CustomButton.swift in Sources */,
@@ -760,6 +799,7 @@
 				927F9A932C6E1CA700C9E9E9 /* HomeViewController.swift in Sources */,
 				92A7762F2C6A774100757440 /* UITableViewEx.swift in Sources */,
 				92E726382C8A0DC900CE7B1F /* ReviewsTableViewCell.swift in Sources */,
+				9236C4D02CC915E6003E7015 /* HomeNavigationViewController.swift in Sources */,
 				92D3C5A02C8CC2C7001D3479 /* TimeCollectionViewCell.swift in Sources */,
 				92A776302C6A774100757440 /* UIStoryboredEx.swift in Sources */,
 				92A776322C6A774100757440 /* UIViewController.swift in Sources */,

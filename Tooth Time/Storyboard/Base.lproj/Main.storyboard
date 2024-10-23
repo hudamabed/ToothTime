@@ -359,7 +359,7 @@
         <!--Book Appointment-->
         <scene sceneID="s9d-uD-uMx">
             <objects>
-                <viewController storyboardIdentifier="BookAppointmentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UiW-Tt-R5a" customClass="BookAppointmentViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookAppointmentViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="UiW-Tt-R5a" customClass="BookAppointmentViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xrz-RB-iRu">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -600,7 +600,7 @@
         <!--Confirmation View Controller-->
         <scene sceneID="gby-B3-Bwi">
             <objects>
-                <viewController storyboardIdentifier="ConfirmationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tmk-ft-iNy" customClass="ConfirmationViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmationViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tmk-ft-iNy" customClass="ConfirmationViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yRG-y7-gh6">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -801,16 +801,16 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="390" height="346"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="a4w-Lz-hlZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="29"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="28.666666666666668"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nearby Medical Centers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vej-eZ-uVf">
-                                                                        <rect key="frame" x="24" y="0.0" width="185.66666666666666" height="29"/>
+                                                                        <rect key="frame" x="24" y="0.0" width="185.66666666666666" height="28.666666666666668"/>
                                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                         <color key="textColor" name="1C2A3A"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFv-g5-Bm5">
-                                                                        <rect key="frame" x="320" y="0.0" width="46" height="29"/>
+                                                                        <rect key="frame" x="320" y="0.0" width="46" height="28.666666666666668"/>
                                                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                         <state key="normal" title="See All">
@@ -821,7 +821,7 @@
                                                                 <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="24" bottom="0.0" trailing="24"/>
                                                             </stackView>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RNd-kS-7kv">
-                                                                <rect key="frame" x="0.0" y="43" width="390" height="303"/>
+                                                                <rect key="frame" x="0.0" y="42.666666666666686" width="390" height="303.33333333333331"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="gda-qp-G06">
                                                                     <size key="itemSize" width="128" height="128"/>
@@ -1006,7 +1006,7 @@
         <!--Doctor Details-->
         <scene sceneID="zAT-9l-1sy">
             <objects>
-                <viewController storyboardIdentifier="DoctorDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xFn-3X-Afc" customClass="DoctorDetailsViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DoctorDetailsViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xFn-3X-Afc" customClass="DoctorDetailsViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pGa-Cu-BBX">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1363,7 +1363,7 @@
         <!--Favorite-->
         <scene sceneID="tfT-Gj-l2e">
             <objects>
-                <viewController storyboardIdentifier="FavoriteViewController" title="Favorite" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8A5-Mx-gOl" customClass="FavoriteViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoriteViewController" title="Favorite" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8A5-Mx-gOl" customClass="FavoriteViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VzN-Gc-GYN">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1611,110 +1611,122 @@
         <!--Logout View Controller-->
         <scene sceneID="PDG-Vc-xfl">
             <objects>
-                <viewController storyboardIdentifier="LogoutViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zyr-oE-Pwb" customClass="LogoutViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogoutViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zyr-oE-Pwb" customClass="LogoutViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aAW-WT-I1r">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jZ-1I-id1">
-                                <rect key="frame" x="0.0" y="654.66666666666663" width="390" height="189.33333333333337"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JgW-n6-kYT">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="9In-Jy-2EH">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="189.33333333333334"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1jZ-1I-id1">
+                                        <rect key="frame" x="0.0" y="654.66666666666663" width="390" height="189.33333333333337"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1Hu-vG-Web">
-                                                <rect key="frame" x="24" y="24" width="342" height="76.333333333333329"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="9In-Jy-2EH">
+                                                <rect key="frame" x="0.0" y="0.0" width="390" height="189.33333333333334"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inz-Se-Rq4">
-                                                        <rect key="frame" x="139" y="0.0" width="64.333333333333314" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                        <color key="textColor" name="1C2A3A"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-p3-Uo2">
-                                                        <rect key="frame" x="0.0" y="40" width="342" height="1"/>
-                                                        <color key="backgroundColor" name="E5E7EB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="1" id="svP-DH-ogS"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                                <color key="value" name="E5E7EB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                <integer key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to log out?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbV-jl-E8m">
-                                                        <rect key="frame" x="45.333333333333329" y="57.000000000000007" width="251.33333333333337" height="19.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
-                                                        <color key="textColor" name="6B7280"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="1Hu-vG-Web">
+                                                        <rect key="frame" x="24" y="24" width="342" height="76.333333333333329"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Logout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inz-Se-Rq4">
+                                                                <rect key="frame" x="139" y="0.0" width="64.333333333333314" height="24"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <color key="textColor" name="1C2A3A"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kHd-p3-Uo2">
+                                                                <rect key="frame" x="0.0" y="40" width="342" height="1"/>
+                                                                <color key="backgroundColor" name="E5E7EB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="svP-DH-ogS"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="E5E7EB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to log out?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbV-jl-E8m">
+                                                                <rect key="frame" x="45.333333333333329" y="57.000000000000007" width="251.33333333333337" height="19.333333333333336"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                <color key="textColor" name="6B7280"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2pz-QL-dNn">
+                                                        <rect key="frame" x="24" y="124.33333333333337" width="342" height="41"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="866-G5-hDT" customClass="CustomButton" customModule="Tooth_Time" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="163" height="41"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="41" id="UNH-p7-8d0"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                                        <color key="value" name="E5E7EB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="LabelColor">
+                                                                        <color key="value" name="1C2A3A"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Cancel"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAa-uo-qfZ" customClass="CustomButton" customModule="Tooth_Time" customModuleProvider="target">
+                                                                <rect key="frame" x="179" y="0.0" width="163" height="41"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                                        <color key="value" name="1C2A3A"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="LabelColor">
+                                                                        <color key="value" name="FFFFFF"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Yes, Logout"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="20.5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2pz-QL-dNn">
-                                                <rect key="frame" x="24" y="124.33333333333337" width="342" height="41"/>
-                                                <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="866-G5-hDT" customClass="CustomButton" customModule="Tooth_Time" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="41"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="41" id="UNH-p7-8d0"/>
-                                                        </constraints>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                                <color key="value" name="E5E7EB"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="LabelColor">
-                                                                <color key="value" name="1C2A3A"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Cancel"/>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20.5"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAa-uo-qfZ" customClass="CustomButton" customModule="Tooth_Time" customModuleProvider="target">
-                                                        <rect key="frame" x="179" y="0.0" width="163" height="41"/>
-                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
-                                                                <color key="value" name="1C2A3A"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="color" keyPath="LabelColor">
-                                                                <color key="value" name="FFFFFF"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="Title" value="Yes, Logout"/>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="20.5"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </view>
-                                                </subviews>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="24" leading="24" bottom="24" trailing="24"/>
                                             </stackView>
                                         </subviews>
-                                        <directionalEdgeInsets key="directionalLayoutMargins" top="24" leading="24" bottom="24" trailing="24"/>
-                                    </stackView>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="9In-Jy-2EH" secondAttribute="trailing" id="1hH-eh-JJg"/>
+                                            <constraint firstAttribute="bottom" secondItem="9In-Jy-2EH" secondAttribute="bottom" id="4oF-Fn-hWy"/>
+                                            <constraint firstAttribute="trailing" secondItem="9In-Jy-2EH" secondAttribute="trailing" id="9dv-qP-VMY"/>
+                                            <constraint firstItem="9In-Jy-2EH" firstAttribute="top" secondItem="1jZ-1I-id1" secondAttribute="top" id="If6-t4-nad"/>
+                                            <constraint firstItem="9In-Jy-2EH" firstAttribute="leading" secondItem="1jZ-1I-id1" secondAttribute="leading" id="Lf3-2D-fUY"/>
+                                            <constraint firstItem="9In-Jy-2EH" firstAttribute="leading" secondItem="1jZ-1I-id1" secondAttribute="leading" id="jav-Hq-8Yd"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.39556601821192056" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="9In-Jy-2EH" secondAttribute="trailing" id="1hH-eh-JJg"/>
-                                    <constraint firstAttribute="bottom" secondItem="9In-Jy-2EH" secondAttribute="bottom" id="4oF-Fn-hWy"/>
-                                    <constraint firstAttribute="trailing" secondItem="9In-Jy-2EH" secondAttribute="trailing" id="9dv-qP-VMY"/>
-                                    <constraint firstItem="9In-Jy-2EH" firstAttribute="top" secondItem="1jZ-1I-id1" secondAttribute="top" id="If6-t4-nad"/>
-                                    <constraint firstItem="9In-Jy-2EH" firstAttribute="leading" secondItem="1jZ-1I-id1" secondAttribute="leading" id="Lf3-2D-fUY"/>
-                                    <constraint firstItem="9In-Jy-2EH" firstAttribute="leading" secondItem="1jZ-1I-id1" secondAttribute="leading" id="jav-Hq-8Yd"/>
+                                    <constraint firstAttribute="bottom" secondItem="1jZ-1I-id1" secondAttribute="bottom" id="TO9-tB-Obv"/>
+                                    <constraint firstAttribute="trailing" secondItem="1jZ-1I-id1" secondAttribute="trailing" id="hxg-hU-0BD"/>
+                                    <constraint firstItem="1jZ-1I-id1" firstAttribute="leading" secondItem="JgW-n6-kYT" secondAttribute="leading" id="nzi-UI-nyT"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bcs-SV-TQL"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.3980235927152318" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="1jZ-1I-id1" secondAttribute="bottom" id="0d4-4U-JFf"/>
-                            <constraint firstItem="1jZ-1I-id1" firstAttribute="trailing" secondItem="bcs-SV-TQL" secondAttribute="trailing" id="smT-Kx-oMf"/>
-                            <constraint firstItem="1jZ-1I-id1" firstAttribute="leading" secondItem="bcs-SV-TQL" secondAttribute="leading" id="yFX-lG-6AX"/>
+                            <constraint firstItem="JgW-n6-kYT" firstAttribute="leading" secondItem="aAW-WT-I1r" secondAttribute="leading" id="3a6-tD-f3q"/>
+                            <constraint firstAttribute="bottom" secondItem="JgW-n6-kYT" secondAttribute="bottom" id="XZ0-li-0DE"/>
+                            <constraint firstItem="JgW-n6-kYT" firstAttribute="top" secondItem="aAW-WT-I1r" secondAttribute="top" id="h1N-qv-Say"/>
+                            <constraint firstAttribute="trailing" secondItem="JgW-n6-kYT" secondAttribute="trailing" id="paq-IR-vva"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1725,7 +1737,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bwY-F1-VDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="343" y="1242"/>
+            <point key="canvasLocation" x="341.53846153846155" y="1241.9431279620853"/>
         </scene>
         <!--Profile-->
         <scene sceneID="LeO-3Y-zHr">
@@ -1736,23 +1748,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2zV-HH-w6f">
-                                <rect key="frame" x="0.0" y="91" width="438.33333333333331" height="670"/>
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ebn-pz-GtV">
-                                        <rect key="frame" x="0.0" y="0.0" width="436" height="667.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="658.66666666666663"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7q-e5-Jm5">
-                                                <rect key="frame" x="0.0" y="0.0" width="436" height="218"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="388" height="209"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="waL-PZ-GUN">
-                                                        <rect key="frame" x="110" y="33" width="168" height="168"/>
+                                                        <rect key="frame" x="110" y="20.333333333333329" width="168" height="168"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="168" id="7YG-sH-ync"/>
                                                             <constraint firstAttribute="width" constant="168" id="rjc-dm-iQJ"/>
                                                         </constraints>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileEdit" translatesAutoresizingMaskIntoConstraints="NO" id="So5-mT-TWf">
-                                                        <rect key="frame" x="235" y="159" width="32" height="32"/>
+                                                        <rect key="frame" x="236" y="143.33333333333334" width="32" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="D9k-va-pwZ"/>
                                                             <constraint firstAttribute="width" constant="32" id="Z4U-XQ-qeG"/>
@@ -1761,28 +1773,26 @@
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="waL-PZ-GUN" secondAttribute="trailing" constant="110" id="HDP-vT-uzV"/>
-                                                    <constraint firstAttribute="height" constant="218" id="WCY-G6-A08"/>
-                                                    <constraint firstItem="So5-mT-TWf" firstAttribute="trailing" secondItem="waL-PZ-GUN" secondAttribute="trailing" constant="-11" id="YEa-h9-Zok"/>
-                                                    <constraint firstItem="waL-PZ-GUN" firstAttribute="top" secondItem="f7q-e5-Jm5" secondAttribute="top" constant="33" id="Yt5-bw-MhB"/>
-                                                    <constraint firstItem="So5-mT-TWf" firstAttribute="bottom" secondItem="waL-PZ-GUN" secondAttribute="bottom" constant="-10" id="h3E-j7-FXN"/>
-                                                    <constraint firstItem="waL-PZ-GUN" firstAttribute="leading" secondItem="f7q-e5-Jm5" secondAttribute="leading" constant="110" id="pKr-8n-LTT"/>
+                                                    <constraint firstItem="waL-PZ-GUN" firstAttribute="centerX" secondItem="f7q-e5-Jm5" secondAttribute="centerX" id="SLo-me-ok6"/>
+                                                    <constraint firstItem="waL-PZ-GUN" firstAttribute="centerY" secondItem="f7q-e5-Jm5" secondAttribute="centerY" id="b4f-Cx-P2h"/>
+                                                    <constraint firstItem="So5-mT-TWf" firstAttribute="trailing" secondItem="waL-PZ-GUN" secondAttribute="trailing" constant="-10" id="gAN-ff-REh"/>
+                                                    <constraint firstItem="So5-mT-TWf" firstAttribute="bottom" secondItem="waL-PZ-GUN" secondAttribute="bottom" constant="-13" id="k7u-JU-9J1"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mbW-Iq-7hD">
-                                                <rect key="frame" x="0.0" y="218.00000000000003" width="436" height="449.66666666666674"/>
+                                                <rect key="frame" x="0.0" y="209.00000000000003" width="388" height="449.66666666666674"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="igK-sN-6IQ">
-                                                        <rect key="frame" x="24" y="0.0" width="388" height="51.333333333333336"/>
+                                                        <rect key="frame" x="24" y="0.0" width="340" height="51.333333333333336"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Daniel Martinez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kW-1C-hhR">
-                                                                <rect key="frame" x="0.0" y="0.0" width="388" height="19.333333333333332"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="340" height="19.333333333333332"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                                 <color key="textColor" name="1F2A37"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+123 856479683" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUY-rt-G2p">
-                                                                <rect key="frame" x="0.0" y="34.333333333333314" width="388" height="17"/>
+                                                                <rect key="frame" x="0.0" y="34.333333333333314" width="340" height="17"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" name="6B7280"/>
                                                                 <nil key="highlightedColor"/>
@@ -1790,7 +1800,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wVo-o4-Ofw">
-                                                        <rect key="frame" x="24" y="71.333333333333343" width="388" height="378.33333333333326"/>
+                                                        <rect key="frame" x="24" y="71.333333333333343" width="340" height="378.33333333333326"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <connections>
                                                             <outlet property="dataSource" destination="SjW-2S-k1t" id="RkH-2o-adQ"/>
@@ -1802,7 +1812,11 @@
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="f7q-e5-Jm5" firstAttribute="top" secondItem="Ebn-pz-GtV" secondAttribute="top" id="0VB-rg-Dsg"/>
                                             <constraint firstAttribute="trailing" secondItem="f7q-e5-Jm5" secondAttribute="trailing" id="Dpj-y7-ssp"/>
+                                            <constraint firstItem="f7q-e5-Jm5" firstAttribute="leading" secondItem="Ebn-pz-GtV" secondAttribute="leading" id="cW2-Vd-bcF"/>
+                                            <constraint firstItem="mbW-Iq-7hD" firstAttribute="top" secondItem="f7q-e5-Jm5" secondAttribute="bottom" id="cyt-CV-EOf"/>
+                                            <constraint firstAttribute="trailing" secondItem="f7q-e5-Jm5" secondAttribute="trailing" id="eai-rO-xLe"/>
                                             <constraint firstItem="f7q-e5-Jm5" firstAttribute="leading" secondItem="Ebn-pz-GtV" secondAttribute="leading" id="hwF-tu-kEN"/>
                                             <constraint firstItem="f7q-e5-Jm5" firstAttribute="top" secondItem="Ebn-pz-GtV" secondAttribute="top" id="lfE-zt-jMA"/>
                                         </constraints>
@@ -1821,6 +1835,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="2zV-HH-w6f" firstAttribute="top" secondItem="Ag2-xQ-PRk" secondAttribute="top" id="30F-tK-eFg"/>
+                            <constraint firstItem="f7q-e5-Jm5" firstAttribute="height" secondItem="QTH-B5-f3Y" secondAttribute="height" multiplier="184/670" id="ELR-Ia-4iR"/>
                             <constraint firstAttribute="trailing" secondItem="2zV-HH-w6f" secondAttribute="trailing" id="FnW-aT-aIS"/>
                             <constraint firstItem="wVo-o4-Ofw" firstAttribute="height" secondItem="QTH-B5-f3Y" secondAttribute="height" multiplier="333/670" id="lK7-JA-WKW"/>
                             <constraint firstItem="2zV-HH-w6f" firstAttribute="leading" secondItem="QTH-B5-f3Y" secondAttribute="leading" id="o5G-5F-hj1"/>
@@ -2023,10 +2038,10 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="606"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIf-Sh-vQY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="971.33333333333337"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1224.3333333333333"/>
                                                         <subviews>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gpf-1d-w2Z">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="712"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="1224"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AIK-Ic-qsq">
@@ -2091,7 +2106,7 @@
                             <constraint firstItem="e85-4U-Z7f" firstAttribute="leading" secondItem="QHK-cb-boz" secondAttribute="leading" id="PVQ-p9-0ET"/>
                             <constraint firstItem="e85-4U-Z7f" firstAttribute="top" secondItem="QHK-cb-boz" secondAttribute="top" id="Tl0-up-aBt"/>
                             <constraint firstItem="e85-4U-Z7f" firstAttribute="top" secondItem="QHK-cb-boz" secondAttribute="top" id="YD7-y9-acO"/>
-                            <constraint firstItem="JIf-Sh-vQY" firstAttribute="height" secondItem="jcb-jU-Zw4" secondAttribute="height" multiplier="1.15075" id="dc3-Ip-kjI"/>
+                            <constraint firstItem="JIf-Sh-vQY" firstAttribute="height" secondItem="jcb-jU-Zw4" secondAttribute="height" multiplier="1.45075" id="dc3-Ip-kjI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My Bookings" largeTitleDisplayMode="never" id="aND-4b-LOU"/>
@@ -2118,6 +2133,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="FFFFFF"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="isRenderOriginal" value="YES"/>
                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -2253,7 +2269,7 @@
         <!--All Doctors-->
         <scene sceneID="iZe-0T-7tF">
             <objects>
-                <viewController storyboardIdentifier="FindDoctorsViewController" title="All Doctors" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EyE-Lr-oTB" customClass="FindDoctorsViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FindDoctorsViewController" title="All Doctors" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EyE-Lr-oTB" customClass="FindDoctorsViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KoX-1M-Zaa">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="753"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2835,10 +2851,10 @@
             </objects>
             <point key="canvasLocation" x="2274" y="-23"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profile Navigation View Controller-->
         <scene sceneID="WK6-qI-PhT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Km0-Jk-mro" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ProfileNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Km0-Jk-mro" customClass="ProfileNavigationViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="icProfile" selectedImage="icSelectedProfile" id="KL3-0p-gTD">
                         <inset key="imageInsets" minX="-16" minY="0.0" maxX="16" maxY="-22"/>
                     </tabBarItem>
@@ -2877,7 +2893,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAV-FV-ClJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1495" y="2413"/>
+            <point key="canvasLocation" x="1522" y="2413"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="84N-dU-GKx">
@@ -2900,10 +2916,10 @@
             </objects>
             <point key="canvasLocation" x="4693.8461538461534" y="2412.7962085308054"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home Navigation View Controller-->
         <scene sceneID="bUe-c3-nru">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ghi-TF-QEN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" navigationBarHidden="YES" id="ghi-TF-QEN" customClass="HomeNavigationViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="icHome" selectedImage="icSelectedHome" id="kWf-QE-c4S">
                         <inset key="imageInsets" minX="11" minY="0.0" maxX="-11" maxY="-22"/>
                         <inset key="largeContentSizeImageInsets" minX="0.0" minY="0.0" maxX="1" maxY="0.0"/>
@@ -2924,7 +2940,7 @@
         <!--Remove From Favorites View Controller-->
         <scene sceneID="WKG-F7-aiR">
             <objects>
-                <viewController storyboardIdentifier="RemoveFromFavoritesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vFr-Sk-PxG" customClass="RemoveFromFavoritesViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RemoveFromFavoritesViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vFr-Sk-PxG" customClass="RemoveFromFavoritesViewController" customModule="Tooth_Time" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UHY-6t-K6A">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

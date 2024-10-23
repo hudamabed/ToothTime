@@ -73,7 +73,7 @@ extension SignInViewController {
 
 //MARK: - Set Root
 extension SignInViewController {
-    func setRoot(){
+    func setRoot() {
         let vc = MainTabBarViewController.instantiat()
         if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
            let sceneDelegate = windowScene.delegate as? SceneDelegate,

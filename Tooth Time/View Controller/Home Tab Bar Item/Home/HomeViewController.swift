@@ -33,12 +33,13 @@ class HomeViewController: UIViewController {
         setUpNavigation()
         
     }
-//MARK: - Actions
+    //MARK: - Actions
     @IBAction func btnFindDoctor(_ sender: Any) {
         let vc = FindDoctorsViewController.instantiat()
         vc.push()
     }
 }
+
 //MARK: - Configurations
 private extension HomeViewController {
     func setupView() {
@@ -48,12 +49,12 @@ private extension HomeViewController {
     }
     
     func localized() {
-//        for familyName in UIFont.familyNames {
-//            print("Family: \(familyName)")
-//            for fontName in UIFont.fontNames(forFamilyName: familyName) {
-//                print("Font: \(fontName)")
-//            }
-//        }
+        //        for familyName in UIFont.familyNames {
+        //            print("Family: \(familyName)")
+        //            for fontName in UIFont.fontNames(forFamilyName: familyName) {
+        //                print("Font: \(fontName)")
+        //            }
+        //        }
     }
     
     func setupData() {
@@ -108,38 +109,35 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             cell.configureCell()
             return cell
         }
-    }    
+    }
 }
 
-//extension HomeViewController: UICollectionViewDelegateFlowLayout {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let screenWidth = collectionView.bounds.width
-//        let screenHeight = collectionView.bounds.height
-//        
-//        let horizontalSpacing: CGFloat = 24
-//        let verticalSpacing: CGFloat = 16 
-//        
-//        let availableWidth = screenWidth - (2 * horizontalSpacing)
-//        
-//        let cellSize: (width: CGFloat, height: CGFloat)
-//        
-//        switch collectionView {
-//        case AdBoardCollectionView:
-//            cellSize = (width: 342, height: 163)
-//        case medicalCentersCollectionView:
-//            cellSize = (width: 232, height: 252)
-//        default:
-//            cellSize = (width: 342, height: 133)
-//        }
-//        
-//        let cellWidth = (availableWidth / 390) * cellSize.width
-//        let cellHeight = (cellWidth / cellSize.width) * cellSize.height
-//        
-//        let adjustedHeight = min(screenHeight, cellHeight)
-//        
-//        return CGSize(width: cellWidth, height: adjustedHeight)
-//    }
-//}
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    
+        switch collectionView {
+        case AdBoardCollectionView:
+            let width: CGFloat = collectionView.frame.width - 14
+            let height: CGFloat = 163
+            let size: CGSize = CGSize.init(width: width, height: height)
+            return size
+        case medicalCentersCollectionView:
+            let width: CGFloat = collectionView.frame.width - 60
+            let height: CGFloat = 90
+            let size: CGSize = CGSize.init(width: width, height: height)
+            return size
+        case topDentistsCollectionView:
+            let width: CGFloat = collectionView.frame.width - 60
+            let height: CGFloat = 90
+            let size: CGSize = CGSize.init(width: width, height: height)
+            return size
+        default:
+            break
+            
+        }
+        return .zero
+    }
+}
 
 
 //MARK: - Set Up Page Control
@@ -168,7 +166,7 @@ extension HomeViewController {
     func setUpNavigation() {
         navigationItem.hidesBackButton = true
         self.isHidNavigation = true
-    
+        
     }
 }
 
