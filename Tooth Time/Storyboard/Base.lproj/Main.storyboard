@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="36" y="-23"/>
+            <point key="canvasLocation" x="342" y="161"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="zvl-eb-FoJ">
@@ -354,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BQ4-me-KYz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="-23"/>
+            <point key="canvasLocation" x="1805" y="162"/>
         </scene>
         <!--Book Appointment-->
         <scene sceneID="s9d-uD-uMx">
@@ -2849,7 +2849,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVt-lR-xwp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2274" y="-23"/>
+            <point key="canvasLocation" x="2642" y="162"/>
         </scene>
         <!--Profile Navigation View Controller-->
         <scene sceneID="WK6-qI-PhT">

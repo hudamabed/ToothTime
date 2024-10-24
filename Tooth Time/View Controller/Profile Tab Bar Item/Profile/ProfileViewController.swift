@@ -80,7 +80,7 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let obj = self.object[indexPath.row]
-        self.navigationController?.popViewController(animated: false)
+        //self.navigationController?.popViewController(animated: false)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.dismiss(animated: true) {
                 switch obj {
@@ -100,10 +100,9 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
                     break
                 case .logOut:
                     let vc = LogoutViewController.instantiat()
-                        vc.modalPresentationStyle = .fullScreen
+                        vc.modalPresentationStyle = .overFullScreen
                         vc.presenVC()
-                        break
-                    
+                    break
                 }
             }
         }

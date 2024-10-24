@@ -30,18 +30,20 @@ private extension MainNanigationViewController {
         AppDelegate.shared?.rootNavigationController = self
         setRoot()
     }
-}
-
-func localized(){
     
     
-}
-
-func setupData(){
+    func localized(){
+        
+        
+    }
     
-}
-
-func fetchData(){
+    func setupData() {
+        
+    }
+    
+    func fetchData() {
+        
+    }
 }
 
 //MARK: - Set Root
