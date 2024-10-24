@@ -81,6 +81,14 @@
 		92ECAC8C2C8E01060005DCDB /* CustomAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ECAC8B2C8E01060005DCDB /* CustomAlert.xib */; };
 		92ECAC8D2C8E01060005DCDB /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECAC8A2C8E01060005DCDB /* CustomAlert.swift */; };
 		92ECAC912C8E058C0005DCDB /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92ECAC902C8E058C0005DCDB /* ConfirmationViewController.swift */; };
+		B189C6E92CCAC961008BF5AB /* FavoriteHospitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189C6E82CCAC961008BF5AB /* FavoriteHospitalView.swift */; };
+		B189C6EC2CCAC9F5008BF5AB /* FavoriteHospitalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B189C6EB2CCAC9F5008BF5AB /* FavoriteHospitalView.xib */; };
+		B189C6F12CCACB5B008BF5AB /* FavoriteDentistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189C6F02CCACB5B008BF5AB /* FavoriteDentistView.swift */; };
+		B189C6F52CCACB6F008BF5AB /* FavoriteDentistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B189C6F42CCACB6F008BF5AB /* FavoriteDentistView.xib */; };
+		B189C6FA2CCACE97008BF5AB /* FavoritDentistTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B189C6F92CCACE97008BF5AB /* FavoritDentistTableViewCell.xib */; };
+		B189C6FB2CCACE97008BF5AB /* FavoritDentistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189C6F82CCACE97008BF5AB /* FavoritDentistTableViewCell.swift */; };
+		B189C6FE2CCACED7008BF5AB /* FavoriteClinicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B189C6FD2CCACED7008BF5AB /* FavoriteClinicTableViewCell.xib */; };
+		B189C6FF2CCACED7008BF5AB /* FavoriteClinicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B189C6FC2CCACED7008BF5AB /* FavoriteClinicTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -161,6 +169,14 @@
 		92ECAC8A2C8E01060005DCDB /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		92ECAC8B2C8E01060005DCDB /* CustomAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAlert.xib; sourceTree = "<group>"; };
 		92ECAC902C8E058C0005DCDB /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		B189C6E82CCAC961008BF5AB /* FavoriteHospitalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHospitalView.swift; sourceTree = "<group>"; };
+		B189C6EB2CCAC9F5008BF5AB /* FavoriteHospitalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteHospitalView.xib; sourceTree = "<group>"; };
+		B189C6F02CCACB5B008BF5AB /* FavoriteDentistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteDentistView.swift; sourceTree = "<group>"; };
+		B189C6F42CCACB6F008BF5AB /* FavoriteDentistView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteDentistView.xib; sourceTree = "<group>"; };
+		B189C6F82CCACE97008BF5AB /* FavoritDentistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritDentistTableViewCell.swift; sourceTree = "<group>"; };
+		B189C6F92CCACE97008BF5AB /* FavoritDentistTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritDentistTableViewCell.xib; sourceTree = "<group>"; };
+		B189C6FC2CCACED7008BF5AB /* FavoriteClinicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteClinicTableViewCell.swift; sourceTree = "<group>"; };
+		B189C6FD2CCACED7008BF5AB /* FavoriteClinicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteClinicTableViewCell.xib; sourceTree = "<group>"; };
 		D8DF45072546883D970D71CB /* Pods_Tooth_Time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tooth_Time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -239,6 +255,8 @@
 		9224EB262C6E43510056B803 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B189C6ED2CCACB20008BF5AB /* FavoriteDentistView */,
+				B189C6E72CCAC92B008BF5AB /* FavoriteHosbitalView */,
 				9224EB212C6E43510056B803 /* CustomButton */,
 				9224EB242C6E43510056B803 /* CustomTextFiled */,
 				92ECAC8E2C8E010A0005DCDB /* Custom Alert */,
@@ -581,6 +599,8 @@
 		92E726332C8A0D8A00CE7B1F /* Table View */ = {
 			isa = PBXGroup;
 			children = (
+				B189C6F72CCACE6A008BF5AB /* FavoriteClinicTableCell */,
+				B189C6F62CCACE61008BF5AB /* FavoriteDoctorTableCell */,
 				920D6EF12CB3C9860001FA1B /* Profile Settings */,
 				92E726342C8A0D9600CE7B1F /* Reviews */,
 			);
@@ -611,6 +631,42 @@
 				92ECAC902C8E058C0005DCDB /* ConfirmationViewController.swift */,
 			);
 			path = Confirmation;
+			sourceTree = "<group>";
+		};
+		B189C6E72CCAC92B008BF5AB /* FavoriteHosbitalView */ = {
+			isa = PBXGroup;
+			children = (
+				B189C6E82CCAC961008BF5AB /* FavoriteHospitalView.swift */,
+				B189C6EB2CCAC9F5008BF5AB /* FavoriteHospitalView.xib */,
+			);
+			path = FavoriteHosbitalView;
+			sourceTree = "<group>";
+		};
+		B189C6ED2CCACB20008BF5AB /* FavoriteDentistView */ = {
+			isa = PBXGroup;
+			children = (
+				B189C6F02CCACB5B008BF5AB /* FavoriteDentistView.swift */,
+				B189C6F42CCACB6F008BF5AB /* FavoriteDentistView.xib */,
+			);
+			path = FavoriteDentistView;
+			sourceTree = "<group>";
+		};
+		B189C6F62CCACE61008BF5AB /* FavoriteDoctorTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				B189C6F82CCACE97008BF5AB /* FavoritDentistTableViewCell.swift */,
+				B189C6F92CCACE97008BF5AB /* FavoritDentistTableViewCell.xib */,
+			);
+			path = FavoriteDoctorTableCell;
+			sourceTree = "<group>";
+		};
+		B189C6F72CCACE6A008BF5AB /* FavoriteClinicTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				B189C6FC2CCACED7008BF5AB /* FavoriteClinicTableViewCell.swift */,
+				B189C6FD2CCACED7008BF5AB /* FavoriteClinicTableViewCell.xib */,
+			);
+			path = FavoriteClinicTableCell;
 			sourceTree = "<group>";
 		};
 		FCDB98CDB67960E030ADD9D5 /* Frameworks */ = {
@@ -685,6 +741,7 @@
 				92ECAC8C2C8E01060005DCDB /* CustomAlert.xib in Resources */,
 				92D3C5A12C8CC2C7001D3479 /* TimeCollectionViewCell.xib in Resources */,
 				92D3C59C2C8CB8A1001D3479 /* CalenderCollectionViewCell.xib in Resources */,
+				B189C6EC2CCAC9F5008BF5AB /* FavoriteHospitalView.xib in Resources */,
 				92A5817F2C74E94200EFAAAE /* AdBoardCollectionViewCell.xib in Resources */,
 				923FEC0E2C862B1D0078531B /* Inter-MediumItalic.ttf in Resources */,
 				92A581872C74E97200EFAAAE /* TopDentistsCollectionViewCell.xib in Resources */,
@@ -694,10 +751,13 @@
 				923FEC142C862B880078531B /* Inter-BoldItalic.ttf in Resources */,
 				920D6EF52CB3CA040001FA1B /* ProfileSettingsTableViewCell.xib in Resources */,
 				925322462C6A61F2007045DB /* Assets.xcassets in Resources */,
+				B189C6FE2CCACED7008BF5AB /* FavoriteClinicTableViewCell.xib in Resources */,
 				925322492C6A61F2007045DB /* Base in Resources */,
+				B189C6F52CCACB6F008BF5AB /* FavoriteDentistView.xib in Resources */,
 				923FEC0A2C862AF30078531B /* Inter-SemiBoldItalic.ttf in Resources */,
 				9285F1412C909577009F50E7 /* MyBookingsCollectionViewCell.xib in Resources */,
 				923FEC092C862AF30078531B /* Inter-SemiBold.ttf in Resources */,
+				B189C6FA2CCACE97008BF5AB /* FavoritDentistTableViewCell.xib in Resources */,
 				92A581832C74E95900EFAAAE /* MedicalCentersCollectionViewCell.xib in Resources */,
 				923FEC0D2C862B1D0078531B /* Inter-Medium.ttf in Resources */,
 				923FEC162C862BA30078531B /* Inter-ExtraLight.ttf in Resources */,
@@ -805,6 +865,9 @@
 				92A776322C6A774100757440 /* UIViewController.swift in Sources */,
 				92A776332C6A774100757440 /* UITextField.swift in Sources */,
 				92A776342C6A774100757440 /* UIKitEx.swift in Sources */,
+				B189C6E92CCAC961008BF5AB /* FavoriteHospitalView.swift in Sources */,
+				B189C6FF2CCACED7008BF5AB /* FavoriteClinicTableViewCell.swift in Sources */,
+				B189C6FB2CCACE97008BF5AB /* FavoritDentistTableViewCell.swift in Sources */,
 				92A776352C6A774100757440 /* UIViewEx.swift in Sources */,
 				927F9A912C6E1C8A00C9E9E9 /* SignInViewController.swift in Sources */,
 				927F9A992C6E1D1D00C9E9E9 /* BookAppointmentViewController.swift in Sources */,
@@ -812,6 +875,7 @@
 				927F9A8F2C6E1C6B00C9E9E9 /* SignUpViewController.swift in Sources */,
 				927F9A952C6E1CCC00C9E9E9 /* FindDoctorsViewController.swift in Sources */,
 				92A581862C74E97200EFAAAE /* TopDentistsCollectionViewCell.swift in Sources */,
+				B189C6F12CCACB5B008BF5AB /* FavoriteDentistView.swift in Sources */,
 				92D8E6652CB457AF00729E65 /* LogoutViewController.swift in Sources */,
 				9231670D2CBE995900E713A1 /* RemoveFromFavoritesViewController.swift in Sources */,
 				9285F1402C909577009F50E7 /* MyBookingsCollectionViewCell.swift in Sources */,

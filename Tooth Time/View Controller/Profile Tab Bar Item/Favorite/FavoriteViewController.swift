@@ -9,14 +9,15 @@ import UIKit
 
 class FavoriteViewController: UIViewController {
     //MARK:  Outlets
-    @IBOutlet weak var collectionView: UICollectionView!
+    //    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var lblDoctor: UILabel!
     @IBOutlet weak var lblHospitals: UILabel!
     
     @IBOutlet weak var btnDoctor: UIButton!
     @IBOutlet weak var btnHospital: UIButton!
-
+    
     @IBOutlet weak var viewLine1: UIView!
     @IBOutlet weak var viewLine2: UIView!
     
@@ -59,8 +60,11 @@ class FavoriteViewController: UIViewController {
 //MARK: - Configurations
 private extension FavoriteViewController {
     func setupView() {
-        collectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
-        collectionView.registerXib(cell: MedicalCentersCollectionViewCell.self)
+        //        collectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
+        //        collectionView.registerXib(cell: MedicalCentersCollectionViewCell.self)
+        tableView.registerXib(cell: FavoritDentistTableViewCell.self)
+        tableView.registerXib(cell: FavoriteClinicTableViewCell.self)
+        
         setUpNavigation()
         
     }
@@ -88,59 +92,60 @@ private extension FavoriteViewController {
     }
 }
 
-//MARK: - Set Up Collection View
-extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        switch currentFavorite {
-        case .doctor:
-            return topDentists.count
-        case .hospital:
-            return medicalCenters.count
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        switch currentFavorite {
-            case .doctor:
-            let cell: TopDentistsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopDentistsCollectionViewCell", for: indexPath) as! TopDentistsCollectionViewCell
-            let object = topDentists[indexPath.row]
-            cell.object = object
-            cell.configureCell()
-            return cell
-            case .hospital:
-            let cell: MedicalCentersCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MedicalCentersCollectionViewCell", for: indexPath) as! MedicalCentersCollectionViewCell
-            let object = medicalCenters[indexPath.row]
-            cell.object = object
-            cell.configureCell()
-            return cell
-        }
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        switch currentFavorite {
-        case .doctor:
-            let selectedDoctor = topDentists[indexPath.row]
-            let vc = RemoveFromFavoritesViewController.instantiat()
-            vc.doctor = selectedDoctor
-            vc.modalPresentationStyle = .fullScreen
-            vc.presenVC()
-        case .hospital:
-            let selectedDoctor = medicalCenters[indexPath.row]
-            let vc = RemoveFromFavoritesViewController.instantiat()
-            vc.hospital = selectedDoctor
-            vc.modalPresentationStyle = .fullScreen
-            vc.presenVC()
-        }
-    }
-}
-
+////MARK: - Set Up Collection View
+//extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        switch currentFavorite {
+//        case .doctor:
+//            return topDentists.count
+//        case .hospital:
+//            return medicalCenters.count
+//        }
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        switch currentFavorite {
+//            case .doctor:
+//            let cell: TopDentistsCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopDentistsCollectionViewCell", for: indexPath) as! TopDentistsCollectionViewCell
+//            let object = topDentists[indexPath.row]
+//            cell.object = object
+//            cell.configureCell()
+//            return cell
+//            case .hospital:
+//            let cell: MedicalCentersCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MedicalCentersCollectionViewCell", for: indexPath) as! MedicalCentersCollectionViewCell
+//            let object = medicalCenters[indexPath.row]
+//            cell.object = object
+//            cell.configureCell()
+//            return cell
+//        }
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        switch currentFavorite {
+//        case .doctor:
+//            let selectedDoctor = topDentists[indexPath.row]
+//            let vc = RemoveFromFavoritesViewController.instantiat()
+//            vc.doctor = selectedDoctor
+//            vc.modalPresentationStyle = .fullScreen
+//            vc.presenVC()
+//        case .hospital:
+//            let selectedDoctor = medicalCenters[indexPath.row]
+//            let vc = RemoveFromFavoritesViewController.instantiat()
+//            vc.hospital = selectedDoctor
+//            vc.modalPresentationStyle = .fullScreen
+//            vc.presenVC()
+//        }
+//    }
+//}
+//
 
 
 
 //MARK: - Favorite
 extension FavoriteViewController {
     func updateFavorite(to favorite: GlobalConstants.Favorite) {
-        self.collectionView.reloadData()
+        //        self.collectionView.reloadData()
+        self.tableView.reloadData()
         currentFavorite = favorite
         switch currentFavorite {
         case .doctor:
@@ -171,4 +176,39 @@ extension FavoriteViewController {
         navigationController?.navigationBar.titleTextAttributes = titleTextAttributes
         self.isHidNavigation = false
     }
+}
+
+extension FavoriteViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch currentFavorite{
+        case .doctor:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FavoritDentistTableViewCell", for: indexPath)
+            return cell
+        case .hospital:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteClinicTableViewCell", for: indexPath)
+            return cell
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch currentFavorite {
+        case .doctor:
+            let selectedDoctor = topDentists[indexPath.row]
+            let vc = RemoveFromFavoritesViewController.instantiat()
+            vc.doctor = selectedDoctor
+            vc.modalPresentationStyle = .custom
+            self.present(vc, animated: true)
+        case .hospital:
+            let selectedDoctor = medicalCenters[indexPath.row]
+            let vc = RemoveFromFavoritesViewController.instantiat()
+            vc.hospital = selectedDoctor
+            vc.modalPresentationStyle = .custom
+            self.present(vc, animated: true)
+        }
+    }
+    
 }

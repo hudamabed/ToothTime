@@ -10,10 +10,11 @@ import UIKit
 class RemoveFromFavoritesViewController: UIViewController {
     //MARK:  Outlets
     @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var collectionView: UICollectionView!
+//    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var btnCancel: CustomButton!
     @IBOutlet weak var btnRemove: CustomButton!
     
+    @IBOutlet weak var containerView: UIView!
     var doctor: TopDentists?
     var hospital: MedicalCenters?
     var topDentists = [TopDentists]()
@@ -31,7 +32,7 @@ class RemoveFromFavoritesViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        setView()
     }
     //MARK: - Actions
     @objc func navigateToFavorites() {
@@ -44,8 +45,35 @@ class RemoveFromFavoritesViewController: UIViewController {
         } else if let selectedHospital = hospital, let index = medicalCenters.firstIndex(where: { $0.id == selectedHospital.id } ) {
             medicalCenters.remove(at: index)
         }
-        collectionView.reloadData()
+//        collectionView.reloadData()
         self.dismiss(animated: true, completion: nil)
+    }
+    private func setView(){
+        if let doctor {
+            
+            let view  = FavoriteDentistView.init()
+            view.translatesAutoresizingMaskIntoConstraints = false
+
+            containerView.addSubview(view)
+            NSLayoutConstraint.activate([
+                      view.topAnchor.constraint(equalTo: containerView.topAnchor),
+                      view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+                      view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
+                      view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor)
+                  ])
+        }
+        if let hospital{
+            let view  = FavoriteHospitalView()
+            view.translatesAutoresizingMaskIntoConstraints = false
+
+            containerView.addSubview(view)
+            NSLayoutConstraint.activate([
+                      view.topAnchor.constraint(equalTo: containerView.topAnchor),
+                      view.leadingAnchor.constraint(equalTo: containerView.leadingAnchor),
+                      view.bottomAnchor.constraint(equalTo: containerView.bottomAnchor),
+                      view.trailingAnchor.constraint(equalTo: containerView.trailingAnchor)
+                  ])
+        }
     }
 }
 //MARK: - Configurations
@@ -53,8 +81,8 @@ private extension RemoveFromFavoritesViewController {
     func setupView() {
         setCornerRadius()
         customButtons()
-        collectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
-        collectionView.registerXib(cell: MedicalCentersCollectionViewCell.self)
+//        collectionView.registerXib(cell: TopDentistsCollectionViewCell.self)
+//        collectionView.registerXib(cell: MedicalCentersCollectionViewCell.self)
     }
     
     func localized() {
@@ -63,7 +91,7 @@ private extension RemoveFromFavoritesViewController {
         } else if let selectedHospital = hospital {
             medicalCenters.append(selectedHospital)
         }
-        collectionView.reloadData()
+//        collectionView.reloadData()
         
     }
     
